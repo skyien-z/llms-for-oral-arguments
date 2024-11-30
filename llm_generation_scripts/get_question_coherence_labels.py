@@ -50,9 +50,9 @@ def get_coherence_judgments(model_name, df):
 
 def main():
     model_path_hf = 'meta-llama/Llama-3.2-3B-Instruct'
-    input_fp = '2024_all_questions_full_text_merged.csv'
+    input_fp = 'datasets/2024_all_questions_full_text_merged.csv'
     model_name = model_path_hf.split('/')[-1]
-    output_fp = f'2024_all_questions_coherence_labeled_{model_name}.csv'
+    output_fp = f'datasets/2024_all_questions_coherence_labeled_{model_name}.csv'
 
     questions_df = pd.read_csv(input_fp)
     print(f'Read input file {input_fp}')
