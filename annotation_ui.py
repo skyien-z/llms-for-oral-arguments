@@ -1,8 +1,34 @@
 import gradio as gr
+import cssutils
 import re
 import json
-import os
+import pandas as pd
 
+##########################################################################
+### CONSTANTS -- QUESTIONS  
+##########################################################################
+q1_realistic = "Given the opening statement, is this question realistic for the justice to ask?"
+q2_similarity = "Is this question similar in content to something the justice actually asked?"
+q3_valence = "Is this question similar in valence/sentiment to the justice's actual questions?"
+q4_helpfulness = "If you were preparing this opening statement, would you find this question helpful?"
+q5_preference = "If you were preparing for oral arguments, would you prefer the model's question to the actual question?"
+
+##########################################################################
+### INPUT -- JSONs
+##########################################################################
+with open('datasets/2024_questions_for_eval.json') as f:
+    all_data_to_annotate = json.load(f)
+
+BRIEF_TRANSCRIPTS_DIR = "2023-2024_case_briefs/"
+def get_brief_json(transcript_id):
+    brief_name = transcript_id[:11] + ".json"
+    with open(BRIEF_TRANSCRIPTS_DIR + brief_name) as json_file:
+        brief_json = json.load(json_file)
+    return brief_json
+
+##########################################################################
+### INPUT PARSING -- GENERATING MARKDOWN HELPERS
+##########################################################################
 def get_speaker(opening_statement):
     return re.findall(r"<speaker>(.*?)</speaker>", opening_statement)[0]
 
@@ -21,24 +47,9 @@ def get_year(transcript_id):
 def get_docket(transcript_id):
     return transcript_id[5:11]
 
-BRIEF_TRANSCRIPTS_DIR = "2023-2024_case_briefs/"
-
-# questions
-q1_realistic = "Given the opening statement, is this question realistic for the justice to ask?"
-q2_similarity = "Is this question similar in content to something the justice actually asked?"
-q3_valence = "Is this question similar in valence/sentiment to the justice's actual questions?"
-q4_helpfulness = "If you were preparing this opening statement, would you find this question helpful?"
-q5_preference = "If you were preparing for oral arguments, would you prefer the model's question to the actual question?"
-
-with open('datasets/2024_questions_for_eval.json') as f:
-    all_data_to_annotate = json.load(f)
-
-def get_brief_json(transcript_id):
-    brief_name = transcript_id[:11] + ".json"
-    with open(BRIEF_TRANSCRIPTS_DIR + brief_name) as json_file:
-        brief_json = json.load(json_file)
-    return brief_json
-
+##########################################################################
+### INPUT DISPLAYING -- GENERATING MARKDOWN
+##########################################################################
 def generate_markdown(transcript_id, petitioner_or_respondent, justice_name):
     selected_data = [x for x in all_data_to_annotate if x["transcript_id"] == transcript_id][0]
     advocate_side = selected_data[petitioner_or_respondent.lower()]
@@ -64,6 +75,9 @@ def generate_markdown(transcript_id, petitioner_or_respondent, justice_name):
         annotations.
         """
 
+##########################################################################
+### USER INPUT -- SURVEY HELPERS
+##########################################################################
 def populate_llama_generated_questions(transcript_id, petitioner_or_respondent, justice_name):
     selected_transcript = [x for x in all_data_to_annotate if x["transcript_id"] == transcript_id][0]
     advocate_side = selected_transcript[petitioner_or_respondent.lower()]
@@ -71,15 +85,47 @@ def populate_llama_generated_questions(transcript_id, petitioner_or_respondent, 
     llama_generated_questions = generated_questions[0]["model_questions"]
     return llama_generated_questions
 
-def make_likert_scale(question, negation, property, key):
+def make_likert_scale(question, negation, property):
     label = f"{question} (-2 is \"Very {negation}\" and 2 is \"Very {property}\")"
-    return gr.Radio(range(-2, 3, 1), label=label, key=key)
+    return gr.Radio(range(-2, 3, 1), label=label)
 
-def save_annotations(is_realistic, how_similar, how_sentiment_similar, how_helpful, how_prefer):
-    print(is_realistic)
+##########################################################################
+#### OUPUT LOADING -- PANDAS
+##########################################################################
+QID_DATA_DIR = "datasets/2024_questions/with_qid/"
+FILE_TO_SAVE = "2024_llm_questions_Meta-Llama-3.1-70B-Instruct_qid_manual_labels.csv"
+manual_annotations_df = pd.read_csv(QID_DATA_DIR + FILE_TO_SAVE)
+manual_annotations_df.drop("Unnamed: 0", axis=1, inplace=True)
 
+manual_annotation_types = ["is_realistic", "how_similar", "how_similar_sentiment", "how_helpful", "how_prefer_to_actual"]
+for annotation_type in manual_annotation_types:
+    if annotation_type not in manual_annotations_df:
+        manual_annotations_df[annotation_type] = None
 
-with gr.Blocks(theme=gr.themes.Ocean()) as demo:
+##########################################################################
+### OUTPUT UPDATING -- PANDAS
+##########################################################################
+def save_annotations(predicted_question, is_realistic, how_similar, how_similar_sentiment, how_helpful, how_prefer):
+    question_text = re.findall(r'"(.*?)"', predicted_question)[0]
+    find_row_df_bool = manual_annotations_df['question_text'] == question_text
+    if manual_annotations_df.loc[find_row_df_bool].empty:
+        return "I'm sorry, but this question does not match our CSV. Please update the CSV and try again."
+    # add in all given manual annotations
+    manual_annotations_df.loc[find_row_df_bool, "is_realistic"] = is_realistic
+    manual_annotations_df.loc[find_row_df_bool, "how_similar"] = how_similar
+    manual_annotations_df.loc[find_row_df_bool, "how_similar_sentiment"] = how_similar_sentiment
+    manual_annotations_df.loc[find_row_df_bool, "how_helpful"] = how_helpful
+    manual_annotations_df.loc[find_row_df_bool, "how_prefer_to_actual"] = how_prefer
+    return "Thank you for your annotation!"
+    
+##########################################################################
+### OUTPUT SAVING -- PANDAS
+##########################################################################
+
+from pathlib import Path
+css = Path("annotation_ui.css").read_text()
+
+with gr.Blocks(theme=gr.themes.Ocean(), css=css) as demo:
     generated_questions = gr.State([])
     with gr.Column() as config_setup_row:
         # initial config set-up
@@ -93,19 +139,27 @@ with gr.Blocks(theme=gr.themes.Ocean()) as demo:
         transcript_info = gr.Markdown()
     
         @gr.render(inputs=generated_questions)
-        def show_split(generated_questions):
-            for i in range(len(generated_questions)):
+        def show_split(llm_questions):
+            for i in range(len(llm_questions)):
                 question_id = f"Question {i + 1}"
                 with gr.Tab(question_id):
-                    gr.Markdown(f"**Predicted Question**: \"{generated_questions[i]}\"")
-                    is_realistic = gr.Radio(["Yes", "No"], label=q1_realistic, key=i)
-                    how_similar = make_likert_scale(q2_similarity, "Similar", "Dissimilar", i)
-                    how_sentiment_similar = make_likert_scale(q3_valence, "Dissimilar in Sentiment", "Similar in Sentiment", i)
-                    how_helpful = make_likert_scale(q4_helpfulness, "Unhelpful", "Helpful", i)
-                    how_prefer = make_likert_scale(q5_preference, "Prefer the Actual Question", "Prefer the Model Question", i)
+                    with gr.Column() as question_survey:
+                        predicted_question = gr.Markdown(f"**Predicted Question**: \"{llm_questions[i]}\"")
+                        is_realistic = gr.Radio(["Yes", "No"], label=q1_realistic)
+                        how_similar = make_likert_scale(q2_similarity, "Similar", "Dissimilar")
+                        how_similar_sentiment = make_likert_scale(q3_valence, "Dissimilar in Sentiment", "Similar in Sentiment")
+                        how_helpful = make_likert_scale(q4_helpfulness, "Unhelpful", "Helpful")
+                        how_prefer = make_likert_scale(q5_preference, "Prefer the Actual Question", "Prefer the Model Question")
                     
+                    on_submission_text = gr.Markdown(visible=False)
                     submit_button = gr.Button(value=f"Submit {question_id}")
-                    submit_button.click(save_annotations, [is_realistic, how_similar, how_sentiment_similar, how_helpful, how_prefer], None)
+                    submit_button.click(save_annotations, [predicted_question, is_realistic, how_similar, how_similar_sentiment, how_helpful, how_prefer], on_submission_text).then(
+                        fn=lambda: [gr.Markdown(visible=True), gr.Column(visible=False), gr.Button(visible=False)], inputs=None, outputs=[on_submission_text, question_survey, submit_button]
+                    )
+        
+        with gr.Row() as submission_row:
+            return_to_transcript_select = gr.Button("Return To Transcript Select", elem_classes="button-meta")
+            save_annotations_to_csv = gr.Button("Save all annotations so far to CSV", elem_classes="button-meta")
 
     # config set-up interactive logic
     petitioner_or_respondent_select.select(fn=lambda: gr.Radio(visible=True), inputs=None, outputs=justice_select)
