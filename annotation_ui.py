@@ -10,7 +10,7 @@ import pandas as pd
 q1_realistic = "Given the opening statement, is this question realistic for the justice to ask?"
 q2_similarity = "Is this question similar in content to something the justice actually asked?"
 q3_valence = "Is this question similar in valence/sentiment to the justice's actual questions?"
-q4_helpfulness = "If you were preparing this opening statement, would you find this question helpful?"
+q4_helpfulness = "If you were preparing for oral arguments using this opening statement, would you find this question helpful?"
 q5_preference = "If you were preparing for oral arguments, would you prefer the model's question to the actual question?"
 
 ##########################################################################
@@ -91,6 +91,9 @@ def make_likert_scale(question, negation, property):
     label = f"{question} (-2 is \"Very {negation}\" and 2 is \"Very {property}\")"
     return gr.Radio(range(-2, 3, 1), label=label)
 
+def go_to_transcript_select():
+    return [gr.Column(visible=True), gr.Column(visible=False)]
+
 ##########################################################################
 #### OUPUT LOADING -- PANDAS
 ##########################################################################
@@ -152,7 +155,7 @@ with gr.Blocks(theme=gr.themes.Ocean(), css=css) as demo:
                 with gr.Tab(question_id):
                     with gr.Column() as question_survey:
                         predicted_question = gr.Markdown(f"**Predicted Question**: \"{llm_questions[i]}\"")
-                        is_realistic = gr.Radio(["Yes", "No"], label=q1_realistic)
+                        is_realistic = gr.Radio(["No", "Yes"], label=q1_realistic)
                         how_similar = make_likert_scale(q2_similarity, "Dissimilar", "Similar")
                         how_similar_sentiment = make_likert_scale(q3_valence, "Dissimilar in Sentiment", "Similar in Sentiment")
                         how_helpful = make_likert_scale(q4_helpfulness, "Unhelpful", "Helpful")
@@ -165,10 +168,9 @@ with gr.Blocks(theme=gr.themes.Ocean(), css=css) as demo:
                     )
         
         with gr.Row() as submission_row:
-            return_to_transcript_select = gr.Button("Return To Transcript Select", elem_classes="button-meta")
-            return_to_transcript_select.click(fn=lambda: [gr.Column(visible=True), gr.Column(visible=False)], inputs=None, outputs=[config_setup_row, case_info])
-            save_annotations_to_csv = gr.Button("Save all annotations so far to CSV", elem_classes="button-meta")
-            save_annotations_to_csv.click(save_df_to_csv)
+            save_description = "Save all annotations to CSV and return to Transcript Select"
+            save_annotations_to_csv = gr.Button(save_description, elem_classes="button-meta")
+            save_annotations_to_csv.click(save_df_to_csv).then(go_to_transcript_select, inputs=None, outputs=[config_setup_row, case_info])
 
     # config set-up interactive logic
     petitioner_or_respondent_select.select(fn=lambda: gr.Radio(visible=True), inputs=None, outputs=justice_select)
