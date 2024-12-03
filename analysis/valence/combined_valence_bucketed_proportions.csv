@@ -1,0 +1,204 @@
+justice,transcript_id,source,bucketed_valence,count,proportion
+"Samuel A. Alito, Jr.",2024.22-7466-t01,Actual,Competitive,5,1.0
+"Samuel A. Alito, Jr.",2024.22-7466-t01,GPT-4,Competitive,4,0.26666666666666666
+"Samuel A. Alito, Jr.",2024.22-7466-t01,GPT-4,Neutral,9,0.6
+"Samuel A. Alito, Jr.",2024.22-7466-t01,GPT-4,Supportive,2,0.13333333333333333
+"Samuel A. Alito, Jr.",2024.22-7466-t01,LLaMA-3.1,Competitive,11,0.9166666666666666
+"Samuel A. Alito, Jr.",2024.22-7466-t01,LLaMA-3.1,Neutral,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-1127-t01,Actual,Neutral,2,1.0
+"Samuel A. Alito, Jr.",2024.23-1127-t01,GPT-4,Competitive,6,0.5
+"Samuel A. Alito, Jr.",2024.23-1127-t01,GPT-4,Neutral,4,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-1127-t01,GPT-4,Supportive,2,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-1127-t01,LLaMA-3.1,Competitive,11,0.9166666666666666
+"Samuel A. Alito, Jr.",2024.23-1127-t01,LLaMA-3.1,Neutral,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-191 -t01,Actual,Competitive,5,0.8333333333333334
+"Samuel A. Alito, Jr.",2024.23-191 -t01,Actual,Neutral,1,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-191 -t01,GPT-4,Competitive,4,0.2857142857142857
+"Samuel A. Alito, Jr.",2024.23-191 -t01,GPT-4,Neutral,6,0.42857142857142855
+"Samuel A. Alito, Jr.",2024.23-191 -t01,GPT-4,Supportive,4,0.2857142857142857
+"Samuel A. Alito, Jr.",2024.23-191 -t01,LLaMA-3.1,Competitive,8,0.6666666666666666
+"Samuel A. Alito, Jr.",2024.23-191 -t01,LLaMA-3.1,Neutral,3,0.25
+"Samuel A. Alito, Jr.",2024.23-191 -t01,LLaMA-3.1,Supportive,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-217-t01,Actual,Competitive,1,0.5
+"Samuel A. Alito, Jr.",2024.23-217-t01,Actual,Supportive,1,0.5
+"Samuel A. Alito, Jr.",2024.23-217-t01,GPT-4,Competitive,6,0.5454545454545454
+"Samuel A. Alito, Jr.",2024.23-217-t01,GPT-4,Neutral,3,0.2727272727272727
+"Samuel A. Alito, Jr.",2024.23-217-t01,GPT-4,Supportive,2,0.18181818181818182
+"Samuel A. Alito, Jr.",2024.23-217-t01,LLaMA-3.1,Competitive,10,0.8333333333333334
+"Samuel A. Alito, Jr.",2024.23-217-t01,LLaMA-3.1,Neutral,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-217-t01,LLaMA-3.1,Supportive,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-365 -t01,Actual,Competitive,1,0.25
+"Samuel A. Alito, Jr.",2024.23-365 -t01,Actual,Neutral,2,0.5
+"Samuel A. Alito, Jr.",2024.23-365 -t01,Actual,Supportive,1,0.25
+"Samuel A. Alito, Jr.",2024.23-365 -t01,GPT-4,Competitive,8,0.47058823529411764
+"Samuel A. Alito, Jr.",2024.23-365 -t01,GPT-4,Neutral,3,0.17647058823529413
+"Samuel A. Alito, Jr.",2024.23-365 -t01,GPT-4,Supportive,6,0.35294117647058826
+"Samuel A. Alito, Jr.",2024.23-365 -t01,LLaMA-3.1,Competitive,7,0.5
+"Samuel A. Alito, Jr.",2024.23-365 -t01,LLaMA-3.1,Neutral,5,0.35714285714285715
+"Samuel A. Alito, Jr.",2024.23-365 -t01,LLaMA-3.1,Supportive,2,0.14285714285714285
+"Samuel A. Alito, Jr.",2024.23-583 -t01,Actual,Competitive,1,1.0
+"Samuel A. Alito, Jr.",2024.23-583 -t01,GPT-4,Competitive,6,0.4
+"Samuel A. Alito, Jr.",2024.23-583 -t01,GPT-4,Neutral,8,0.5333333333333333
+"Samuel A. Alito, Jr.",2024.23-583 -t01,GPT-4,Supportive,1,0.06666666666666667
+"Samuel A. Alito, Jr.",2024.23-583 -t01,LLaMA-3.1,Competitive,13,0.8666666666666667
+"Samuel A. Alito, Jr.",2024.23-583 -t01,LLaMA-3.1,Neutral,1,0.06666666666666667
+"Samuel A. Alito, Jr.",2024.23-583 -t01,LLaMA-3.1,Supportive,1,0.06666666666666667
+"Samuel A. Alito, Jr.",2024.23-621-t01,Actual,Competitive,2,0.6666666666666666
+"Samuel A. Alito, Jr.",2024.23-621-t01,Actual,Neutral,1,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-621-t01,GPT-4,Competitive,5,0.38461538461538464
+"Samuel A. Alito, Jr.",2024.23-621-t01,GPT-4,Neutral,5,0.38461538461538464
+"Samuel A. Alito, Jr.",2024.23-621-t01,GPT-4,Supportive,3,0.23076923076923078
+"Samuel A. Alito, Jr.",2024.23-621-t01,LLaMA-3.1,Competitive,12,0.8571428571428571
+"Samuel A. Alito, Jr.",2024.23-621-t01,LLaMA-3.1,Neutral,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-621-t01,LLaMA-3.1,Supportive,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-677-t01,Actual,Competitive,4,0.5714285714285714
+"Samuel A. Alito, Jr.",2024.23-677-t01,Actual,Neutral,3,0.42857142857142855
+"Samuel A. Alito, Jr.",2024.23-677-t01,GPT-4,Competitive,8,0.5714285714285714
+"Samuel A. Alito, Jr.",2024.23-677-t01,GPT-4,Neutral,3,0.21428571428571427
+"Samuel A. Alito, Jr.",2024.23-677-t01,GPT-4,Supportive,3,0.21428571428571427
+"Samuel A. Alito, Jr.",2024.23-677-t01,LLaMA-3.1,Competitive,9,0.75
+"Samuel A. Alito, Jr.",2024.23-677-t01,LLaMA-3.1,Neutral,3,0.25
+"Samuel A. Alito, Jr.",2024.23-713-t01,Actual,Competitive,3,0.75
+"Samuel A. Alito, Jr.",2024.23-713-t01,Actual,Neutral,1,0.25
+"Samuel A. Alito, Jr.",2024.23-713-t01,GPT-4,Competitive,5,0.35714285714285715
+"Samuel A. Alito, Jr.",2024.23-713-t01,GPT-4,Neutral,4,0.2857142857142857
+"Samuel A. Alito, Jr.",2024.23-713-t01,GPT-4,Supportive,5,0.35714285714285715
+"Samuel A. Alito, Jr.",2024.23-713-t01,LLaMA-3.1,Competitive,10,0.7692307692307693
+"Samuel A. Alito, Jr.",2024.23-713-t01,LLaMA-3.1,Neutral,2,0.15384615384615385
+"Samuel A. Alito, Jr.",2024.23-713-t01,LLaMA-3.1,Supportive,1,0.07692307692307693
+"Samuel A. Alito, Jr.",2024.23-715-t01,Actual,Competitive,1,1.0
+"Samuel A. Alito, Jr.",2024.23-715-t01,GPT-4,Competitive,5,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-715-t01,GPT-4,Neutral,6,0.4
+"Samuel A. Alito, Jr.",2024.23-715-t01,GPT-4,Supportive,4,0.26666666666666666
+"Samuel A. Alito, Jr.",2024.23-715-t01,LLaMA-3.1,Competitive,9,0.75
+"Samuel A. Alito, Jr.",2024.23-715-t01,LLaMA-3.1,Neutral,3,0.25
+"Samuel A. Alito, Jr.",2024.23-753-t01,Actual,Competitive,2,0.4
+"Samuel A. Alito, Jr.",2024.23-753-t01,Actual,Neutral,2,0.4
+"Samuel A. Alito, Jr.",2024.23-753-t01,Actual,Supportive,1,0.2
+"Samuel A. Alito, Jr.",2024.23-753-t01,GPT-4,Competitive,5,0.3125
+"Samuel A. Alito, Jr.",2024.23-753-t01,GPT-4,Neutral,4,0.25
+"Samuel A. Alito, Jr.",2024.23-753-t01,GPT-4,Supportive,7,0.4375
+"Samuel A. Alito, Jr.",2024.23-753-t01,LLaMA-3.1,Competitive,1,0.07692307692307693
+"Samuel A. Alito, Jr.",2024.23-753-t01,LLaMA-3.1,Neutral,8,0.6153846153846154
+"Samuel A. Alito, Jr.",2024.23-753-t01,LLaMA-3.1,Supportive,4,0.3076923076923077
+"Samuel A. Alito, Jr.",2024.23-852-t01,Actual,Competitive,3,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-852-t01,Actual,Neutral,3,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-852-t01,Actual,Supportive,3,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-852-t01,GPT-4,Competitive,7,0.4375
+"Samuel A. Alito, Jr.",2024.23-852-t01,GPT-4,Neutral,9,0.5625
+"Samuel A. Alito, Jr.",2024.23-852-t01,LLaMA-3.1,Competitive,9,0.6428571428571429
+"Samuel A. Alito, Jr.",2024.23-852-t01,LLaMA-3.1,Neutral,3,0.21428571428571427
+"Samuel A. Alito, Jr.",2024.23-852-t01,LLaMA-3.1,Supportive,2,0.14285714285714285
+"Samuel A. Alito, Jr.",2024.23-980-t01,Actual,Competitive,4,0.5714285714285714
+"Samuel A. Alito, Jr.",2024.23-980-t01,Actual,Neutral,2,0.2857142857142857
+"Samuel A. Alito, Jr.",2024.23-980-t01,Actual,Supportive,1,0.14285714285714285
+"Samuel A. Alito, Jr.",2024.23-980-t01,GPT-4,Competitive,3,0.1875
+"Samuel A. Alito, Jr.",2024.23-980-t01,GPT-4,Neutral,10,0.625
+"Samuel A. Alito, Jr.",2024.23-980-t01,GPT-4,Supportive,3,0.1875
+"Samuel A. Alito, Jr.",2024.23-980-t01,LLaMA-3.1,Competitive,5,0.38461538461538464
+"Samuel A. Alito, Jr.",2024.23-980-t01,LLaMA-3.1,Neutral,4,0.3076923076923077
+"Samuel A. Alito, Jr.",2024.23-980-t01,LLaMA-3.1,Supportive,4,0.3076923076923077
+Sonia Sotomayor,2024.22-7466-t01,Actual,Competitive,7,0.3684210526315789
+Sonia Sotomayor,2024.22-7466-t01,Actual,Neutral,10,0.5263157894736842
+Sonia Sotomayor,2024.22-7466-t01,Actual,Supportive,2,0.10526315789473684
+Sonia Sotomayor,2024.22-7466-t01,GPT-4,Competitive,3,0.23076923076923078
+Sonia Sotomayor,2024.22-7466-t01,GPT-4,Neutral,4,0.3076923076923077
+Sonia Sotomayor,2024.22-7466-t01,GPT-4,Supportive,6,0.46153846153846156
+Sonia Sotomayor,2024.22-7466-t01,LLaMA-3.1,Competitive,2,0.16666666666666666
+Sonia Sotomayor,2024.22-7466-t01,LLaMA-3.1,Neutral,5,0.4166666666666667
+Sonia Sotomayor,2024.22-7466-t01,LLaMA-3.1,Supportive,5,0.4166666666666667
+Sonia Sotomayor,2024.23-1127-t01,Actual,Competitive,1,0.2
+Sonia Sotomayor,2024.23-1127-t01,Actual,Neutral,2,0.4
+Sonia Sotomayor,2024.23-1127-t01,Actual,Supportive,2,0.4
+Sonia Sotomayor,2024.23-1127-t01,GPT-4,Competitive,8,0.5
+Sonia Sotomayor,2024.23-1127-t01,GPT-4,Neutral,5,0.3125
+Sonia Sotomayor,2024.23-1127-t01,GPT-4,Supportive,3,0.1875
+Sonia Sotomayor,2024.23-1127-t01,LLaMA-3.1,Competitive,11,0.9166666666666666
+Sonia Sotomayor,2024.23-1127-t01,LLaMA-3.1,Neutral,1,0.08333333333333333
+Sonia Sotomayor,2024.23-191 -t01,Actual,Competitive,4,0.5
+Sonia Sotomayor,2024.23-191 -t01,Actual,Neutral,1,0.125
+Sonia Sotomayor,2024.23-191 -t01,Actual,Supportive,3,0.375
+Sonia Sotomayor,2024.23-191 -t01,GPT-4,Competitive,2,0.15384615384615385
+Sonia Sotomayor,2024.23-191 -t01,GPT-4,Neutral,8,0.6153846153846154
+Sonia Sotomayor,2024.23-191 -t01,GPT-4,Supportive,3,0.23076923076923078
+Sonia Sotomayor,2024.23-191 -t01,LLaMA-3.1,Competitive,4,0.3076923076923077
+Sonia Sotomayor,2024.23-191 -t01,LLaMA-3.1,Neutral,4,0.3076923076923077
+Sonia Sotomayor,2024.23-191 -t01,LLaMA-3.1,Supportive,5,0.38461538461538464
+Sonia Sotomayor,2024.23-217-t01,Actual,Competitive,1,0.5
+Sonia Sotomayor,2024.23-217-t01,Actual,Neutral,1,0.5
+Sonia Sotomayor,2024.23-217-t01,GPT-4,Competitive,3,0.23076923076923078
+Sonia Sotomayor,2024.23-217-t01,GPT-4,Neutral,4,0.3076923076923077
+Sonia Sotomayor,2024.23-217-t01,GPT-4,Supportive,6,0.46153846153846156
+Sonia Sotomayor,2024.23-217-t01,LLaMA-3.1,Competitive,10,0.7692307692307693
+Sonia Sotomayor,2024.23-217-t01,LLaMA-3.1,Neutral,1,0.07692307692307693
+Sonia Sotomayor,2024.23-217-t01,LLaMA-3.1,Supportive,2,0.15384615384615385
+Sonia Sotomayor,2024.23-365 -t01,GPT-4,Competitive,5,0.3333333333333333
+Sonia Sotomayor,2024.23-365 -t01,GPT-4,Neutral,8,0.5333333333333333
+Sonia Sotomayor,2024.23-365 -t01,GPT-4,Supportive,2,0.13333333333333333
+Sonia Sotomayor,2024.23-365 -t01,LLaMA-3.1,Competitive,9,0.6923076923076923
+Sonia Sotomayor,2024.23-365 -t01,LLaMA-3.1,Neutral,2,0.15384615384615385
+Sonia Sotomayor,2024.23-365 -t01,LLaMA-3.1,Supportive,2,0.15384615384615385
+Sonia Sotomayor,2024.23-583 -t01,Actual,Competitive,2,1.0
+Sonia Sotomayor,2024.23-583 -t01,GPT-4,Competitive,5,0.3333333333333333
+Sonia Sotomayor,2024.23-583 -t01,GPT-4,Neutral,6,0.4
+Sonia Sotomayor,2024.23-583 -t01,GPT-4,Supportive,4,0.26666666666666666
+Sonia Sotomayor,2024.23-583 -t01,LLaMA-3.1,Competitive,7,0.5384615384615384
+Sonia Sotomayor,2024.23-583 -t01,LLaMA-3.1,Neutral,3,0.23076923076923078
+Sonia Sotomayor,2024.23-583 -t01,LLaMA-3.1,Supportive,3,0.23076923076923078
+Sonia Sotomayor,2024.23-621-t01,Actual,Competitive,1,0.5
+Sonia Sotomayor,2024.23-621-t01,Actual,Neutral,1,0.5
+Sonia Sotomayor,2024.23-621-t01,GPT-4,Competitive,4,0.3333333333333333
+Sonia Sotomayor,2024.23-621-t01,GPT-4,Neutral,7,0.5833333333333334
+Sonia Sotomayor,2024.23-621-t01,GPT-4,Supportive,1,0.08333333333333333
+Sonia Sotomayor,2024.23-621-t01,LLaMA-3.1,Competitive,9,0.75
+Sonia Sotomayor,2024.23-621-t01,LLaMA-3.1,Supportive,3,0.25
+Sonia Sotomayor,2024.23-677-t01,Actual,Competitive,5,1.0
+Sonia Sotomayor,2024.23-677-t01,GPT-4,Competitive,9,0.5625
+Sonia Sotomayor,2024.23-677-t01,GPT-4,Neutral,4,0.25
+Sonia Sotomayor,2024.23-677-t01,GPT-4,Supportive,3,0.1875
+Sonia Sotomayor,2024.23-677-t01,LLaMA-3.1,Competitive,11,0.8461538461538461
+Sonia Sotomayor,2024.23-677-t01,LLaMA-3.1,Neutral,1,0.07692307692307693
+Sonia Sotomayor,2024.23-677-t01,LLaMA-3.1,Supportive,1,0.07692307692307693
+Sonia Sotomayor,2024.23-713-t01,Actual,Competitive,4,0.5714285714285714
+Sonia Sotomayor,2024.23-713-t01,Actual,Neutral,2,0.2857142857142857
+Sonia Sotomayor,2024.23-713-t01,Actual,Supportive,1,0.14285714285714285
+Sonia Sotomayor,2024.23-713-t01,GPT-4,Competitive,3,0.21428571428571427
+Sonia Sotomayor,2024.23-713-t01,GPT-4,Neutral,6,0.42857142857142855
+Sonia Sotomayor,2024.23-713-t01,GPT-4,Supportive,5,0.35714285714285715
+Sonia Sotomayor,2024.23-713-t01,LLaMA-3.1,Competitive,8,0.5714285714285714
+Sonia Sotomayor,2024.23-713-t01,LLaMA-3.1,Neutral,1,0.07142857142857142
+Sonia Sotomayor,2024.23-713-t01,LLaMA-3.1,Supportive,5,0.35714285714285715
+Sonia Sotomayor,2024.23-715-t01,Actual,Competitive,2,0.6666666666666666
+Sonia Sotomayor,2024.23-715-t01,Actual,Neutral,1,0.3333333333333333
+Sonia Sotomayor,2024.23-715-t01,GPT-4,Competitive,2,0.13333333333333333
+Sonia Sotomayor,2024.23-715-t01,GPT-4,Neutral,10,0.6666666666666666
+Sonia Sotomayor,2024.23-715-t01,GPT-4,Supportive,3,0.2
+Sonia Sotomayor,2024.23-715-t01,LLaMA-3.1,Competitive,3,0.25
+Sonia Sotomayor,2024.23-715-t01,LLaMA-3.1,Neutral,2,0.16666666666666666
+Sonia Sotomayor,2024.23-715-t01,LLaMA-3.1,Supportive,7,0.5833333333333334
+Sonia Sotomayor,2024.23-753-t01,Actual,Competitive,5,0.625
+Sonia Sotomayor,2024.23-753-t01,Actual,Neutral,1,0.125
+Sonia Sotomayor,2024.23-753-t01,Actual,Supportive,2,0.25
+Sonia Sotomayor,2024.23-753-t01,GPT-4,Competitive,5,0.3333333333333333
+Sonia Sotomayor,2024.23-753-t01,GPT-4,Neutral,4,0.26666666666666666
+Sonia Sotomayor,2024.23-753-t01,GPT-4,Supportive,6,0.4
+Sonia Sotomayor,2024.23-753-t01,LLaMA-3.1,Competitive,6,0.42857142857142855
+Sonia Sotomayor,2024.23-753-t01,LLaMA-3.1,Neutral,5,0.35714285714285715
+Sonia Sotomayor,2024.23-753-t01,LLaMA-3.1,Supportive,3,0.21428571428571427
+Sonia Sotomayor,2024.23-852-t01,Actual,Competitive,3,0.3333333333333333
+Sonia Sotomayor,2024.23-852-t01,Actual,Neutral,3,0.3333333333333333
+Sonia Sotomayor,2024.23-852-t01,Actual,Supportive,3,0.3333333333333333
+Sonia Sotomayor,2024.23-852-t01,GPT-4,Competitive,5,0.35714285714285715
+Sonia Sotomayor,2024.23-852-t01,GPT-4,Neutral,8,0.5714285714285714
+Sonia Sotomayor,2024.23-852-t01,GPT-4,Supportive,1,0.07142857142857142
+Sonia Sotomayor,2024.23-852-t01,LLaMA-3.1,Competitive,6,0.46153846153846156
+Sonia Sotomayor,2024.23-852-t01,LLaMA-3.1,Neutral,3,0.23076923076923078
+Sonia Sotomayor,2024.23-852-t01,LLaMA-3.1,Supportive,4,0.3076923076923077
+Sonia Sotomayor,2024.23-980-t01,Actual,Competitive,2,0.6666666666666666
+Sonia Sotomayor,2024.23-980-t01,Actual,Neutral,1,0.3333333333333333
+Sonia Sotomayor,2024.23-980-t01,GPT-4,Competitive,4,0.25
+Sonia Sotomayor,2024.23-980-t01,GPT-4,Neutral,9,0.5625
+Sonia Sotomayor,2024.23-980-t01,GPT-4,Supportive,3,0.1875
+Sonia Sotomayor,2024.23-980-t01,LLaMA-3.1,Competitive,9,0.6428571428571429
+Sonia Sotomayor,2024.23-980-t01,LLaMA-3.1,Neutral,2,0.14285714285714285
+Sonia Sotomayor,2024.23-980-t01,LLaMA-3.1,Supportive,3,0.21428571428571427
