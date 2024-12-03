@@ -1,0 +1,171 @@
+[
+    {
+        "category_name": "statutory_interpretation",
+        "description": "Properties related to understanding and interpreting statutory language and provisions.",
+        "properties_in_category": [
+            "clarifying_statutory_provisions",
+            "cross_examining_statutory_interpretation",
+            "scrutinizing_statutory_interpretation_consistency",
+            "requesting_statutory_support",
+            "seeking_statutory_support",
+            "clarifying_unaddressed_consequences",
+            "evaluating_statutory_language_and_procedural_implications",
+            "testing_hypothetical_application_of_rule",
+            "challenging_statutory_interpretation_for_coherence_and_sensibility",
+            "challenging_statutory_interpretation_and_scope",
+            "examining_statutory_requirements_for_removal_orders",
+            "request_for_statutory_interpretation",
+            "clarifying_exceptional_cases",
+            "examining_exceptions_to_the_rule",
+            "focusing_on_statutory_language",
+            "clarifying_interpretation_of_statutory_elements",
+            "requesting_statutory_basis",
+            "alternative_statutory_interpretation",
+            "examining_statutory_interpretation_in_hypothetical_scenario",
+            "evaluating_legislative_intent_and_statutory_purpose",
+            "clarifying_statutory_provision_interpretation",
+            "clarifying_statutory_provision",
+            "examining_statutory_interpretation_implications",
+            "clarifying_statutory_language_and_implications",
+            "evaluating_statutory_equivalence_to_constitutional_provisions",
+            "invoking_statutory_analogy",
+            "evaluating_alternative_interpretation_impact_on_case",
+            "clarifying_statutory_entitlement_understanding",
+            "examining_statutory_consistency_across_sections",
+            "clarifying_key_statutory_requirement",
+            "evaluating_reasonableness_of_statutory_interpretation",
+            "examining_statutory_intent_and_policy",
+            "challenging_statutory_interpretation_for_coherence_and_sensibility",
+            "examining_statutory_balance_and_government_burden"
+        ]
+    },
+    {
+        "category_name": "procedural_mechanisms",
+        "description": "Properties related to understanding and navigating procedural mechanisms and rules.",
+        "properties_in_category": [
+            "clarifying_procedural_details",
+            "clarifying_procedural_rights",
+            "clarifying_procedural_process",
+            "clarifying_procedural_consequences_of_notice_types",
+            "clarifying_procedural_mechanisms",
+            "clarifying_litigation_procedure",
+            "probing_procedural_limitations",
+            "requesting_clarification_on_boundary_conditions",
+            "clarifying_post_decision_procedure",
+            "clarifying_procedural_options",
+            "identifying_procedural_inconsistencies",
+            "probing_alternative_procedural_paths",
+            "probing_litigation_strategy",
+            "dismissive_transition_to_next_speaker"
+        ]
+    },
+    {
+        "category_name": "argument_challenge",
+        "description": "Properties related to challenging or questioning arguments, assumptions, or premises.",
+        "properties_in_category": [
+            "challenging_factual_premise",
+            "challenging_prior_argument_rejection",
+            "challenging_regulatory_compliance_and_statutory_interpretation",
+            "challenging_statutory_interpretation_for_coherence_and_sensibility",
+            "challenging_argument_with_hypothetical_scenario",
+            "challenging_literal_interpretation",
+            "challenging_specific_aspect_of_argument",
+            "challenging_rebuttal_with_alternative_scenario",
+            "challenging_argument_claims",
+            "challenging_effectiveness_of_proposed_rule",
+            "challenging_mandatory_rule_applicability",
+            "challenging_rule_exception_clarification",
+            "questioning_relevance_of_argument_due_to_changed_circumstances"
+        ]
+    },
+    {
+        "category_name": "clarification_request",
+        "description": "Properties related to requesting clarification on various aspects of the case or argument.",
+        "properties_in_category": [
+            "clarifying_legal_standards",
+            "clarifying_private_litigation_outcomes",
+            "clarifying_scope_of_impact",
+            "clarifying_argument_assumptions",
+            "seeking_clarification_on_existing_argument",
+            "requesting_clarification_on_alternative_procedure",
+            "seeking_clarification_on_argument_strategy",
+            "clarifying_prior_ruling",
+            "clarifying_prior_precedent",
+            "clarifying_the_applicable_law",
+            "clarifying_petitioner_position_on_procedural_implications",
+            "clarifying_core_argument",
+            "clarifying_hypothetical_scenarios",
+            "clarifying_initial_claim",
+            "clarifying_election_process",
+            "clarifying_election_procedure",
+            "clarifying_election_necessity_and_intent",
+            "clarifying_statutory_delegation",
+            "clarifying_precedent_revision_implications",
+            "clarifying_appellant_argument"
+        ]
+    },
+    {
+        "category_name": "precedent_and_doctrine",
+        "description": "Properties related to understanding and applying precedent and doctrine.",
+        "properties_in_category": [
+            "addressing_stare_decisis_concerns",
+            "assessing_historical_context_and_evolution_of_doctrine",
+            "challenging_alternative_doctrine",
+            "analyzing_relationship_between_doctrines",
+            "assessing_impact_on_related_doctrines",
+            "examining_precedent_and_outer_boundaries",
+            "evaluating_relationship_between_precedents",
+            "reconciling_with_precedent",
+            "clarifying_statutory_interpretation_process",
+            "highlighting_procedural_limitations",
+            "challenging_complexity_of_precedent"
+        ]
+    },
+    {
+        "category_name": "remedies_and_restitution",
+        "description": "Properties related to understanding and evaluating remedies and restitution.",
+        "properties_in_category": [
+            "evaluating_remedy_implementation_challenges",
+            "examining_practicalities_of_remedial_action",
+            "understanding_alternative_remedies_and_their_implications",
+            "examining_scope_of_remedy_application",
+            "assessing_alternative_legal_remedies",
+            "challenging_alternative_legal_remedies",
+            "probing_limitations_of_restitution",
+            "clarifying_compensation_parameters",
+            "evaluating_alternative_routes_for_relief"
+        ]
+    },
+    {
+        "category_name": "jurisdiction_and_constitutional_rights",
+        "description": "Properties related to understanding and evaluating jurisdiction and constitutional rights.",
+        "properties_in_category": [
+            "clarifying_jurisdictional_limits",
+            "examining_scope_of_constitutional_rights",
+            "challenging_congressional_limitations_on_constitutional_rights",
+            "probing_state_federal_jurisdiction",
+            "evaluating_statutory_equivalence_to_constitutional_provisions",
+            "distinguishing_between_types_ofconstitutional_violations"
+        ]
+    },
+    {
+        "category_name": "factual_understanding",
+        "description": "Properties related to understanding and evaluating facts and assumptions.",
+        "properties_in_category": [
+            "challenging_factual_premise",
+            "challenging_factual_assumptions",
+            "identifying_alleged_harm_or_prejudice",
+            "clarifying_underlying_facts"
+        ]
+    },
+    {
+        "category_name": "procedural_weaknesses",
+        "description": "Properties related to identifying and evaluating procedural weaknesses and vulnerabilities.",
+        "properties_in_category": [
+            "identifying_procedural_vulnerabilities",
+            "identifying_procedural_weakness",
+            "identifying_workarounds_to_statutory_requirements",
+            "probing_rule_application_and_implications"
+        ]
+    }
+]

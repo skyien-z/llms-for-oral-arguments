@@ -1,0 +1,136 @@
+{
+    "clarifying_legal_concepts": {
+        "description": "Properties related to seeking clarification on legal concepts, precedents, and standards",
+        "properties_in_category": [
+            "clarifying_key_factors_in_due_process_assessment",
+            "clarifying_position_on_statutory_application",
+            "clarifying_the_application_of_precedent",
+            "clarifying_historical_context_application",
+            "clarifying_scope_of_facial_challenge",
+            "clarifying_prior_court_precedent_interpretation",
+            "clarifying_historical_precedent",
+            "clarifying_scope_of_challenge",
+            "clarifying_alleged_exception_to_rule",
+            "clarifying_judicial_limitations",
+            "clarifying_adversary_argument_and_implications",
+            "clarifying_litigation_facts",
+            "clarifying_contractual_scenarios",
+            "clarifying_intent_behind_contractual_language",
+            "clarifying_regulatory_timeline",
+            "clarifying_harm_threshold",
+            "clarifying_agency_response_to_comments",
+            "clarifying_testimony_uncertainty",
+            "clarifying_legal_standard_for_emergency_relief",
+            "clarifying_legal_standard_for_emergency_stay",
+            "clarifying_interdependence_requirement",
+            "clarifying_exception_application",
+            "clarifying_scope_of_precedent_extension",
+            "clarifying_evidentiary_standards_and_categories",
+            "clarifying_court_rulings_and_statutes",
+            "clarifying_legal_standard_for_causation",
+            "clarifying_causal_link_between_speech_and_prosecution",
+            "clarifying_similarly_situated_standard",
+            "clarifying_key_evidence_requirements",
+            "clarifying_burden_of_proof_and_evidentiary_requirements",
+            "clarifying_opponent_test_implications"
+        ]
+    },
+    "examining_statutory_language": {
+        "description": "Properties related to examining statutory language, justification, and applicability",
+        "properties_in_category": [
+            "examining_statutory_language_and_justification",
+            "comparing_criminal_and_civil_determinations_for_disarmament",
+            "examining_defense_strategies_under_statutory_interpretation",
+            "examining_contract_scope_and_delegation_applicability",
+            "examining_external_authority_support",
+            "distinguishing_legal_characterization"
+        ]
+    },
+    "evaluating_procedural_processes": {
+        "description": "Properties related to evaluating procedural processes, hurdles, and merits review",
+        "properties_in_category": [
+            "evaluating_adjudication_process",
+            "evaluating_temporal_implications_of_due_process_standards",
+            "evaluating_procedural_hurdles_and_merits_review",
+            "evaluating_likelihood_of_success_on_merits",
+            "evaluating_standard_for_supreme_court_intervention"
+        ]
+    },
+    "assessing_evidence_and_impact": {
+        "description": "Properties related to assessing evidence, impact, and harm",
+        "properties_in_category": [
+            "assessing_petitioner_evidence_submission",
+            "assessing_actual_impact_of_rule",
+            "assessing_evidence_of_harm",
+            "assessing_petitioner_evidence_submission",
+            "assessing_evidentiary_requirements",
+            "assessing_evidentiary_standards_in_exceptional_cases"
+        ]
+    },
+    "clarifying_historical_context": {
+        "description": "Properties related to clarifying historical context, precedent, and scope",
+        "properties_in_category": [
+            "clarifying_historical_context_application",
+            "clarifying_historical_context_for_legal_precedent",
+            "clarifying_historical_context_and_scope",
+            "clarifying_historical_context_and_regulatory_scope",
+            "clarifying_historical_scope"
+        ]
+    },
+    "challenging_interpretations": {
+        "description": "Properties related to challenging interpretations, analyses, and strategies",
+        "properties_in_category": [
+            "challenging_interpretation_with_real_world_implications",
+            "challenging_historical_basis_of_argument",
+            "challenging_historical_analysis_approach",
+            "challenging_interpretation_with_hypothetical",
+            "challenging_contract_interpretation",
+            "challenging_interpretation_of_contractual_silence",
+            "challenging_legal_strategy_and_procedural_timeliness",
+            "challenging_cost_impact_argument",
+            "challenging_causal_attribution_and_cost_distribution"
+        ]
+    },
+    "comparing_and_contrasting": {
+        "description": "Properties related to comparing and contrasting facts, precedents, and standards",
+        "properties_in_category": [
+            "comparing_alternative_legal_approaches",
+            "comparing_criminal_and_civil_determinations_for_disarmament",
+            "comparing_types_of_interference",
+            "comparing_facts_to_precedent",
+            "comparing_alternative_standards_and_their_applications"
+        ]
+    },
+    "probing_and_inquiring": {
+        "description": "Properties related to probing and inquiring about information, strategies, and approaches",
+        "properties_in_category": [
+            "probing_contract_interpretation",
+            "probing_litigation_strategy",
+            "probing_litigation_strategy_and_procedural_history",
+            "probing_administrative_feasibility",
+            "probing_argument_completeness",
+            "probing_prior_litigation"
+        ]
+    },
+    "seeking_clarification": {
+        "description": "Properties related to seeking clarification on various aspects of the case",
+        "properties_in_category": [
+            "seeking_clarification_on_historical_analogue_application",
+            "seeking_clarification_on_precedent_application",
+            "seeking_clarification_on_shared_agreement",
+            "seeking_clarification_on_relevance",
+            "seeking_clarification_on_inference_process"
+        ]
+    },
+    "testing_and_analyzing": {
+        "description": "Properties related to testing and analyzing hypothetical situations, standards, and boundaries",
+        "properties_in_category": [
+            "testing_the_limit_of_a_rights_exception",
+            "testing_exception_boundaries",
+            "testing_position_boundaries",
+            "testing_the_scope_of_precedent",
+            "analyzing_hypothetical_situations",
+            "analyzing_hypothetical_application_of_standard"
+        ]
+    }
+}

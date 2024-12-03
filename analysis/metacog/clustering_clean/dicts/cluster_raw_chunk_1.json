@@ -1,0 +1,145 @@
+{
+    "statutory_interpretation": {
+        "description": "Properties related to understanding and interpreting statutory language, intent, and limitations.",
+        "properties_in_category": [
+            "understanding_statutory_drafting_purpose",
+            "examining_factual_connections_to_statutory_exceptions",
+            "probing_the_necessity_of_statutory_limitations",
+            "interpreting_exceptional_statutory_language",
+            "assessing_boundaries_of_statutory_exception",
+            "clarifying_statutory_interpretation",
+            "probing_statutory_intent_and_distinctions",
+            "addressing_counterargument_and_statutory_interpretation",
+            "challenging_statutory_interpretation_with_counter_evidence",
+            "understanding_statutory_purpose",
+            "addressing_statutory_silence_and_implied_principles",
+            "evaluating_statutory_interpretation",
+            "challenging_statutory_interpretation_through_hypotheticals"
+        ]
+    },
+    "argument_clarification": {
+        "description": "Properties related to clarifying and understanding arguments, including those of opponents.",
+        "properties_in_category": [
+            "clarifying_factual_basis_of_dispute",
+            "clarifying_argument_inconsistency",
+            "clarifying_opponent's_argument",
+            "clarifying_argument_limitations",
+            "clarifying_key_disagreement",
+            "clarifying_alternative_arguments",
+            "clarifying_argument_scope",
+            "clarifying_limits_of_argument",
+            "clarifying_the_scope_of_argument",
+            "clarifying_previous_response",
+            "drawing_analogy_to_challenge_argument"
+        ]
+    },
+    "procedural_clarification": {
+        "description": "Properties related to understanding and clarifying procedural aspects, including administrative procedures and jurisdiction.",
+        "properties_in_category": [
+            "clarifying_administrative_procedure",
+            "clarifying_normal_procedural_practices",
+            "identifying_potential_jurisdictional_conflicts",
+            "establishing_federal_jurisdiction",
+            "clarifying_jurisdictional_barrier",
+            "clarifying_jurisdictional_scope",
+            "examining_procedural_history",
+            "identifying_and_mitigating_potential_delays"
+        ]
+    },
+    "counterargument_and_challenge": {
+        "description": "Properties related to addressing counterarguments, challenging assumptions, and testing argument boundaries.",
+        "properties_in_category": [
+            "identifying_procedural_weaknesses_in_opponent's_argument",
+            "addressing_opponent_argument",
+            "requesting_alternative_analogies",
+            "challenging_presumption_of_automatic_implication",
+            "challenging_congressional_intent_inference",
+            "challenging_statutory_interpretation_with_counter_evidence",
+            "challenging_irreparable_harm_standard",
+            "assessing_opponent_arguments_and_reframing_concerns",
+            "confronting_litigant_with_inconsistencies",
+            "identifying_circular_reasoning_flaws",
+            "challenging_underlying_assumptions",
+            "testing_argument_boundaries"
+        ]
+    },
+    "precedent_and_analogy": {
+        "description": "Properties related to understanding and applying precedents, as well as drawing analogies to other legal concepts.",
+        "properties_in_category": [
+            "evaluating_precedent_implications",
+            "examining_hypothetical_circumstances_for_clarity",
+            "probing_exceptional_circumstances",
+            "drawing_analogy_to_other_legal_concepts",
+            "probing_analogies_between_individuals_and_corporations",
+            "comparing_judicial_manageability_of_standards",
+            "probing_distinctions_between_referendum_and_constitutional_amendments",
+            "clarifying_precedent_application",
+            "examining_precedent_and_exception",
+            "challenging_historical_precedent_exception",
+            "probing_evidentiary_thresholds_for_historical_precedent"
+        ]
+    },
+    "legislative_and_constitutional_limits": {
+        "description": "Properties related to understanding and examining legislative and constitutional limits, including state and federal authority.",
+        "properties_in_category": [
+            "examining_statutory_limits_on_authority",
+            "probing_state_constitutional_limits",
+            "challenging_state_legislative_authority_origins",
+            "clarifying_state_legislature_authority_under_elections_clause",
+            "examining_limitations_on_legislative_discretion",
+            "testing_state_power_limits",
+            "clarifying_federal_limits_on_state_action",
+            "exploring_exceptions_to_general_rule",
+            "examining_boundary_conditions"
+        ]
+    },
+    "equitable_and_policy_implications": {
+        "description": "Properties related to understanding and examining equitable and policy implications, including potential consequences and impacts.",
+        "properties_in_category": [
+            "analyzing_equitable_implications_of_mandatory_stay",
+            "evaluating_tradeoffs_of_policy_choices",
+            "exploring_unintended_consequences_for_vulnerable_parties",
+            "identifying_key_state_interests",
+            "evaluating_impact_on_third_party_interests",
+            "identifying_potential_practical_challenges",
+            "identifying_potential_regulatory_gaps"
+        ]
+    },
+    "alternative_scenarios_and_solutions": {
+        "description": "Properties related to exploring alternative scenarios, solutions, and legal theories.",
+        "properties_in_category": [
+            "examining_alternative_scenarios_and_requirements",
+            "evaluating_alternative_solutions",
+            "proposing_alternative_scenario",
+            "suggesting_alternative_solutions",
+            "exploring_alternative_rulings",
+            "requesting_counterpart_standard_or_boundary",
+            "proposing_alternative_legal_theory",
+            "considering_alternative_legal_doctrines"
+        ]
+    },
+    "clarification_and_assessment": {
+        "description": "Properties related to seeking clarification, assessing assumptions, and evaluating the applicability of proposed standards.",
+        "properties_in_category": [
+            "seeking_clarification_on_key_terms_and_distinctions",
+            "seeking_clarification_on_statutory_provisions",
+            "seeking_clarification_on_distinction",
+            "seeking_clarification_on_legal_basis",
+            "assessing_assumption_validity",
+            "evaluating_applicability_of_irreparable_harm_standard",
+            "evaluating_applicability_of_proposed_standard",
+            "assessing_claim_remediation_and_procedural_implications"
+        ]
+    },
+    "historical_and_foundational_context": {
+        "description": "Properties related to understanding and examining the historical and foundational context of laws and interpretations.",
+        "properties_in_category": [
+            "inquiring_about_doctrinal_origins",
+            "examining_historical_consistency_and_implausibility",
+            "probing_historical_precedent",
+            "challenging_historical_precedent_relevance",
+            "challenging_historical_precedent_application",
+            "acknowledging_historical_context"
+        ]
+    }
+}

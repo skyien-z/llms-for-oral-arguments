@@ -1,0 +1,102 @@
+{
+    "clarifying_statutory_interpretation": {
+        "description": "Properties related to understanding and clarifying the interpretation of statutes.",
+        "properties_in_category": [
+            "examining_statutory_authority",
+            "comparing_statutory_language_and_intent",
+            "clarifying_statute_application",
+            "clarifying_scope_of_policy",
+            "clarifying_application_of_policy_in_specific_situations",
+            "probing_statute_scope",
+            "testing_statutory_interpretation_with_hypothetical_exceptions",
+            "probing_statutory_interpretation_consistency",
+            "clarifying_key_terms_and_authority",
+            "clarifying_status_definitions_and_applications",
+            "clarifying_ordinance_applicability"
+        ]
+    },
+    "evaluating_precedent_and_doctrine": {
+        "description": "Properties related to evaluating the applicability and implications of precedents and doctrines.",
+        "properties_in_category": [
+            "assessing_argument_reliance_on_precedent",
+            "evaluating_precedent_applicability",
+            "testing_limits_of_precedent_and_doctrine",
+            "comparing_precedent_to_case_facts",
+            "evaluating_scope_of_precedent",
+            "assessing_relevance_of_precedent",
+            "establising_precedent_and_context",
+            "requesting_precedent_analogies",
+            "drawing_analogies_and_challenging_applicability",
+            "drawing_analogies_to_test_limits",
+            "exploring_analogies_and_boundaries"
+        ]
+    },
+    "examining_judicial_role_and_constitutional_structure": {
+        "description": "Properties related to understanding the role of the judiciary and the constitutional structure.",
+        "properties_in_category": [
+            "examining_judicial_role_and_constitutional_structure",
+            "evaluating_jurisdictional_authority",
+            "evaluating_proper_forum_or_jurisdiction",
+            "evaluating_federal_interests_vs_state_interests",
+            "assessing_jurisdictional_implications_and_potential_expansion",
+            "clarifying_judicial_review_standard",
+            "evaluating_court_decision_implications",
+            "inquiring_about_doctrinal_background",
+            "understanding_jurisdictional_rule_origin"
+        ]
+    },
+    "assessing_argument_strength_and_vulnerability": {
+        "description": "Properties related to evaluating the strength and vulnerability of arguments.",
+        "properties_in_category": [
+            "challenging_key_assumptions_with_congressional_intent",
+            "challenging_argument_necessity",
+            "challenging_application_of_argument",
+            "challenging_applicability_to_specific_scenarios",
+            "assessing_argument_vulnerability",
+            "confronting_implausible_alternatives",
+            "assessing_confidence_in_argument",
+            "assessing_claim_independence",
+            "anticipating_counterargument",
+            "interrupting_and_requesting_permission"
+        ]
+    },
+    "clarifying_party_status_and_interests": {
+        "description": "Properties related to understanding the status and interests of parties involved.",
+        "properties_in_category": [
+            "clarifying_party_status",
+            "challenging_party_interests_and_relevance",
+            "examining_party_alignment_motivations",
+            "clarifying_motivations_and_stakes",
+            "clarifying_compact_agreements",
+            "clarifying_compact_enforcement_mechanisms",
+            "clarifying_exisiting_agreements",
+            "clarifying_position_on_legal_enforceability"
+        ]
+    },
+    "evaluating_policy_implications_and_effectiveness": {
+        "description": "Properties related to evaluating the implications and effectiveness of policies.",
+        "properties_in_category": [
+            "evaluating_policy_effectiveness_on_homeless_population",
+            "evaluating_alternative_outcomes",
+            "assessing_impact_on_municipal_regulations",
+            "evaluating_exceptional_circumstances",
+            "probing_application_of Eighth_Amendment",
+            "understanding_eighth_amendment_applicability",
+            "evaluating_policy_restrictions",
+            "evaluating_alternative_solutions_and_jurisdictional_authority"
+        ]
+    },
+    "exploring_alternative_scenarios_and_solutions": {
+        "description": "Properties related to exploring alternative scenarios and solutions.",
+        "properties_in_category": [
+            "exploring_alternative_policy_scenarios",
+            "assessing_alternative_scenarios_and_their_implications",
+            "evaluating_alternative_solutions",
+            "evaluating_alternative_dispute_resolution_channels",
+            "identifying_alternative_dispute_resolution_channels",
+            "probing_basis_of_federal_interest",
+            "evaluating_proper_forum_or_jurisdiction",
+            "evaluating_federal_interests_vs_state_interests"
+        ]
+    }
+}

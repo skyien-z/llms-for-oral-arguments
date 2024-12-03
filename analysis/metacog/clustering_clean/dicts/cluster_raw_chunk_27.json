@@ -1,0 +1,143 @@
+{
+    "clarification_requests": {
+        "description": "Properties related to requests for clarification on various aspects of the case, such as statutory interpretations, precedents, and evidence.",
+        "properties_in_category": [
+            "clarifying_authority_for_judgment_calls",
+            "clarifying_application_of_standard",
+            "clarifying_counsel_intention",
+            "requesting_clarification_on_interpretation_criteria",
+            "seeking_clarification_on_precedent",
+            "clarifying_statutory_presumption",
+            "clarifying_statutory_implications_on_business_operations",
+            "clarifying_evidentiary_showing_requirements",
+            "clarifying_preemption_standard",
+            "request_for_clarification_on_key_terms",
+            "requesting_textual_support_for_interpretation",
+            "clarifying_mootness_standard",
+            "clarifying_commitment_to_declaration",
+            "clarifying_underlying_procedures",
+            "clarifying_doctrine_interpretation",
+            "clarifying_relief_sought_and_legal_implications",
+            "clarifying_petitioner_objectives",
+            "probing_for_clarity_on_sought_remedy",
+            "requesting_clarification_on_analytical_distinction",
+            "clarifying_realization_definition",
+            "clarifying_advocates_position_on_key_term",
+            "clarifying_implied_meaning",
+            "requesting_clarification_on_congressional_authority",
+            "clarifying_historical_precedent_implications",
+            "clarifying_congressional_authority_boundaries",
+            "clarifying_petitioner_injury",
+            "clarifying_substantial_risk_threshold",
+            "seeking_clarification_on_quantitative_threshold",
+            "clarifying_current_status",
+            "clarifying_medical_procedure_details",
+            "seeking_clarification_on_conscience_injury_scenarios",
+            "requesting_clarification_on_traceability_standard",
+            "clarifying_causal_link",
+            "clarifying_causal_link_between_injury_and_risk",
+            "probing_causal_link_between_risk_and_injury",
+            "inquiring_agency_deference_standards",
+            "clarifying_agency_deference_standard"
+        ]
+    },
+    "argument_evaluation": {
+        "description": "Properties related to the evaluation of arguments, including their strengths, weaknesses, and implications.",
+        "properties_in_category": [
+            "evaluating_precedent_interpretation",
+            "evaluating_strategic_behavior",
+            "evaluating_mootness_criteria",
+            "evaluating_standard_application_challenges",
+            "evaluating_evidence_threshold",
+            "evaluating_statutory_impact_on_state_laws",
+            "evaluating_question_scope_and_relevance",
+            "evaluating_legislative_power_and_limitations",
+            "evaluating_alternative_narrow_rulings",
+            "evaluating_individual_rights_under_government_immunity",
+            "evaluating_agency_response_to_evidence",
+            "evaluating_alternative_rulings_and_their_implications",
+            "evaluating_alternative_solutions_and_outcomes",
+            "evaluating_precedent_interpretation"
+        ]
+    },
+    "evidence_examination": {
+        "description": "Properties related to the examination of evidence, including its impact, reliability, and relevance.",
+        "properties_in_category": [
+            "examining_uncertainty_in_future_applications",
+            "examining_voluntary_cessation_exception_scenarios",
+            "examining_temporal_implications_on_mootness",
+            "examining_the_effectiveness_of_disclosure_as_a_safeguard",
+            "examining_assumptions_and_underlying_claims",
+            "examining_impact_on_established_tax_mechanisms",
+            "examining_alternative_taxation_scenarios",
+            "examining_definition_clarity",
+            "examining_specific_claims_of_harm",
+            "examining_impact_of_external_factors_on_probability_of_injury"
+        ]
+    },
+    "jurisdiction_and_scope": {
+        "description": "Properties related to the jurisdiction and scope of the case, including the limits of authority and the boundaries of taxation.",
+        "properties_in_category": [
+            "challenging_scope_of_jurisdiction",
+            "probing_interpretational_boundaries",
+            "probing_the_boundaries_of_taxation_authority",
+            "clarifying_congressional_authority_boundaries",
+            "challenging_historical_precedent_interpretation",
+            "challenging_scope_of_remedy",
+            "questioning_proportionality_of_remedy",
+            "exploring_geographic_scope_of constitutional_provision"
+        ]
+    },
+    "statutory_interpretation": {
+        "description": "Properties related to the interpretation of statutes, including their application, implications, and relationships to precedents.",
+        "properties_in_category": [
+            "analyzing_statutory_standard_against_precedents_and_analogies",
+            "clarifying_statutory_presumption",
+            "evaluating_statutory_impact_on_state_laws",
+            "clarifying_statutory_implications_on_business_operations",
+            "clarifying_statutory_distinctions",
+            "assessing_statutory_impact_on_federalism",
+            "evaluating_statutory_standard_against_precedents_and_analogies",
+            "probing_statutory_standard_against_precedents_and_analogies"
+        ]
+    },
+    "precedent_relationships": {
+        "description": "Properties related to the relationships between precedents, including their evolution, implications, and relevance to the case.",
+        "properties_in_category": [
+            "evaluating_precedent_interpretation",
+            "understanding_precedent_and_doctrine_evolution",
+            "understanding_precedent_relationship",
+            "evaluating_precedent_interpretation",
+            "clarifying_historical_precedent_implications",
+            "seeking_distinction_from_precedent",
+            "assessing_reliance_on_precendent",
+            "evaluating_precedent_interpretation"
+        ]
+    },
+    "alternatives_and_implications": {
+        "description": "Properties related to the consideration of alternative solutions, outcomes, and implications, including their feasibility and potential consequences.",
+        "properties_in_category": [
+            "assessing_feasibility_of_alternative_solutions",
+            "evaluating_alternative_solutions_and_outcomes",
+            "evaluating_alternative_rulings_and_their_implications",
+            "evaluating_alternative_narrow_rulings",
+            "assessing_implications_of_opponent_concession",
+            "assessing_implications_for_mootness_determination",
+            "evaluating_mootness_criteria",
+            "evaluating_question_scope_and_relevance"
+        ]
+    },
+    "argument_development": {
+        "description": "Properties related to the development of arguments, including their construction, weaknesses, and potential responses.",
+        "properties_in_category": [
+            "identifying_argument_gap",
+            "identifying_argument_inconsistency",
+            "probing_alternative_legal_arguments",
+            "assessing_scope_and_limitations_of_argument",
+            "challenging_a_key_assumption",
+            "clarifying_key_arguments",
+            "assessing_implications_of_opponent_concession",
+            "anticipating_and_assessing_argument_implications"
+        ]
+    }
+}

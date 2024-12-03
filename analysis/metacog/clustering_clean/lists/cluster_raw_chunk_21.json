@@ -1,0 +1,262 @@
+[
+    {
+        "category_name": "clarifying_legal_concepts",
+        "description": "Questions that seek to clarify or understand legal concepts, definitions, and applications.",
+        "properties_in_category": [
+            "clarifying_key_concept_timing",
+            "clarifying_insurer_status_under_bankruptcy_proceedings",
+            "clarifying_objector_requirements",
+            "clarifying_party_in_interest_definition",
+            "clarifying_counsel_claim",
+            "clarifying_timing_for_party_in_interest_determination",
+            "clarifying_scope_of_rights",
+            "clarifying_extent_of_interest",
+            "clarifying_petitioner_objective",
+            "clarifying_key_points",
+            "clarifying_the_petitioner's_position",
+            "seeking_confirmation_of_shared_understanding",
+            "clarifying_key_action_details",
+            "clarifying_trigger_functionality",
+            "clarifying_operation_of_bump_stock",
+            "clarifying_manual_action_requirements",
+            "clarifying_key_characteristics_of_device",
+            "clarifying_previous_argument_point",
+            "clarifying_reply_brief_position",
+            "clarifying_appellate_standard",
+            "clarifying_agency_procedure",
+            "clarifying_statistics_context",
+            "clarifying_likelihood_of_success_standard",
+            "clarifying_likelihood_threshold",
+            "clarifying_predictive_judgment_standard",
+            "clarifying_injunction_scope",
+            "clarifying_scope_of_dispute",
+            "clarifying_court_role_and_procedure",
+            "clarifying_agency_roles_and_procedures",
+            "clarifying_reviewability_of_mixed_questions",
+            "clarifying_statutory_interpretation_with_hypothetical",
+            "clarifying_definition_of_legal_standard",
+            "clarifying_fact_vs_legal_standard_application",
+            "clarifying_review_standard_application",
+            "clarifying_standard_for_review",
+            "clarifying_constitutional_definitions",
+            "clarifying_burden_of_proof_and_constitutional_interpretation",
+            "clarifying_appropriations_clause_interpretation",
+            "clarifying_constitutional_requirements",
+            "clarifying_public_official_capacity",
+            "clarifying_conditions_for_state_action",
+            "clarifying_state_action_threshold",
+            "clarifying_appellant_position_in_relation_to_co_appellee"
+        ]
+    },
+    {
+        "category_name": "evaluating_statutory_interpretation",
+        "description": "Questions that evaluate or challenge statutory interpretations, applications, and implications.",
+        "properties_in_category": [
+            "evaluating_alternative_scenarios_and_statutory_applications",
+            "evaluating_change_in_administrative_interpretation_and_its_implications",
+            "evaluating_statutory_evidence_and_judicial_discretion",
+            "evaluating_brevity_of_disposition",
+            "evaluating_timing_and_procedural_implications",
+            "evaluating_hypothetical_outcomes_and_implications",
+            "evaluating_argument_implications_and_potential_abuse",
+            "evaluating_evidentiary_sufficiency",
+            "evaluating_alternative_interpretations_and_their_implications"
+        ]
+    },
+    {
+        "category_name": "challenging_statutory_application",
+        "description": "Questions that challenge or test the application of statutory terms, definitions, and interpretations.",
+        "properties_in_category": [
+            "challenging_causal_link_and_timing",
+            "challenging_interest_in_outcome",
+            "challenging_the_applicability_of_rule",
+            "challenging_timing_and_certainty_of_interest",
+            "challenging_interest_representation",
+            "challenging_assumptions_on_interests_in_estate_property",
+            "challenging_party_interest_criteria",
+            "challenging_definition_application_with_hypothetical",
+            "challenging_semantic_meaning",
+            "challenging_interpretation_with_policy_context",
+            "challenging_the_definition_of_key_statutory_term",
+            "challenging_interpretation_of_key_statutory_term",
+            "challenging_statutory_interpretation_clarity",
+            "challenging_application_of_legal_standard",
+            "challenging_standard_of_review",
+            "challenging_factual_application_claims",
+            "challenging_the_scope_of_legal_review",
+            "challenging_application_of_discretion",
+            "challenging_statutory_interpretation_through_prior_cases",
+            "challenging_congressional_control"
+        ]
+    },
+    {
+        "category_name": "probing_statutory_intent",
+        "description": "Questions that probe or seek to understand the intent behind statutory terms, definitions, and interpretations.",
+        "properties_in_category": [
+            "probing_interpretation_boundaries",
+            "probing_statutory_intent",
+            "probing_fact_specific_circumstances",
+            "probing_the_basis_of_a_standard"
+        ]
+    },
+    {
+        "category_name": "clarifying_agency_action",
+        "description": "Questions that seek to clarify or understand agency actions, procedures, and implications.",
+        "properties_in_category": [
+            "clarifying_agency_procedure",
+            "clarifying_agency_roles_and_procedures",
+            "clarifying_reviewability_of_mixed_questions",
+            "clarifying_statutory_interpretation_with_hypothetical",
+            "clarifying_scope_of_dispute",
+            "clarifying_court_role_and_procedure",
+            "clarifying_agency_influence_on_likelihood_of_success",
+            "clarifying_appellant_position_in_relation_to_co_appellee",
+            "clarifying_state_action_threshold"
+        ]
+    },
+    {
+        "category_name": "seeking_clarification",
+        "description": "Questions that seek clarification on specific points, definitions, or applications.",
+        "properties_in_category": [
+            "requesting_clarification_on_key_details",
+            "seeking_clarification_on_key_definition",
+            "seeking_clarification_on_statutory_interpretation_doctrines",
+            "seeking_clarification_on_device_comparison",
+            "seeking_clarity_on_boundary_conditions",
+            "seeking_clarification_on_test_application"
+        ]
+    },
+    {
+        "category_name": "evaluating_argument_strength",
+        "description": "Questions that evaluate or challenge the strength of arguments, implications, and potential abuse.",
+        "properties_in_category": [
+            "evaluating_argument_strength_by_linking_to_prior_cases",
+            "evaluating_argument_implications_and_potential_abuse",
+            "evaluating_alternative_interpretations_and_their_implications",
+            "evaluating_evidentiary_sufficiency"
+        ]
+    },
+    {
+        "category_name": "considering_statutory_context",
+        "description": "Questions that consider or evaluate the statutory context, intent, and implications.",
+        "properties_in_category": [
+            "considering_statutory_intent_and_contemporary_context",
+            "considering_statutory_context_and_agency_prerogatives"
+        ]
+    },
+    {
+        "category_name": "challenging_assertions",
+        "description": "Questions that challenge or test assertions, claims, or assumptions.",
+        "properties_in_category": [
+            "challenging_assertion_and_seeking_clarification",
+            "challenging_extremity_of_argument"
+        ]
+    },
+    {
+        "category_name": "evaluating_analogies",
+        "description": "Questions that evaluate or challenge analogies, comparisons, or applications.",
+        "properties_in_category": [
+            "evaluating_analogous_statistical_reasoning",
+            "evaluating_boundary_conditions",
+            "evaluating_alternative_paths_to_victory"
+        ]
+    },
+    {
+        "category_name": "examining_boundary_conditions",
+        "description": "Questions that examine or test boundary conditions, limitations, or applications.",
+        "properties_in_category": [
+            "examining_boundary_conditions_for_reviewability",
+            "examining_separation_of_powers_implications",
+            "examining_the_impact_of_statutory_variations"
+        ]
+    },
+    {
+        "category_name": "assessing_judicial_overreach",
+        "description": "Questions that assess or challenge judicial overreach, limitations, or implications.",
+        "properties_in_category": [
+            "assessing_judicial_overreach_and_limitations",
+            "assessing_impact_on_litigation_scope"
+        ]
+    },
+    {
+        "category_name": "testing_constitutional_limits",
+        "description": "Questions that test or evaluate constitutional limits, applications, or implications.",
+        "properties_in_category": [
+            "testing_constitutional_limits_with_hypothetical_scenario",
+            "testing_the_limit_of_authorization"
+        ]
+    },
+    {
+        "category_name": "understanding_legislative_intent",
+        "description": "Questions that seek to understand or evaluate legislative intent, policy, or implications.",
+        "properties_in_category": [
+            "understanding_legislative_intent_and_policy",
+            "understanding_machinegun_operation",
+            "understanding_insurer_interests"
+        ]
+    },
+    {
+        "category_name": "drawing_analogies",
+        "description": "Questions that draw or challenge analogies, comparisons, or applications.",
+        "properties_in_category": [
+            "drawing_analogy_with_precedent",
+            "clarifying_statutory_interpretation_through_analogy"
+        ]
+    },
+    {
+        "category_name": "evaluating_historical_precedent",
+        "description": "Questions that evaluate or challenge historical precedent, relevance, or implications.",
+        "properties_in_category": [
+            "evaluating_historical_precedent_relevance",
+            "requesting_historical_precedent_examples",
+            "requesting_specific_historical_precedent",
+            "clarifying_historical_precedent_relevance"
+        ]
+    },
+    {
+        "category_name": "transitioning_to_next_speaker",
+        "description": "Questions that transition to the next speaker or conclude the current line of questioning.",
+        "properties_in_category": [
+            "transitioning_to_next_speaker"
+        ]
+    },
+    {
+        "category_name": "legislative_drafting_guidance",
+        "description": "Questions that seek guidance or clarification on legislative drafting, intent, or implications.",
+        "properties_in_category": [
+            "legislative_drafting_guidance",
+            "legislative_intent_clarification"
+        ]
+    },
+    {
+        "category_name": "proposing_alternative_statutory_approach",
+        "description": "Questions that propose or evaluate alternative statutory approaches, interpretations, or implications.",
+        "properties_in_category": [
+            "proposing_alternative_statutory_approach",
+            "considering_statutory_context_and_agency_prerogatives"
+        ]
+    },
+    {
+        "category_name": "assessing_broader_agency_applicability",
+        "description": "Questions that assess or evaluate the broader applicability of agency actions, procedures, or implications.",
+        "properties_in_category": [
+            "assessing_broader_agency_applicability",
+            "assessing_impact_on_litigation_scope"
+        ]
+    },
+    {
+        "category_name": "defining_scope_of_ruling",
+        "description": "Questions that define or evaluate the scope of a ruling, decision, or implication.",
+        "properties_in_category": [
+            "defining_scope_of_ruling",
+            "challenging_assertion_and_seeking_clarification"
+        ]
+    },
+    {
+        "category_name": "assessing_impact_of_disclaimers",
+        "description": "Questions that assess or evaluate the impact of disclaimers, official capacity, or implications.",
+        "properties_in_category": [
+            "assessing_impact_of_disclaimers_on_official_capacity"
+        ]
+    }
+]

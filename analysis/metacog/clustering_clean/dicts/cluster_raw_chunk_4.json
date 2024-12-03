@@ -1,0 +1,127 @@
+{
+    "statutory_interpretation": {
+        "description": "Properties related to the interpretation of statutes and laws.",
+        "properties_in_category": [
+            "assessing_congressional_intent",
+            "clarifying_statutory_interpretation_position",
+            "clarifying_statutory_interpretation_precedent",
+            "requesting_clarification_on_statutory_interpretation",
+            "requesting_statutory_language_interpretation",
+            "applying_statute_to_edge_cases",
+            "assessing_statutory_proportionality_and_fairness",
+            "clarifying_statutory_interpretation_options",
+            "evaluating_statute_under_alternative_context",
+            "clarifying_statutory_intent",
+            "probing_statutory_interpretation_boundaries"
+        ]
+    },
+    "consequences_and_implications": {
+        "description": "Properties related to the consequences and implications of a ruling or decision.",
+        "properties_in_category": [
+            "requesting_clarification_on_consequences_of_ruling",
+            "evaluating_implications_and_future_impact",
+            "anticipating_procedural_implications",
+            "anticipating_future_application_of_ruling",
+            "highlighting_potential_inconsistencies",
+            "evaluating_evidentiary_relevance_to_policy_implications",
+            "clarifying_implications_on_speech_expression"
+        ]
+    },
+    "argument_clarification": {
+        "description": "Properties related to clarifying or seeking clarification on an argument or position.",
+        "properties_in_category": [
+            "clarifying_argument_rationale",
+            "requesting_clarification_on_argument",
+            "clarifying_advocate_arguments",
+            "clarifying_advocate_argument",
+            "clarifying_principal_argument",
+            "clarifying_interpreter's_focus",
+            "identifying_distinct_issues_for_clarity"
+        ]
+    },
+    "procedural_matters": {
+        "description": "Properties related to procedural matters and the application of procedures.",
+        "properties_in_category": [
+            "evaluating_trial_procedure_accuracy",
+            "examining_jury_instructions",
+            "requesting_prosecutorial_practice_clarification",
+            "clarifying_procedural_recommendations",
+            "clarifying_harmless_error_review_process",
+            "seeking_clarification_on_trial_procedure",
+            "examining_burden_of_proof_application",
+            "clarifying_jury_instructions_for_complex_offense_scenarios"
+        ]
+    },
+    "evidentiary_matters": {
+        "description": "Properties related to evidentiary matters and the admissibility of evidence.",
+        "properties_in_category": [
+            "examining_evidence_admissibility",
+            "highlighting_evidentiary_review_challenges",
+            "highlighting_evidentiary_limitations",
+            "identifying_evidentiary_shortcomings",
+            "requesting_evidentiary_support_for_claim",
+            "requesting_evidence_for_viewpoint_discrimination",
+            "requesting_evidence_to_support_claim"
+        ]
+    },
+    "first_amendment": {
+        "description": "Properties related to the First Amendment and its implications.",
+        "properties_in_category": [
+            "clarifying_first_amendment_implications",
+            "acknowledging_potential_first_amendment_conflicts",
+            "clarifying_infringement_scope_and_first_amendment_consistency",
+            "assessing_artist_protection_and_first_amendment_implications",
+            "challenging_the_necessity_of_first_amendment_protection",
+            "clarifying_viewpoint_discrimination_concerns",
+            "identifying_burdened_speech"
+        ]
+    },
+    "historical_context": {
+        "description": "Properties related to the historical context and precedent of a case or issue.",
+        "properties_in_category": [
+            "assessing_historical_and_traditional_support",
+            "examining_historical_context_and_statutory_intent",
+            "evaluating_historical_context_and_intent",
+            "seeking_historical_precedents",
+            "requesting_historical_context_and_precedent",
+            "challenging_historical_contextualization",
+            "challenging_historical_precedent"
+        ]
+    },
+    "hypotheticals_and_analogies": {
+        "description": "Properties related to the use of hypotheticals and analogies in argumentation.",
+        "properties_in_category": [
+            "testing_applicability_with_hypothetical_examples",
+            "testing_the_limits_of_your_argument_with_a_hypothetical",
+            "highlighting_inconsistency_through_analogy",
+            "challenging_analogy_by_extending_it_to_other_restrictions",
+            "challenging_analogy_with_counterexample",
+            "considering_counterfactual_scenarios_and_hypothetical_applications"
+        ]
+    },
+    "alternative_perspectives": {
+        "description": "Properties related to considering alternative perspectives or approaches.",
+        "properties_in_category": [
+            "addressing_alternative_interpretation",
+            "examining_alternative_legislative_intent",
+            "evaluating_alternative_interpretations",
+            "proposing_alternative_framework",
+            "considering_alternative_ruling_approaches",
+            "exploring_alternative_legal_outcomes",
+            "evaluating_alternative_statutory_scenarios",
+            "probing_alternative_legal_theories"
+        ]
+    },
+    "scrutiny_and_challenge": {
+        "description": "Properties related to scrutinizing or challenging an argument or position.",
+        "properties_in_category": [
+            "challenging_statutory_interpretation_by_examining_practical_applications",
+            "challenging_likelihood_of_confusion",
+            "challenging_test_application",
+            "challenging_defendant_protection_argument",
+            "confronting_precedent_tension",
+            "challenging_scrutiny_standard",
+            "challenging_expert_testimony"
+        ]
+    }
+}

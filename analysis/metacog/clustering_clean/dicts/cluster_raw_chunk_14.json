@@ -1,0 +1,139 @@
+{
+    "statutory_interpretation": {
+        "description": "Properties related to interpreting statutes, including examining statutory definitions, provisions, and implications.",
+        "properties_in_category": [
+            "evaluating_statutory_provisions_in_different_titles",
+            "examining_statutory_design_choices",
+            "examining_statutory_definitions_and_implications",
+            "applying_statutory_language_to_specific_cases",
+            "exploring_statute_applicability_beyond_specific_context",
+            "clarifying_statute_application_to_similar_entities",
+            "challenging_statutory_language_and_intent",
+            "applying_statutory_interpretation_framework",
+            "identifying_statutory_anomalies_and_inconsistencies",
+            "clarifying_test_applicability",
+            "seeking_historical_contextualization",
+            "inquiring_about_statutory_origins",
+            "challenging_statutory_exemption_clarity",
+            "exploring_alternative_statutory_interpretation_routes"
+        ]
+    },
+    "argument_clarification": {
+        "description": "Properties related to clarifying arguments, including probing inconsistencies, challenging assumptions, and seeking clarification on interpretation criteria.",
+        "properties_in_category": [
+            "probing_inconsistencies_in_argument",
+            "challenging_underlying_assumptions_and_regulatory_interpretation",
+            "testing_the_limits_of_the_argument",
+            "challenging_interpretation_implications",
+            "clarifying_opponent_arguments",
+            "challenging_argument_leap",
+            "seeking_clarification_on_interpretation_criteria",
+            "expressing_skepticism_and_seeking_clarification",
+            "probing_contrasting_statements",
+            "highlighting_analogy_weakness"
+        ]
+    },
+    "precedent_and_analogy": {
+        "description": "Properties related to applying precedent and analogy, including distinguishing rules and protections, and examining historical context assumptions.",
+        "properties_in_category": [
+            "applying_precedent_to_related_scenarios",
+            "analyzing_statutory_interpretation_precedent",
+            "challenging_relevance_of_prior_precedent",
+            "questioning_alternative_interpretations_of_existing_precedent",
+            "clarifying_applicability_of_precedent",
+            "examining_application_of_rule_in_specific_context",
+            "distinguishing_rules_and_protections",
+            "examining_historical_context_assumptions",
+            "comparing_to_precedent_and_evaluating_standard_of_review"
+        ]
+    },
+    "procedural_consequences": {
+        "description": "Properties related to examining procedural consequences, including evaluating procedural consistency, and assessing procedural history.",
+        "properties_in_category": [
+            "clarifying_procedural_consequences",
+            "evaluating_procedural_consistency",
+            "assessing_procedural_history",
+            "evaluating_procedural_alternatives_and_necessity",
+            "evaluating_remand_and_delay_consequences",
+            "probing_exhaustion_of_administrative_remiedies"
+        ]
+    },
+    "representation_and_litigation": {
+        "description": "Properties related to representation and litigation, including challenging representation adequacy, and identifying alternative litigation strategies.",
+        "properties_in_category": [
+            "challenging_representation_adequacy",
+            "challenging_state_designation_of_representatives",
+            "probing_representation_conflicts",
+            "clarifying_representation_standards",
+            "evaluating_limits_of_deference_to_state_interest",
+            "clarifying_state_law_deference",
+            "identifying_alternative_litigation_strategies",
+            "identifying_core_legal_issue",
+            "requesting_clarification_on_irrelevance",
+            "evaluating_argument_consistency_and_preservation"
+        ]
+    },
+    "factual_clarification": {
+        "description": "Properties related to clarifying factual information, including clarifying factual circumstances, and seeking clarification on administrative process.",
+        "properties_in_category": [
+            "clarifying_factual_circumstances",
+            "clarifying_factual_information",
+            "seeking_clarification_on_administrative_process",
+            "clarifying_specific_facts",
+            "comparing_factual_circumstances",
+            "clarifying_factual_understanding",
+            "clarifying_testimony_details"
+        ]
+    },
+    "compelling_interest_and_means": {
+        "description": "Properties related to compelling interest and means, including challenging compelling interest standard, and clarifying least restrictive means.",
+        "properties_in_category": [
+            "challenging_compelling_interest_standard",
+            "exploring_broad_applicability_and_comparative_standards",
+            "challenging_least_restrictive_means_standard",
+            "clarifying_compelling_interest",
+            "identifying_compelling_state_interest",
+            "clarifying_least_restrictive_means",
+            "probing_the_limits_of_compelling_interest"
+        ]
+    },
+    "alternative_scenarios_and_protections": {
+        "description": "Properties related to alternative scenarios and protections, including exploring alternative statutory interpretation routes, and examining alternative protections for legislative interests.",
+        "properties_in_category": [
+            "examining_hypothetical_extreme_scenarios",
+            "testing_hypothetical_scenarios",
+            "considering_alternative_scenarios_and_legislative_influence",
+            "exploring_scenarios_for_intervention",
+            "examining_alternative_protections_for_legislative_interests",
+            "proposing_alternative_balanced_solutions",
+            "proposing_alternative_solutions"
+        ]
+    },
+    "state_action_and_obligations": {
+        "description": "Properties related to state action and obligations, including assessing state action integrity, and clarifying state obligations.",
+        "properties_in_category": [
+            "assessing_state_action_integrity",
+            "clarifying_state_obligations",
+            "comparing_state_policies_and_restrictions",
+            "clarifying_state_law_deference"
+        ]
+    },
+    "argument_evaluation": {
+        "description": "Properties related to evaluating arguments, including evaluating argument consistency and preservation, and assessing relevance to current context.",
+        "properties_in_category": [
+            "evaluating_argument_consistency_and_preservation",
+            "assessing_relevance_to_current_context",
+            "evaluating_retroactive_application_implications",
+            "evaluating_limits_of_deference_to_state_interest"
+        ]
+    },
+    "court_intervention": {
+        "description": "Properties related to court intervention, including identifying limits of federal court intervention, and examining implications of aligned interests.",
+        "properties_in_category": [
+            "identifying_limits_of_federal_court_intervention",
+            "examining_implications_of_aligned_interests",
+            "evaluating_limits_of_deference_to_state_interest",
+            "examining_hypothetical_scenarios_to_clarify_intervention_criteria"
+        ]
+    }
+}

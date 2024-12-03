@@ -1,0 +1,111 @@
+{
+    "statutory_interpretation": {
+        "description": "Properties related to clarifying and understanding statutory language, interpretation, and implications.",
+        "properties_in_category": [
+            "clarifying_statutory_interpretation_criteria",
+            "examining_statutory_language_discrepancies",
+            "comparing_definitions_to_clarify_meaning",
+            "evaluating_implications_of_alternative_interpretation",
+            "exploring_statutory_implications_on_procedural_requirements",
+            "clarifying_statutory_interpretation_versus_constitutional_constraints",
+            "clarifying_statutory_interpretation_limits",
+            "testing_statutory_interpretation_with_hypothetical_scenario",
+            "clarifying_statutory_vs_constitutional_requirements",
+            "evaluating_doctrine_extension_and_scope",
+            "evaluating_alternative_regulatory_approaches",
+            "evaluating_alternative_approaches_to_statutory_interpretation"
+        ]
+    },
+    "precedent_and_analogies": {
+        "description": "Properties related to understanding and applying precedent, analogies, and hypothetical scenarios.",
+        "properties_in_category": [
+            "distinguishing_precedent_andscopes_of_statutes",
+            "examining_precedent_and_comparing_treatment",
+            "examining_precedent_and_statutory_limits",
+            "eliciting_precedent_comparison",
+            "identifying_analogous_precedents",
+            "examining_precedent_and_analogous_cases",
+            "requesting_precedent_support",
+            "historical_analogy_testing",
+            "examining_applicability_in_hypothetical_situations",
+            "testing_alternative_authority_scenarios"
+        ]
+    },
+    "procedural_requirements_and_exceptions": {
+        "description": "Properties related to understanding and applying procedural requirements, exceptions, and rules.",
+        "properties_in_category": [
+            "clarifying_exceptional_rules",
+            "challenging_state_standing_exception",
+            "clarifying_procedural_facts",
+            "challenging_exception_to_general_rule",
+            "clarifying_procedural_sequence",
+            "examining_procedural_scenarios_and_exceptions",
+            "clarifying_procedural_standard"
+        ]
+    },
+    "constitutional_rights_and_limits": {
+        "description": "Properties related to understanding and applying constitutional rights, limits, and implications.",
+        "properties_in_category": [
+            "evaluating_implications_on_constitutional_rights",
+            "exploring_constitutional_limits",
+            "examining_statutory_interpretation_versus_constitutional_constraints",
+            "clarifying_statutory_vs_constitutional_requirements",
+            "evaluating_boundary_between_civil_and_criminal_liability",
+            "assessing_chilling_effect_on_valuable_speech",
+            "evaluating_contextual_versus_content_based_standards"
+        ]
+    },
+    "intent_and_culpability": {
+        "description": "Properties related to understanding and applying intent, culpability, and mental state requirements.",
+        "properties_in_category": [
+            "evaluating_mens_rea_standards",
+            "clarifying_intent_requirements",
+            "evaluating_alternative_standards_of_culpability",
+            "clarifying_condition_for_conviction",
+            "probing_intent_relevance",
+            "clarifying_prior_argument",
+            "examining_alternative_standards_of_intent",
+            "testing_the_boundaries_of_intent",
+            "highlighting_intent_interpretation_challenges"
+        ]
+    },
+    "legal_doctrine_and_theory": {
+        "description": "Properties related to understanding and applying legal doctrine, theory, and principles.",
+        "properties_in_category": [
+            "clarifying_legal_doctrine",
+            "defining_key_terms_and_standards",
+            "clarifying_key_terms_through_alternative_framework",
+            "evaluating_alternative_legal_approaches",
+            "probing_moral_and_scientific_justifications_for_regulation",
+            "evaluating_consistency_and_comparing_arguments"
+        ]
+    },
+    "state_interests_and_regulation": {
+        "description": "Properties related to understanding and applying state interests, regulation, and limits.",
+        "properties_in_category": [
+            "clarifying_state_interests_and_local_impact",
+            "examining_state_interests_beyond_health_and_safety",
+            "clarifying_legitimate_interests",
+            "clarifying_state_interest_classifications",
+            "challenging_moral_distinctions",
+            "evaluating_alternative_regulatory_approaches",
+            "exploring_limits_of_state_regulation",
+            "highlighting_balkanization_consequences"
+        ]
+    },
+    "argument_clarification_and_understanding": {
+        "description": "Properties related to clarifying and understanding arguments, positions, and implications.",
+        "properties_in_category": [
+            "clarifying_argument_implications",
+            "clarifying_opponent_argument_and_understanding_government_position",
+            "clarifying_litigant_position_on_scope_of_rights",
+            "clarifying_litigant_position_on_evidentiary_issues",
+            "clarifying_appellant_position",
+            "clarifying_alternative_legal_argument",
+            "clarifying_advocate_position_on_key_issue",
+            "clarifying_counsel_position_on_legal_principle",
+            "clarifying_underlying_arguments_and_intent",
+            "clarifying_underlying_assumptions"
+        ]
+    }
+}
