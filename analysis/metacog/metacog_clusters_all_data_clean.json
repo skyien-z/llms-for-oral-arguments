@@ -1,0 +1,145 @@
+[
+    {
+        "category_name": "statutory_interpretation",
+        "description": "Properties related to the interpretation and application of statutes.",
+        "properties_in_category": [
+            "examining_statutory_language",
+            "evaluating_statutory_interpretation_and_application",
+            "probing_statutory_intent",
+            "examining_statutory_language_and_implications",
+            "statutory_application",
+            "considering_statutory_context",
+            "examining_contract_and_compact_provisions",
+            "evaluating_statutes",
+            "proposing_alternative_statutory_approach",
+            "examine_statutory_interpretation",
+            "evaluating_statutory_interpretation",
+            "clarifying_and_challenging_statutory_interpretation",
+            "confronting_statutory_interpretation",
+            "challenging_statutory_application",
+            "clarifying_statutory_authority",
+            "clarifying_statutes_and_regulations",
+            "clarifying_statutory_history",
+            "clarifying_statutory_interpretation",
+            "clarifying_regulations",
+            "probing_and_testing_statutory_application"
+        ]
+    },
+    {
+        "category_name": "precedent_and_doctrine",
+        "description": "Properties related to the examination and application of precedents and doctrines.",
+        "properties_in_category": [
+            "interpreting_precedents_and_rulings",
+            "examining_precedent_and_analogies",
+            "evaluating_precedent_and_doctrine",
+            "precedent_and_doctrine",
+            "precedent_and_analogy",
+            "precedent_and_stare_decisis",
+            "precedent_relationships",
+            "evaluating_historical_precedent",
+            "evaluating_precedent",
+            "understanding_precedent_and_analogies",
+            "examining_historical_and_procedural_context",
+            "probing_limits_and_boundaries",
+            "probing_and_challenging_assumptions"
+        ]
+    },
+    {
+        "category_name": "case_facts_and_context",
+        "description": "Properties related to the examination of case facts and context.",
+        "properties_in_category": [
+            "case_facts_and_context",
+            "factual_understanding",
+            "fact_finding",
+            "fact_finding_and_evidence",
+            "assessing_evidence_and_relevance",
+            "assessing_evidence_and_impact",
+            "evaluating_evidence_and_statistics",
+            "evaluating_evidence_and_relevance",
+            "evaluating_evidence_and_burden_of_proof",
+            "assessing_medical_judgment_criteria",
+            "understanding_case_facts"
+        ]
+    },
+    {
+        "category_name": "judicial_role_and_review",
+        "description": "Properties related to the examination of the judicial role and review.",
+        "properties_in_category": [
+            "judicial_role_and_review",
+            "judicial_role_and_responsibility",
+            "judicial_role_and_policy",
+            "assessing_judicial_authority_and_implications",
+            "assessing_judicial_practices",
+            "assessing_judicial_overreach",
+            "examining_judicial_role_and_constitutional_structure",
+            "evaluating_intent_and_motivation"
+        ]
+    },
+    {
+        "category_name": "argumentation_and_clarification",
+        "description": "Properties related to the examination of argumentation and clarification.",
+        "properties_in_category": [
+            "argument_challenge",
+            "argumentation_and_clarification",
+            "argumentation_and_clarity",
+            "argumentation_and_challenging",
+            "argument_testing",
+            "argument_development",
+            "argument_clarification",
+            "argument_clarification_and_understanding",
+            "assessing_argument_strength",
+            "assessing_argument_strength_and_vulnerability",
+            "evaluating_argument_strength",
+            "evaluating_argument_consistency_and_relevance",
+            "seeking_clarification",
+            "seeking_clarification_and_common_ground",
+            "clarification_request",
+            "clarification_requests",
+            "clarification_and_explanation",
+            "clarification_and_assessment"
+        ]
+    },
+    {
+        "category_name": "constitutional_issues",
+        "description": "Properties related to the examination of constitutional issues.",
+        "properties_in_category": [
+            "historical_and_foundational_context",
+            "examining_liberty_interests_and_individual_rights",
+            "examining_constitutional_basis_and_implications",
+            "constitutional_issues",
+            "constitutional_rights_and_limits",
+            "confronting_statutory_interpretation",
+            "challenging_statutory_application",
+            "evaluating_policy_and_political_implications",
+            "evaluating_policy_implications_and_effectiveness",
+            "first_amendment",
+            "first_amendment_protections",
+            "due_process",
+            "evaluating_government_interests_and_accountability"
+        ]
+    },
+    {
+        "category_name": "procedural_matters",
+        "description": "Properties related to the examination of procedural matters.",
+        "properties_in_category": [
+            "procedural_weaknesses",
+            "procedural_requirements",
+            "procedural_requirements_and_exceptions",
+            "procedural_requirements_and_implications",
+            "assess_procedural_requirements",
+            "procedural_clarification",
+            "procedural_history",
+            "procedural_implications",
+            "procedural_evaluation",
+            "procedural_defenses",
+            "procedural_consequences",
+            "examining_litigation_strategy",
+            "assessing_litigation_strategy",
+            "representation_and_litigation",
+            "case_and_litigation_management",
+            "burden_of_proof",
+            "jurisdictional_evaluation",
+            "assessing_procedural_implications_and_jurisdictional_manipulation"
+        ]
+    }
+]
