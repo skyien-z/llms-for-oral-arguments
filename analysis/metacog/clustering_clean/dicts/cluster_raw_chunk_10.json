@@ -1,0 +1,154 @@
+{
+    "probing_procedural_standards": {
+        "description": "Properties related to questioning and understanding procedural standards, rules, and their implications.",
+        "properties_in_category": [
+            "examining_state_procedural_evolution",
+            "clarifying_state_procedural_standards",
+            "clarifying_state_procedural_rules_versus_federal_rights",
+            "clarifying_relationship_between_state_and_federal_procedural_rules",
+            "probing_procedural_rights_violation",
+            "clarifying_procedural_requirements",
+            "clarifying_litigant_motivation",
+            "clarifying_position_on_exceptions",
+            "clarifying_procedural_violations",
+            "clarifying_scope_of_procedural_violations"
+        ]
+    },
+    "examining_litigation_strategy": {
+        "description": "Properties related to evaluating and understanding litigation strategy, its implications, and consequences.",
+        "properties_in_category": [
+            "evaluating_litigation_strategy_and_consequences",
+            "probing_the_basis_of_standing",
+            "challenging_plaintiff_standing",
+            "evaluating_hypothetical_alternative_scenarios_for_standing",
+            "clarifying_legal_element_of_standing",
+            "assessing_alternative_outcomes_and_procedural_implications"
+        ]
+    },
+    "clarifying_legal_elements": {
+        "description": "Properties related to seeking clarification and understanding of legal elements, concepts, and terminology.",
+        "properties_in_category": [
+            "clarifying_contextual_reference",
+            "clarifying_meaning_of_significant_change",
+            "clarifying_respondents_claim",
+            "clarifying_statutory_exemptions",
+            "clarifying_alternative_scenarios",
+            "clarifying_alternative_authority",
+            "clarifying_litigant_viewpoint_on_procedural_details",
+            "clarifying_key_terms",
+            "clarifying_opponent_s_position_on_procedural_implications"
+        ]
+    },
+    "understanding_precedent_and_analogies": {
+        "description": "Properties related to exploring, understanding, and applying precedent, analogies, and their implications.",
+        "properties_in_category": [
+            "analyzing_analogous_legal_precedents",
+            "seeking_analogous_precedent",
+            "drawing_analogies_to_private_property_interests",
+            "challenging_analogy_and_scope",
+            "probing_analogy_and_precedent"
+        ]
+    },
+    "evaluating_statutory_interpretation": {
+        "description": "Properties related to examining, understanding, and challenging statutory interpretation and its implications.",
+        "properties_in_category": [
+            "probing_interpretation_of_statutory_language",
+            "examining_statutory_interpretation_and_legislative_history",
+            "examining_statutory_imbalances_in_power",
+            "exploring_statutory_purpose_and_requirements",
+            "challenging_statutory_interpretation_via_constitutional_concerns"
+        ]
+    },
+    "assessing_judicial_practices": {
+        "description": "Properties related to evaluating and understanding judicial practices, discretion, and their implications.",
+        "properties_in_category": [
+            "assessing_traditional_judicial_practices",
+            "anticipating_judicial_implications",
+            "evaluating_judicial_discretion_and_reconsideration",
+            "scrutinizing_hearing_standards",
+            "evaluating_alternative_standards_for_review"
+        ]
+    },
+    "examining_contract_and_compact_provisions": {
+        "description": "Properties related to examining, understanding, and applying contract and compact provisions, terms, and their implications.",
+        "properties_in_category": [
+            "clarifying_contract_duration_implications",
+            "clarifying_pre_compact_authority_and_jurisdiction",
+            "evaluating_contract_principles_against_compact_rules",
+            "identifying_unique_characteristics_of_compacts",
+            "clarifying_compact_terms",
+            "clarifying_key_concept"
+        ]
+    },
+    "understanding_historical_context": {
+        "description": "Properties related to understanding and exploring historical context, intent, and its implications.",
+        "properties_in_category": [
+            "understanding_historical_context",
+            "inquiring_about_sources_of_intent"
+        ]
+    },
+    "anticipating_and_addressing_concerns": {
+        "description": "Properties related to anticipating, addressing, and acknowledging potential concerns, counterarguments, and their implications.",
+        "properties_in_category": [
+            "anticipating_counterarguments",
+            "anticipating_potential_hypocrisy",
+            "acknowledging_counterargument_and_seeking_confirmation",
+            "acknowledging_and_accepting_limitations",
+            "acknowledging_and_addressing_potential_procedural_concerns"
+        ]
+    },
+    "probing_and_challenging_assumptions": {
+        "description": "Properties related to probing, challenging, and testing assumptions, inferences, and their implications.",
+        "properties_in_category": [
+            "probing_alternative_rules_or_limitations",
+            "testing_theory_boundaries_and_hypothetical_applications",
+            "testing_theory_against_alternative_scenarios",
+            "challenging_fundamental_assumptions",
+            "challenging_argument_assumptions",
+            "challenging_contextual_assumptions",
+            "challenging_default_rule_assumption",
+            "challenging_default_rule_inference"
+        ]
+    },
+    "clarifying_and_understanding_invention_details": {
+        "description": "Properties related to seeking clarification and understanding of invention details, processes, and their implications.",
+        "properties_in_category": [
+            "requesting_clarification_on_invention_details",
+            "probing_claims_of_feasibility",
+            "clarifying_invention_distinctions",
+            "understanding_the_invention_process",
+            "clarifying_enablement_test_standard",
+            "clarifying_species_versus_genus",
+            "probing_enablement_breadth",
+            "clarifying_counsel_statement",
+            "clarifying_parties_agreement_on_legal_test",
+            "evaluating_claims_notice_and_scope"
+        ]
+    },
+    "examining_vulnerabilities_in_arguments": {
+        "description": "Properties related to examining, understanding, and challenging vulnerabilities in arguments, and their implications.",
+        "properties_in_category": [
+            "examining_vulnerabilities_in_argument",
+            "assessing_relevance_of_argument",
+            "challenging_inferences_from_compact_duration",
+            "challenging_argument_with_precedent",
+            "probing_statutory_interpretation_with_counterassumption"
+        ]
+    },
+    "evaluating_evidence_and_burden_of_proof": {
+        "description": "Properties related to evaluating and understanding evidence, burden of proof, and their implications.",
+        "properties_in_category": [
+            "assessing_burden_of_proof",
+            "evaluating_burden_of_proof_under_broad_patent_claims",
+            "evaluating_evidence_for_alternative_outcomes"
+        ]
+    },
+    "evaluating_government_interests_and_accountability": {
+        "description": "Properties related to evaluating and understanding government interests, accountability, and their implications.",
+        "properties_in_category": [
+            "evaluating_government_interests_and_discretion",
+            "probing_role_of_government_in_litigation",
+            "exploring_government_accountability_and_equitable_restitution"
+        ]
+    }
+}

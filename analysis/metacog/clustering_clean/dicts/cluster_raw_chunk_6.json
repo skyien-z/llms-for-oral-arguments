@@ -1,0 +1,113 @@
+{
+    "clarifying_legal_concepts": {
+        "description": "Properties related to clarifying various legal concepts, including standing, cause of action, key distinctions, and injury establishment.",
+        "properties_in_category": [
+            "clarifying_relationship_between_standing_and_cause_of_action",
+            "clarifying_informational_injury_nexus",
+            "clarifying_key_distinctions_for_injury_establishment",
+            "clarifying_key_legal_concept",
+            "clarifying_injury_type",
+            "clarifying_standard_of_review",
+            "clarifying_clear_error_review_standard",
+            "clarifying_burden_of_proof",
+            "clarifying_prohibited_means",
+            "clarifying_legal_exceptions"
+        ]
+    },
+    "examining_evidence": {
+        "description": "Properties related to examining evidence, including requirements, weight, credibility, and interpretation.",
+        "properties_in_category": [
+            "examining_fact_finding_requirements",
+            "assessing_evidentiary_weight_and_standard_of_review",
+            "examining_evidence_requirements_in_gerrymandering_cases",
+            "evaluating_evidentiary_requirements",
+            "assessing_evidentiary_weight_and_credibility",
+            "evaluating_evidence_interpretation",
+            "clarifying_standards_for_evidence",
+            "assessing_uniqueness_of_circumstantial_evidence",
+            "examining_evidence_inconsistencies",
+            "challenging_evidence_consistency",
+            "assessing_witness_credibility",
+            "examining_expert_testimony_methods",
+            "evaluating_expert_testimony_methodology"
+        ]
+    },
+    "evaluating_intent_and_motivation": {
+        "description": "Properties related to evaluating intent and motivation behind actions, including legislative intent, intent to discriminate, and motivation behind content moderation.",
+        "properties_in_category": [
+            "probing_intent_and_knowledge",
+            "challenging_race_neutrality_assumption",
+            "probing_intentional_discrimination",
+            "scrutinizing_evidence_of_intent",
+            "examining_legislative_intent",
+            "probing_expert_methodology",
+            "evaluating_intent_and_means",
+            "probing_intent_and_motivation_behind_legislative_action",
+            "examining_alternative_motivations_and_implications"
+        ]
+    },
+    "comparing_and_analogizing": {
+        "description": "Properties related to comparing and analogizing cases, including precedent cases, hypothetical scenarios, and analogies to test the limits of legal principles.",
+        "properties_in_category": [
+            "comparing_precedent_cases",
+            "examining_hypothetical_application_of_legal_principle",
+            "drawing_analogies_and_testing_application",
+            "testing_analogies_and_limitations",
+            "highlighting_analogy_limitations",
+            "seeking_precedent_support",
+            "examining_analogies_and_distinctions",
+            "distinguishing_precedent_and_applicability"
+        ]
+    },
+    "challenging_arguments_and_positions": {
+        "description": "Properties related to challenging arguments and positions, including criticisms, counterexamples, and alternative perspectives.",
+        "properties_in_category": [
+            "addressing_criticisms_from_exterior_views",
+            "challenging_dignitary_harm_theory_with_historical_analogy",
+            "challenging_evidentiary_sufficiency",
+            "challenging_scope_and_applicability",
+            "challenging_applicability_of_regulations",
+            "challenging_proposed_solution",
+            "challenging_precedent_distinctions",
+            "challenging_argument_by_reference_to_precedent",
+            "challenging_analogy_with_precedent",
+            "challenging_the_distinction_between_human_and_algorithmic_censorship"
+        ]
+    },
+    "assessing_litigation_strategy": {
+        "description": "Properties related to assessing litigation strategy, including litigation outcomes, procedural posture, and statutory implications.",
+        "properties_in_category": [
+            "assessing_litigation_strategy",
+            "examining_litigation_implications_and_procedural_outcomes",
+            "exploring_litigation_implications_and_procedural_outcomes",
+            "requesting_clarification_on_scope_of_analysis",
+            "evaluating_standard_of_review_for_fact_finding",
+            "assessing_standard_of_review",
+            "probing_litigation_strategy_and_scope"
+        ]
+    },
+    "statutory_interpretation": {
+        "description": "Properties related to statutory interpretation, including principles, practices, and application.",
+        "properties_in_category": [
+            "clarifying_statutory_framework",
+            "challenging_statutory_application_to_specific_entities",
+            "challenging_statutory_necessity",
+            "clarifying_statutory_interpretation_principles",
+            "addressing_contextual_inconsistencies",
+            "testing_interpretation_consistency",
+            "examining_statutory_interpretation_logic",
+            "evaluating_surplusage_thresholds",
+            "exploring_statutory_application_in_practice"
+        ]
+    },
+    "understanding_case_facts": {
+        "description": "Properties related to understanding the facts of the case, including understanding counsel's rebuttal, facts, and context.",
+        "properties_in_category": [
+            "understanding_counsel's_rebuttal_to_potential_salvaging_of_the_law",
+            "understanding_facts_of_the_case",
+            "clarifying_case_nature",
+            "clarifying_facts_and_context",
+            "clarifying_factual_details"
+        ]
+    }
+}
