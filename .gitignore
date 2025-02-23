@@ -1,5 +1,4 @@
-transcripts_up_to_2024/
-2024_cases_json/
 tmp/
 .ipynb_checkpoints/
 *.out
+.DS_Store

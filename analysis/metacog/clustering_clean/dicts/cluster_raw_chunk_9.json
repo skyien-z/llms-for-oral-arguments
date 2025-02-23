@@ -1,0 +1,104 @@
+{
+    "statutory_interpretation": {
+        "description": "Questions related to the interpretation of statutes, including their meaning, scope, and application.",
+        "properties_in_category": [
+            "comparing_alternative_statutory_interpretations",
+            "testing_statutory_interpretation_flexibility",
+            "clarifying_statutory_interpretation_alternatives",
+            "understanding_statutory_application",
+            "challenging_interpretation_by_offering_alternative",
+            "interpreting_legislative_intent_through_statutory_language",
+            "verifying_statutory_application",
+            "highlighting_statutory_limitations",
+            "assessing_statutory_language",
+            "clarifying_scope_of_statutory_exception",
+            "challenging_statutory_authority",
+            "examining_statutory_authority_and_limits",
+            "comparing_statutory_frameworks",
+            "comparing_statutory_standards",
+            "considering_legislative_history_and_congressional_intent",
+            "examining_scope_of_regulatory_authority",
+            "challenging_statutory_interpretation_through_precedent",
+            "challenging_advocate_position_clarity",
+            "examining_alternative_legislative_authority",
+            "comparing_with_existing_statutes_to_understand_congressional_power"
+        ]
+    },
+    "procedural_requirements": {
+        "description": "Questions related to the procedures and rules governing the case, including jurisdiction, court authority, and procedural application.",
+        "properties_in_category": [
+            "clarifying_circuit_disagreements_on_procedural_requirements",
+            "clarifying_procedural_application",
+            "querying_procedural_appropriateness",
+            "challenging_certainty_of_state_procedural_application",
+            "clarifying_state_procedural_rule",
+            "probing_state_discretion_in_interpreting_rule_32",
+            "anticipating_procedural_outcomes_and_limitations",
+            "assessing_procedural_options",
+            "case_proceeding_confirmation",
+            "identifying_federal_question_jurisdiction"
+        ]
+    },
+    "argument_clarification": {
+        "description": "Questions aimed at clarifying the arguments presented by the parties, including their positions, assumptions, and bases.",
+        "properties_in_category": [
+            "clarifying_party_position",
+            "clarifying_argument_basis",
+            "clarifying_counterargument",
+            "seeking_clarification_on_arguments",
+            "requesting_source_or_basis",
+            "clarifying_the_core_argument",
+            "clarifying_vague_statements_and_underlying_doctrine",
+            "clarifying_argument_focus",
+            "clarifying_policy_provisions_through_hypothetical_scenario"
+        ]
+    },
+    "assessing_external_factors": {
+        "description": "Questions examining the potential impact of external factors on the case, including congressional intent, legislative history, and international practices.",
+        "properties_in_category": [
+            "engaging_with_congressional_intent_and_statutory_interpretation",
+            "inferring_congressional_intent",
+            "evaluating_retaliatory_consequences_and_comparing_national_interests",
+            "comparing_international_immunity_standards",
+            "challenging_argument_by_contrasting_with_international_practices",
+            "examining_external_influence_on_prosecution",
+            "probing_policy_exceptions"
+        ]
+    },
+    "doctrine_and_precedent": {
+        "description": "Questions related to the application of doctrine and precedent, including their interpretation, boundaries, and implications.",
+        "properties_in_category": [
+            "clarifying_doctrine_boundaries",
+            "challenging_interpretation_of_legal_terms",
+            "distinguishing_key_legal_concepts",
+            "challenging_statutory_interpretation_by_identifying_legislative_intent",
+            "clarifying_application_of_equitable_tolling",
+            "challenging_the_applicability_of_a_doctrine",
+            "clarifying_the_scope_of_article_i_power",
+            "clarifying_existing_precedent",
+            "drawing_analogy_to_precedent",
+            "challenging_interpretation_of_state_rule",
+            "examining_hypothetical_application_of_state_rule"
+        ]
+    },
+    "state_federal_relations": {
+        "description": "Questions examining the relationship between state and federal authorities, including jurisdiction, power limits, and potential challenges.",
+        "properties_in_category": [
+            "comparing_state_action_to_federal_law_and_identifying_potential_challenges",
+            "examining_state_response_to_federal_requirements",
+            "examining_federal_state_authority_limits",
+            "identifying_alternative_constitutional_limits",
+            "evaluating_alternative_state_actions"
+        ]
+    },
+    "judicial_role_and_policy": {
+        "description": "Questions related to the role of the judiciary in policy-making, including their authority, limits, and potential implications.",
+        "properties_in_category": [
+            "evaluating_judicial_role_in_foreign_policy",
+            "questioning_judicial_role_in_policy_making",
+            "challenging_advocate_bias_and_separation_of_powers",
+            "exploring_limits_of_congressional_power",
+            "examining_departmental_authority_limits"
+        ]
+    }
+}

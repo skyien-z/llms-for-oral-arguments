@@ -1,0 +1,145 @@
+{
+    "interpreting_statutes": {
+        "description": "Properties related to interpreting statutes, including probing statutory interpretation, challenging statutory language interpretation, and testing statutory application analogy.",
+        "properties_in_category": [
+            "probing_statutory_interpretation_via_hypothetical_rewording",
+            "challenging_statutory_language_interpretation",
+            "testing_statutory_application_analogy",
+            "identifying_statutory_interpretation_discrepancies",
+            "requesting_specific_statutory_support",
+            "understanding_statutory_purpose_and_application",
+            "alternative_interpretation_of_statutory_language",
+            "evaluating_hypothetical_statutory_implications",
+            "challenging_interpretation_of_congressional_intent",
+            "reinterpreting_statute_purpose",
+            "scrutinizing_treatment_of_statutory_change",
+            "testing_hypothetical_statutory_scenario",
+            "clarifying_legislative_intent",
+            "questioning_consistency_in_applying_statutory_changes",
+            "challenging_textual_interpretation",
+            "challenging_interpretation_of_statutory_elements"
+        ]
+    },
+    "jurisdiction_and_precedent": {
+        "description": "Properties related to jurisdiction and precedent, including reviewing precedent and jurisdictional application, testing jurisdictional boundary conditions, and interpreting precedent and its applicability.",
+        "properties_in_category": [
+            "reviewing_precedent_and_jurisdictional_application",
+            "testing_jurisdictional_boundary_conditions",
+            "interpreting_precedent_and_its_applicability",
+            "evaluating_implications_of_precedent",
+            "testing_application_of_precedent_to_new_circumstances",
+            "examining_similarity_between_procedural_steps",
+            "examining_implications_of_evidentiary_standards",
+            "analyzing_procedural_equivalence",
+            "challenging_precedent_and_conflicting_rules",
+            "addressing_precedent_and_statutory_interpretation",
+            "evaluating_judicial_precedent_and_expansion_of_private_rights"
+        ]
+    },
+    "procedural_implications": {
+        "description": "Properties related to procedural implications, including assessing trial procedure and defense strategy, seeking alternative solutions, and exploring rule applications and limitations.",
+        "properties_in_category": [
+            "assessing_trial_procedure_and_defense_strategy",
+            "seeking_alternative_solutions",
+            "exploring_rule_applications_and_limitations",
+            "highlighting_evidentiary_challenge",
+            "probing_precedent_application_with_alternative_rules",
+            "exploring_implications_on_precedent",
+            "challenging_applicability_of_rule",
+            "evaluating_alternative_procedural_steps",
+            "probing_alternative_procedural_remedies",
+            "comparing_analogous_legal_precedents",
+            "evaluating_state_process_alternatives"
+        ]
+    },
+    "evidentiary_standards": {
+        "description": "Properties related to evidentiary standards, including examining evidentiary thresholds, highlighting contextual loopholes, and assessing evidentiary standards.",
+        "properties_in_category": [
+            "examining_evidentiary_thresholds",
+            "highlighting_contextual_loopholes",
+            "assessing_evidentiary_standards",
+            "examining_implications_of_evidentiary_standards",
+            "highlighting_distinctions_between_temporary_and_permanent_deprivation",
+            "breaking_down_due_process_components"
+        ]
+    },
+    "burden_of_proof": {
+        "description": "Properties related to burden of proof, including assigning burden of proof, probing burden of proof allocation, and challenging burden assessment via analogous regulation.",
+        "properties_in_category": [
+            "assigning_burden_of_proof",
+            "probing_burden_of_proof_allocation",
+            "challenging_burden_assessment_via_analogous_regulation",
+            "challenging_presumption_and_burden_of_proof"
+        ]
+    },
+    "clarification_and_explanation": {
+        "description": "Properties related to clarification and explanation, including seeking clarification on procedural scope, seeking clarification on rule application, and requesting further explanation.",
+        "properties_in_category": [
+            "seeking_clarification_on_procedural_scope",
+            "seeking_clarification_on_rule_application",
+            "requesting_further_explanation",
+            "seeking_clarification_of_previous_response",
+            "requesting_clarification_on_doctrine_application"
+        ]
+    },
+    "argument_evaluation": {
+        "description": "Properties related to argument evaluation, including evaluating alternative legal frameworks, evaluating case relevance and appropriateness, and evaluating necessity of procedural step.",
+        "properties_in_category": [
+            "evaluating_alternative_legal_frameworks",
+            "evaluating_case_relevance_and_appropriateness",
+            "evaluating_necessity_of_procedural_step",
+            "evaluating_similarity_to_precedent_example",
+            "comparing_regulatory_standards_across_securities_law"
+        ]
+    },
+    "due_process": {
+        "description": "Properties related to due process, including identifying residual due process concerns, clarifying relationship between due process and innocent owner defense, and evaluating implications of rejecting precedent.",
+        "properties_in_category": [
+            "identifying_residual_due_process_concerns",
+            "clarifying_relationship_between_due_process_and_innocent_owner_defense",
+            "evaluating_implications_of_rejecting_precedent",
+            "addressing_potential_abuse_of_process",
+            "challenging_adequacy_of_procedural_safeguards",
+            "clarifying_counsel_position_on_due_process"
+        ]
+    },
+    "questioning_and_transition": {
+        "description": "Properties related to questioning and transition, including requesting attention from specific justices, probing intent vs effect in legislation, and transitioning to questions.",
+        "properties_in_category": [
+            "requesting_attention_from_specific_justices",
+            "probing_intent_vs_effect_in_legislation",
+            "transitioning_to_questions"
+        ]
+    },
+    "expert_testimony": {
+        "description": "Properties related to expert testimony, including challenging expert witness assertion and understanding defendant theory.",
+        "properties_in_category": [
+            "challenging_expert_witness_assertion",
+            "understanding_defendant_theory",
+            "assessing_defendant's_intent_and_motivation"
+        ]
+    },
+    "legislative_intent": {
+        "description": "Properties related to legislative intent, including understanding legislative intent, questioning consistency in applying statutory changes, and exploring compliance strategies.",
+        "properties_in_category": [
+            "understanding_legislative_intent",
+            "questioning_consistency_in_applying_statutory_changes",
+            "exploring_compliance_strategies"
+        ]
+    },
+    "procedural_history": {
+        "description": "Properties related to procedural history, including clarifying procedural history and implications, and examining relationship with precedent and alternative approaches.",
+        "properties_in_category": [
+            "clarifying_procedural_history_and_implications",
+            "examining_relationship_with_precedent_and_alternative_approaches"
+        ]
+    },
+    "counterarguments_and_exceptions": {
+        "description": "Properties related to counterarguments and exceptions, including addressing potential exceptions to argument, addressing counterargument from opposing side, and addressing historical precedent in light of modern developments.",
+        "properties_in_category": [
+            "addressing_potential_exceptions_to_argument",
+            "addressing_counterargument_from_opposing_side",
+            "addressing_historical_precedent_in_light_of_modern_developments"
+        ]
+    }
+}

@@ -1,0 +1,144 @@
+[
+    {
+        "category_name": "clarifying_statutory_interpretation",
+        "description": "Properties related to clarifying the meaning and application of statutes.",
+        "properties_in_category": [
+            "clarifying_statutory_interpretation_through_contextual_analysis",
+            "clarifying_statutory_scope_and_definitions",
+            "examining_statutory_interpretation_impact_on_due_process",
+            "examining_statutory_exceptions_and_implications",
+            "examining_statutory_interpretation_through_analogies",
+            "clarifying_statutory_language_comparison",
+            "clarifying_statutory_connection",
+            "clarifying_statutory_scope",
+            "clarifying_pending_proceeding_definition",
+            "examining_statutory_intent_through_legislative_history",
+            "clarifying_statute_application_requirements",
+            "clarifying_statute_application_boundaries",
+            "probing_statute_interpretation_boundaries",
+            "testing_statutory_construction_boundaries",
+            "probing_title_scope_and_limitations",
+            "clarifying_key_requirements",
+            "examining_theory_applicability_and_boundaries",
+            "clarifying_factor_interpretation",
+            "clarifying_interpreter_differences",
+            "clarifying_transformative_use_criteria"
+        ]
+    },
+    {
+        "category_name": "challenging_statutory_interpretation",
+        "description": "Properties related to challenging the meaning and application of statutes.",
+        "properties_in_category": [
+            "challenging_definition_method",
+            "challenging_expanded_definition",
+            "challenging_interpretative_breadth",
+            "challenging_definition_boundary_through_hypothetical",
+            "challenging_theory_on_conflicting_interests",
+            "challenging_analogy_to_real_property",
+            "challenging_comity_implications",
+            "challenging_nexus_requirement_with_hypothetical",
+            "challenging_interpretation_of_legal_standard",
+            "challenging_application_of_defense",
+            "challenging_statutory_requirements",
+            "challenging_domicile_assumption",
+            "challenging_the_narrow_application_of_statutory_requirements"
+        ]
+    },
+    {
+        "category_name": "testing_statutory_limits",
+        "description": "Properties related to testing the limits of statutes.",
+        "properties_in_category": [
+            "testing_hypothetical_fact_pattern",
+            "testing_hypothetical_scenarios_to_undermine_argument",
+            "testing_edge_cases_with_hypothetical_situations",
+            "testing_statutory_interpretation",
+            "testing_statutory_limits",
+            "testing_threshold_for_transformative_use",
+            "testing_transformative_meaning_thresholds",
+            "testing_the_limits_of_transformative_use",
+            "testing_alternative_statutory_interpretation",
+            "testing_exceptional_scenario",
+            "testing_nexus_to_pending_proceeding"
+        ]
+    },
+    {
+        "category_name": "clarifying_case_elements",
+        "description": "Properties related to clarifying the elements of a case.",
+        "properties_in_category": [
+            "clarifying_key_elements_of_the_case",
+            "clarifying_claim_elements",
+            "clarifying_domestic_injury_location",
+            "clarifying_injury_definition",
+            "clarifying_causal_link_between_domestic_conduct_and_injury",
+            "clarifying_scope_of_obstruction",
+            "clarifying_scope_of_exception",
+            "clarifying_pending_proceeding_definition",
+            "clarifying_broad_definition",
+            "clarifying_property_interest_distinctions",
+            "clarifying_relationship_between_statutory_interpretation_and_comity",
+            "clarifying_the_relationship_between_domestic_property_and_foreign_actions"
+        ]
+    },
+    {
+        "category_name": "evaluating_argument_strength",
+        "description": "Properties related to evaluating the strength of an argument.",
+        "properties_in_category": [
+            "evaluating_complexity_of_legal_test",
+            "evaluating_prosecutor_argument_through_counterexample",
+            "evaluating_government_litigation_strategy_and_judicial_role",
+            "assessing_relative_strength_of_legal_arguments",
+            "assessing_argument_structure_and_relevance",
+            "assessing_importance_of_prosecution_history",
+            "assessing_evidence_of_chilling_effect",
+            "assessing_statutory_precedents_and_proportional_punishment"
+        ]
+    },
+    {
+        "category_name": "examining_historical_context",
+        "description": "Properties related to examining the historical context of statutes.",
+        "properties_in_category": [
+            "examining_historical_context_and_definitions",
+            "examining_historical_context_and_continuity",
+            "examining_legislative_intent_behind_statute_amendments",
+            "acknowledging_congressional_intent_history",
+            "clarifying_congressional_intentions_through_historical_context"
+        ]
+    },
+    {
+        "category_name": "comparing_and_contrasting",
+        "description": "Properties related to comparing and contrasting different concepts.",
+        "properties_in_category": [
+            "comparing_and_contrasting_precedent_cases",
+            "comparing_and_contrasting_different_contexts",
+            "comparing_and_contrasting_statutes"
+        ]
+    },
+    {
+        "category_name": "probing_boundary_cases",
+        "description": "Properties related to probing boundary cases.",
+        "properties_in_category": [
+            "probing_boundary_cases_for_commentary",
+            "probing_the_boundaries_of_the_proposed_test",
+            "probing_factor_interpretation_and_application",
+            "probing_transformative_meaning_standard"
+        ]
+    },
+    {
+        "category_name": "clarifying_procedural_next_steps",
+        "description": "Properties related to clarifying procedural next steps.",
+        "properties_in_category": [
+            "clarifying_procedural_next_steps",
+            "seeking_clarity_on_procedural_next_steps",
+            "clarifying_litigant_position_on_jury_trial_requirements"
+        ]
+    },
+    {
+        "category_name": "highlighting_inconsistencies",
+        "description": "Properties related to highlighting inconsistencies.",
+        "properties_in_category": [
+            "highlighting_inconsistency_and_shifting_focus",
+            "highlighting_inadequacy_of_proposed_solution",
+            "highlighting_evidentiary_challenges"
+        ]
+    }
+]
