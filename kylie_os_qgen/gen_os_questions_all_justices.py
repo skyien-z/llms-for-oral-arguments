@@ -15,7 +15,6 @@ pipeline = transformers.pipeline(
 )
 
 def get_question_generation_prompt(justice_name, opening_statement):
-
     system_prompt = """You are a legal expert trained to simulate the questioning style of Supreme Court justices during oral arguments. Below is an opening statement from a Supreme Court case and the name of a specific justice. Your task is to generate a list of questions that this justice is likely to ask in response to the opening statement. These questions should reflect the justice’s known priorities, jurisprudence, and typical questioning style, and they should be directly relevant to the arguments presented in the opening statement.
 
         ### Instructions:
@@ -104,16 +103,10 @@ def create_justice_questions_tuple(justice, advocate_side, row):
     })
     return sample
 
-
-
-
-
 # input_fp = '../datasets/original/2024_full_text_transcripts.csv'
 input_fp = './roberts_2024_full_text_questions_scratch.csv'
 transcripts_df = pd.read_csv(input_fp)
-current_justices = {"Justice Elena Kagan"}
-
-# current_justices = {"Justice John G. Roberts, Jr.", "Justice Clarence Thomas", "Justice Samuel A. Alito, Jr.", "Justice Sonia Sotomayor", "Justice Elena Kagan", "Justice Neil Gorsuch", "Justice Brett M. Kavanaugh", "Justice Amy Coney Barrett", "Justice Ketanji Brown Jackson"}
+current_justices = {"Justice John G. Roberts, Jr.", "Justice Clarence Thomas", "Justice Samuel A. Alito, Jr.", "Justice Sonia Sotomayor", "Justice Elena Kagan", "Justice Neil Gorsuch", "Justice Brett M. Kavanaugh", "Justice Amy Coney Barrett", "Justice Ketanji Brown Jackson"}
 
 def add_justice_questions(justice_name, opening_statement):
     messages = get_question_generation_prompt(justice_name, opening_statement)
