@@ -104,9 +104,11 @@ def create_justice_questions_tuple(justice, advocate_side, row):
     })
     return sample
 
-input_fp = '../datasets/original/2024_full_text_transcripts.csv'
+# input_fp = '../datasets/original/2024_full_text_transcripts.csv'
+input_fp = './alito_2024_full_text_questions_llama70b_finetuned.csv'
 transcripts_df = pd.read_csv(input_fp)
-current_justices = {"Justice John G. Roberts", "Justice Clarence Thomas", "Justice Samuel A. Alito", "Justice Sonia Sotomayor", "Justice Elena Kagan", "Justice Neil Gorsuch", "Justice Brett M. Kavanaugh", "Justice Amy Coney Barrett", "Justice Ketanji Brown Jackson"}
+current_justices = {"Justice Brett M. Kavanaugh", "Justice Amy Coney Barrett", "Justice Ketanji Brown Jackson"}
+# Justice John G. Roberts", "Justice Clarence Thomas", "Justice Samuel A. Alito", "Justice Sonia Sotomayor", "Justice Elena Kagan", "Justice Neil Gorsuch", 
 
 def add_justice_questions(justice_name, opening_statement):
     messages = get_question_generation_prompt(justice_name, opening_statement)
