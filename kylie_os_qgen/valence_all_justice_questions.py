@@ -4,8 +4,10 @@ import torch
 import re
 import pandas as pd
 
-# Kylie uses her local scratch model
+##################################################################################
+## Change to your classification model
 model_id = '/scratch/gpfs/kz9921/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit'
+##################################################################################
 
 pipeline = transformers.pipeline(
     "text-generation",
@@ -92,11 +94,6 @@ def parse_response(response):
     else:
         return None
 
-
-input_fp = '../datasets/llm_outputs/generate_questions/2024_questions_all_justices_llama70b_with_qids.csv'
-all_questions_df = pd.read_csv(input_fp)
-
-
 def classify_questions_valence(opening_statement, question):
     messages = get_valence_classification_prompt(opening_statement, question)
     response = get_model_response(messages)
@@ -104,11 +101,23 @@ def classify_questions_valence(opening_statement, question):
     print(valence_classification)
     return valence_classification
 
+input_dir = '../datasets/llm_outputs/generate_questions/'
+############################################################################
+## Update Input File Path!
+input_file = '2024_questions_all_justices_llama70b_with_qids.csv'
+############################################################################
+input_fp = input_dir + input_file
+all_questions_df = pd.read_csv(input_fp)
 
 all_questions_df['valence'] = all_questions_df.apply(
     lambda row: classify_questions_valence(row['opening_statement'], row['question_text']), axis=1
 )
 
-out_fp = f'../datasets/llm_outputs/valence/2024_questions_all_justices_llama70b_with_qids_valence.csv'
+output_dir = '../datasets/llm_outputs/valence/'
+############################################################################
+## Update Output File Path!
+output_file = '2024_questions_all_justices_llama70b_with_qids_valence.csv'
+############################################################################
+out_fp = output_dir + output_file
 all_questions_df.to_csv(out_fp, index=False)
 

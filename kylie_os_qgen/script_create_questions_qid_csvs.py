@@ -2,11 +2,20 @@ import pandas as pd
 import hashlib
 
 io_dir = "../datasets/llm_outputs/generate_questions/"
-all_questions_csv = io_dir + "2024_full_text_all_justices_questions_llama70b.csv"
+#################################################################################
+## REPLACE WITH YOUR INPUT DIRECTORY
+input_file_path = "2024_full_text_all_justices_questions_llama70b.csv"
+#################################################################################
 
+all_questions_csv = io_dir + input_file_path
 df = pd.read_csv(all_questions_csv)
+
+#################################################################################
+## Assumes that the csv you're reading has column "Unnamed: 0", "petitioner_opening_text"
+## and "respondent_opening_statement". Comment out if this isn't true!
 df.drop(["Unnamed: 0"], axis=1, inplace=True)
 df.rename(columns={"petitioner_opening_text": "petitioner_opening_statement"}, inplace=True)
+#################################################################################
 
 def get_question_id(transcript_id, question_text):
     unique_string = f"{transcript_id}_{question_text}"
@@ -34,4 +43,9 @@ for justice in current_justices:
                                                 })
                 all_questions_df = pd.concat([all_questions_df, new_question_row_df], ignore_index=True)
 
-all_questions_df.to_csv(io_dir+"2024_questions_all_justices_llama70b_with_qids.csv")
+#################################################################################
+## REPLACE WITH YOUR OUTPUT FILE PATH
+output_file_path = "2024_questions_all_justices_llama70b_with_qids.csv"
+#################################################################################
+
+all_questions_df.to_csv(io_dir+output_file_path)

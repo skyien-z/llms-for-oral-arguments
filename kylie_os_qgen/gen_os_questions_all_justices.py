@@ -4,8 +4,9 @@ import torch
 import re
 import pandas as pd
 
-# Kylie uses her local scratch model
-model_id = '/scratch/gpfs/kz9921/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit'
+# Non-fine-tuned model
+# model_id = '/scratch/gpfs/kz9921/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit' 
+model_id = '/scratch/gpfs/kz9921/oral_args_finetune' 
 
 pipeline = transformers.pipeline(
     "text-generation",
@@ -103,10 +104,9 @@ def create_justice_questions_tuple(justice, advocate_side, row):
     })
     return sample
 
-# input_fp = '../datasets/original/2024_full_text_transcripts.csv'
-input_fp = './roberts_2024_full_text_questions_scratch.csv'
+input_fp = '../datasets/original/2024_full_text_transcripts.csv'
 transcripts_df = pd.read_csv(input_fp)
-current_justices = {"Justice John G. Roberts, Jr.", "Justice Clarence Thomas", "Justice Samuel A. Alito, Jr.", "Justice Sonia Sotomayor", "Justice Elena Kagan", "Justice Neil Gorsuch", "Justice Brett M. Kavanaugh", "Justice Amy Coney Barrett", "Justice Ketanji Brown Jackson"}
+current_justices = {"Justice John G. Roberts", "Justice Clarence Thomas", "Justice Samuel A. Alito", "Justice Sonia Sotomayor", "Justice Elena Kagan", "Justice Neil Gorsuch", "Justice Brett M. Kavanaugh", "Justice Amy Coney Barrett", "Justice Ketanji Brown Jackson"}
 
 def add_justice_questions(justice_name, opening_statement):
     messages = get_question_generation_prompt(justice_name, opening_statement)
@@ -125,6 +125,6 @@ for justice in current_justices:
         lambda row: add_justice_questions(justice, row['petitioner_opening_text']), axis=1)
     new_justice_df[f'questions_{justice_last_name}_respondent'] = new_justice_df.apply(
     lambda row: add_justice_questions(justice, row['respondent_opening_statement']), axis=1)
-    out_fp = f'{justice_last_name}_2024_full_text_questions_{model_suffix}.csv'
+    out_fp = f'{justice_last_name}_2024_full_text_questions_llama70b_finetuned.csv' #CHANGE
     print("saving data")
     new_justice_df.to_csv(out_fp, index=False)
