@@ -1,0 +1,152 @@
+{
+    "clarifying_key_concepts": {
+        "description": "Properties related to clarifying key concepts, definitions, and boundaries.",
+        "properties_in_category": [
+            "clarifying_facts_of_specific_case",
+            "clarifying_the_scope_of_government_speech",
+            "seeking_clarification_on_boundary_definition",
+            "requesting_clarification_on_key_terms",
+            "clarifying_injury_requirement",
+            "clarifying_harm_requirement",
+            "clarifying_necessary_conditions_for_decision",
+            "clarifying_harm_definition",
+            "clarifying_bribery_definition",
+            "clarifying_element_of_mental_state",
+            "clarifying_key_concept_parameters",
+            "clarifying_remedy_scope",
+            "clarifying_article_iii_requirements",
+            "clarifying_petitioner_claim",
+            "clarifying_resource_implications",
+            "clarifying_advocate_position_on_precedent",
+            "clarifying_relationship_between_precedent_and_current_claim",
+            "clarifying_position_comparison",
+            "clarifying_accommodation_scenarios",
+            "clarifying_undue_hardship_analysis",
+            "clarifying_relevant_contractual_agreements",
+            "clarifying_interpreter_position",
+            "clarifying_context_dependent_decision_making",
+            "clarifying_scope_of_rule"
+        ]
+    },
+    "assessing_and_challenging_arguments": {
+        "description": "Properties related to assessing and challenging arguments, interpretations, and applications.",
+        "properties_in_category": [
+            "assessing_fact_pattern_impact_on_argument",
+            "challenging_argument_with_counterexample",
+            "challenging_the_scope_of_state_action",
+            "challenging_the_applicability_of_test",
+            "challenging_the_necessity_of_tangible_harm",
+            "challenging_job_definition_classification",
+            "probing_employer_defenses_and_exceptions",
+            "evaluating_supportive_external_authority",
+            "challenging_statutory_interpretation_with_subjective_factors",
+            "challenging_statutory_interpretation_with_hypothetical_scenario",
+            "challenging_statutory_interpretation_and_asking_for_textual_evidence",
+            "probing_implications_of_vagueness",
+            "challenging_state_borne_costs_and_cause",
+            "assessing_counterarguments_on_economic_impact",
+            "challenging_evidence_of_standing",
+            "challenging_argument_boundary_conditions",
+            "challenging_representation_of_external_views"
+        ]
+    },
+    "evaluating_statutory_interpretation_and_application": {
+        "description": "Properties related to evaluating statutory interpretation and application.",
+        "properties_in_category": [
+            "evaluating_analogies_and_applicability_to_new_technology",
+            "evaluating_statutory_application",
+            "evaluating_statutory_application_to_harassment",
+            "evaluating_judicial_review_process",
+            "evaluating_the_applicability_of_the_theory_to_a_broader_range_of_parties",
+            "evaluating_remedial_ruling_consequences",
+            "evaluating_legal_doctrine_and_precedent",
+            "evaluating_alternative_solutions_avoiding_broader_issues",
+            "evaluating_alternative_solutions_avoiding_broader_issues"
+        ]
+    },
+    "exploring_boundary_conditions_and_thresholds": {
+        "description": "Properties related to exploring boundary conditions and thresholds.",
+        "properties_in_category": [
+            "exploring_boundary_conditions_of_discrimination",
+            "gauging_threshold_for_prohibited_discrimination",
+            "exploring_evidentiary_thresholds_for_proving_discrimination",
+            "testing_absolute_application",
+            "exploring_thresholds_for_undue_hardship",
+            "probing_the_boundaries_of_undue_hardship",
+            "testing_boundary_conditions_with_hypothetical",
+            "exploring_boundary_conditions_under_current_test",
+            "clarifying_circumstantial_exceptions_to_undue_hardship"
+        ]
+    },
+    "examining_statutory_language_and_implications": {
+        "description": "Properties related to examining statutory language and implications.",
+        "properties_in_category": [
+            "examining_application_to_specific_fact_patterns",
+            "examining_statutory_language_for_clarity",
+            "examining_statutory_intent_and_preemption",
+            "examining_legislative_intent_through_statutory_analogy",
+            "examining_statutory_interpretation_sequence",
+            "highlighting_statutory_inconsistency_with_established_doctrines",
+            "raising_statutory_interpretation_concerns_through_constitutional_avoidance"
+        ]
+    },
+    "considering_external_factors_and_practicalities": {
+        "description": "Properties related to considering external factors and practicalities.",
+        "properties_in_category": [
+            "considering_external_factors_on_private_analysis",
+            "considering_external_factors_and_omissions",
+            "addressing_judicial_practicality_concerns",
+            "considering_statutory_interpretation_in_light_of_practical_implications",
+            "probing_resource_constraints_and_prosecutorial_discretion",
+            "considering_legislative_remediation",
+            "deference_to_congressional_authority",
+            "questioning_statutory_interpretation_consistency"
+        ]
+    },
+    "seeking_clarification_and_common_ground": {
+        "description": "Properties related to seeking clarification and common ground.",
+        "properties_in_category": [
+            "seeking_clarification_on_key_terms",
+            "seeking_clarification_on_previous_statement",
+            "seeking_clarification_on_statutory_analogies",
+            "seeking_common_ground",
+            "narrowing_the_scope_of_inquiry",
+            "establishing_shared_understanding",
+            "identifying_points_of_agreement",
+            "gauging_necessity_of_explicit_ruling"
+        ]
+    },
+    "probing_and_testing_statutory_application": {
+        "description": "Properties related to probing and testing statutory application.",
+        "properties_in_category": [
+            "probing_exceptions_to_argument",
+            "testing_statutory_application_with_hypothetical",
+            "testing_statutory_application_to_harassment",
+            "probing_agreement_with_prior_precedent",
+            "probing_boundary_conditions_and_official_guidance",
+            "probing_standing_theory_boundaries",
+            "probing_the_role_of_economic_factors",
+            "probing_resource_constraints_and_prosecutorial_discretion"
+        ]
+    },
+    "challenging_statutory_interpretation": {
+        "description": "Properties related to challenging statutory interpretation.",
+        "properties_in_category": [
+            "challenging_statutory_interpretation_with_subjective_factors",
+            "challenging_statutory_interpretation_with_hypothetical_scenario",
+            "challenging_statutory_interpretation_and_asking_for_textual_evidence",
+            "challenging_statutory_interpretation_with_legislative_history",
+            "challenging_radical_departure_from_established_precedent",
+            "challenging_remedy_authority_as_jurisdictional",
+            "challenging_argument_on_statutory_interpretation_through_judicial_power"
+        ]
+    },
+    "assessing_evidence_and_relevance": {
+        "description": "Properties related to assessing evidence and relevance.",
+        "properties_in_category": [
+            "assessing_specific_evidence_relevance",
+            "requesting_evidentiary_details_and_cost_implications",
+            "assessing_damage_compensation_implications"
+        ]
+    }
+}

@@ -1,0 +1,140 @@
+{
+    "clarifying_and_challenging_statutory_interpretation": {
+        "description": "Properties related to questioning, clarifying, or challenging the interpretation of statutes and their implications.",
+        "properties_in_category": [
+            "requesting_statute_clarification",
+            "examining_logical_implications_of_statutory_interpretation_on_impeachment",
+            "evaluating_statutory_specificity",
+            "clarifying_statutory_interpretation_framework",
+            "challenging_statutory_interpretation_by_questioning_redundancy",
+            "examining_statutory_interpretation_doctrine",
+            "challenging_statutory_interpretation_through_judicial_precedent",
+            "challenging_statutory_interpretation_and_due_process",
+            "clarifying_statutory_interpretation_requirements",
+            "assessing_statutory_interpretation_dynamics",
+            "highlighting_absurd_consequences",
+            "challenging_statutory_interpretation_against_precedent",
+            "addressing_clear_statement_rule_application",
+            "comparing_statutory_structures",
+            "challenging_statutory_interpretation_approach",
+            "assessing_relevance_of_amendment_history",
+            "clarifying_interpreter_intent",
+            "identifying_statutory_interpretation_authority",
+            "challenging_statutory_interpretation_criteria"
+        ]
+    },
+    "examining_constitutional_basis_and_implications": {
+        "description": "Properties related to examining and understanding the constitutional basis and implications of laws and policies.",
+        "properties_in_category": [
+            "examining_constitutional_basis",
+            "clarifying_scope_of_constitutional_protections",
+            "clarifying_scope_of_presidential_immunity",
+            "clarifying_implications_for_presidential_powers",
+            "probing_intent_and_scope_of_immunity",
+            "clarifying_litigation_objectives",
+            "addressing_precedent_and_judicial_deference",
+            "clarifying_relationship_between_statutory_and_constitutional_standards",
+            "clarifying_relationship_between_precedent_and_fundamental_rights",
+            "distinguishing_legal_from_policy_questions"
+        ]
+    },
+    "evaluating_argument_consistency_and_relevance": {
+        "description": "Properties related to evaluating the consistency and relevance of arguments presented.",
+        "properties_in_category": [
+            "evaluating_argument_consistency",
+            "challenging_initial_argument",
+            "proposing_alternative_analytical_approach",
+            "challenging_evidence_sufficiency",
+            "inviting_opponent_to_address_judicial_standard",
+            "assessing_evidence_sufficiency",
+            "probing_application_of_legal_standard",
+            "clarifying_preliminary_assumptions",
+            "evaluating_case_suitability_for_test_development",
+            "requesting_deferral_for_better_case_law",
+            "questioning_definition_of_key_term"
+        ]
+    },
+    "assessing_judicial_authority_and_implications": {
+        "description": "Properties related to assessing the authority and implications of judicial decisions and precedents.",
+        "properties_in_category": [
+            "assessing_judicial_authority_implications",
+            "evaluating_judicial_authority_in_extreme_scenarios",
+            "evaluating_application_of_precedent",
+            "evaluating_relevance_of_precedents",
+            "comparing_and_contrasting_precedent",
+            "distinguishing_precedent_based_on_facet_of_rights",
+            "historical_analogy_and_precedent",
+            "assessing_future_implications"
+        ]
+    },
+    "clarifying_and_challenging_advocate_positions": {
+        "description": "Properties related to clarifying or challenging the positions of advocates and litigants.",
+        "properties_in_category": [
+            "clarifying_litigator_position",
+            "clarifying_advocate_position_through_comparing_rhetoric_to_legal_argument",
+            "clarifying_advocate_position_on_exception",
+            "clarifying_litigation_objectives",
+            "addressing_counterargument_uncertainty_of_alternative_outcomes",
+            "assessing_advocate_confidence_in_core_argument"
+        ]
+    },
+    "examining_historical_and_procedural_context": {
+        "description": "Properties related to examining the historical and procedural context of laws, policies, and judicial decisions.",
+        "properties_in_category": [
+            "historical_contextualization_and_analogizing",
+            "establishing_facts_and_assumptions_for_hypothetical_scenario",
+            "resolving_procedural_due_process_dilemmas",
+            "evaluating_remedy_options_and_implications",
+            "challenging_compliance_with_procedural_requirements_and_harmlessness",
+            "assessing_error_impact_on_procedural_due_process",
+            "examining_legislative_context"
+        ]
+    },
+    "evaluating_policy_and_political_implications": {
+        "description": "Properties related to evaluating the policy and political implications of laws, policies, and judicial decisions.",
+        "properties_in_category": [
+            "evaluating_policy_and_political_implications",
+            "assessing_potential_political_implications",
+            "evaluating_specific_application_of_policy",
+            "assessing_implications_on_jurisprudence",
+            "evaluating_alternative_solutions_and_authority",
+            "assessing_current_outcome",
+            "considering_agency_expertise_in_fact_bound_decisions"
+        ]
+    },
+    "probing_broader_contextual_implications": {
+        "description": "Properties related to probing the broader contextual implications of laws, policies, and judicial decisions.",
+        "properties_in_category": [
+            "probing_broader_contextual_implications",
+            "clarifying_applicability_to_broader_scenarios",
+            "examining_broader_implications_on_related_issues",
+            "assessing_broader_implications_and_ramifications",
+            "exploring_analogous_situations",
+            "considering_alternative_scenarios",
+            "assessing_litigation_scope_and_remedies"
+        ]
+    },
+    "clarifying_and_challenging_core_assumptions": {
+        "description": "Properties related to clarifying or challenging the core assumptions underlying laws, policies, and judicial decisions.",
+        "properties_in_category": [
+            "challenging_core_assumptions",
+            "clarifying_the_root_cause_of_the_problem",
+            "challenging_basis_for_third_party_releases",
+            "clarifying_the_core_issue_in_dispute",
+            "evaluating_litigant_motivations",
+            "clarifying_valuation_perspective",
+            "challenging_assumptions_about_company_finances"
+        ]
+    },
+    "examining_liberty_interests_and_individual_rights": {
+        "description": "Properties related to examining the liberty interests and individual rights affected by laws, policies, and judicial decisions.",
+        "properties_in_category": [
+            "clarifying_liberty_interest_threshold",
+            "challenging_liberty_interest_basis",
+            "challenging_applicant_entitlement",
+            "balancing_individual_rights_against_government_interests",
+            "exploring_hypothetical_extremes",
+            "clarifying_scope_of_constitutional_protections"
+        ]
+    }
+}

@@ -1,0 +1,178 @@
+{
+    "clarifying_statutes_and_regulations": {
+        "description": "Properties related to clarifying statutes, regulations, and their applications.",
+        "properties_in_category": [
+            "clarifying_statutory_elements",
+            "clarifying_statutory_definitions_and_applications",
+            "clarifying_statute_specificity",
+            "clarifying_statutory_comparisons",
+            "clarifying_statutory_structure_comparison",
+            "identifying_statutory_hierarchy_and_intent",
+            "clarifying_statutory_threshold",
+            "challenging_statutory_interpretation_by_analogizing_to_similar_statutes",
+            "challenging_statutory_interpretation_by_analogy",
+            "evaluating_statutory_interpretation_alternatives",
+            "assessing_statutory_vagueness_and_notice",
+            "evaluating_statute_clarity_and_notice",
+            "assessing_statutory_notice_to_defendant",
+            "challenging_statutory_interpretation_scenarios",
+            "clarifying_alleged_standard"
+        ]
+    },
+    "interpreting_precedents_and_rulings": {
+        "description": "Properties related to interpreting precedents, rulings, and their implications.",
+        "properties_in_category": [
+            "understanding_importance_of_precedent",
+            "examining_implications_of_changing_interpretive_standards",
+            "considering_temporal_applicability_of_jurisdictional_clarity_standard",
+            "reconciling_prior_case_language",
+            "resolving_statutory_interpretation_inconsistencies",
+            "evaluating_statutory_interpretation_approach",
+            "challenging_precedent_application",
+            "revisiting_prior_jurisdictional_determinations",
+            "clarifying_stare_decisis_application",
+            "clarifying_prior_holdings_and_dicta",
+            "reexamining_precedent_holding",
+            "challenging_stare_decisis_application",
+            "clarifying_jurisdictional_implications",
+            "challenging_precedent_consistency",
+            "clarifying_and_narrowing_argument_scope",
+            "evaluating_progress_towards_race_neutral_goals",
+            "challenging_timeframe_for_policy_change",
+            "challenging/selective_application_of_diversity_criteria",
+            "clarifying_existing_precedent_limits",
+            "examining_history_and_continuity_of_policy",
+            "evaluating_program_duration_and_termination"
+        ]
+    },
+    "evaluating_evidence_and_statistics": {
+        "description": "Properties related to evaluating evidence, statistics, and their implications.",
+        "properties_in_category": [
+            "examining_evidence_and_accounting_for_discrepancies",
+            "probing_for_potential_inconsistencies_in_policy_application",
+            "examining_statistical_evidence",
+            "clarifying_statistical_outcomes_by_race",
+            "understanding_supporting_evidence_for_policy_alternatives",
+            "probing_harm_to_victim_factor",
+            "examining_statutory_element_necessity",
+            "probing_limitations_of_interpretation",
+            "testing_the_boundaries_of_opponent_definition",
+            "examining_statutory_application_via_analogous_scenario",
+            "probing_statutory_element_definitions",
+            "testing_statutory_application_via_hypothetical_scenario",
+            "identifying_underlying_statutory_concerns",
+            "identifying_supporting_precedents",
+            "challenging_statutory_element_interpretation"
+        ]
+    },
+    "clarifying_definitions_and_standards": {
+        "description": "Properties related to clarifying definitions, standards, and their applications.",
+        "properties_in_category": [
+            "clarifying_key_terms_and_standards",
+            "clarifying_doctrinal_foundations",
+            "clarifying_interpretation_framework",
+            "requesting_clarification_on_contextual_background_principles",
+            "clarifying_contract_categorization_rules",
+            "clarifying_the_definition_of_aiding_and_abetting",
+            "probing_the_boundaries_of_knowledge_and_intent",
+            "clarifying_knowledge_specificity",
+            "clarifying_substantial_assistance_standard",
+            "clarifying_key_elements_of_legal_standard",
+            "clarifying_knowledge_requirement_for_aiding_and_abetting",
+            "clarifying_knowledge_threshold_for_liability",
+            "simplifying_complex_legal_standards",
+            "clarifying_elements_of_liability",
+            "requesting_clarification_on_specific_scenario",
+            "challenging_standard_for_jury_determination",
+            "seeking_statutory_interpretation_clarity",
+            "challenging_argument_with_analogous_legal_concept",
+            "assessing_statutory_application_to_specific_senarios",
+            "clarifying_causation_link_between_service_use_and_attack",
+            "clarifying_standard_for_aiding_and_abetting",
+            "clarifying_standard_for_liability",
+            "examining_the_basis_of_substantial_assistance_claim"
+        ]
+    },
+    "examining_analogies_and_hypotheticals": {
+        "description": "Properties related to examining analogies, hypotheticals, and their implications.",
+        "properties_in_category": [
+            "probing_analogous_cases_for_relevant_differences",
+            "considering_supportive_historical_analogy",
+            "challenging_analogies_with_statutory_interpretation",
+            "examining_alternative_outcomes_and_implications",
+            "examining_precedent_and_its_implicit_implications",
+            "evaluating_retroactive_application_of_legal_standard",
+            "testing_statutory_application_with_hypothetical_scenario",
+            "comparing_analogous_situations_for_clarity",
+            "extending_hypothetical_to_analogous_situation",
+            "testing_boundaries_of_liability_with_additional_facts",
+            "testing_analogy_and_limiting_principles",
+            "requesting_analogy_clarification",
+            "clarifying_statutory_element_through_analogy",
+            "clarifying_previous_argument_with_hypothetical",
+            "testing_the_limitations_of_argued_standard",
+            "testing_statutory_element_applications"
+        ]
+    },
+    "challenging_assumptions_and_arguments": {
+        "description": "Properties related to challenging assumptions, arguments, and their implications.",
+        "properties_in_category": [
+            "challenging_evidence_of_negotiation_history",
+            "examining_exceptions_to_general_principle",
+            "challenging_withdrawal_implications",
+            "clarifying_categorical_distinctions",
+            "examining_boundary_cases_and_exceptions",
+            "identifying_boundary_cases",
+            "seeking_a_practical_and_narrow_ruling",
+            "challenging_assumptions_and_examining_alternative_interpretations",
+            "challenging_assumptions_about_compact_terms",
+            "challenging_limitations_of_race_neutral_approaches",
+            "probing_limitations_of_argument",
+            "challenging_timeframe_for_policy_change",
+            "challenging/selective_application_of_diversity_criteria",
+            "challenging_the_underlying_assumptions",
+            "addressing_counterarguments_and_alternative_solutions",
+            "addressing_adverse_impact_on_third_party",
+            "addressing_potential_slippery_slope_concerns",
+            "challenging_broad_application_of_liability"
+        ]
+    },
+    "exploring_policy_and_procedural_implications": {
+        "description": "Properties related to exploring policy and procedural implications.",
+        "properties_in_category": [
+            "assessing_procedural_impact_on_litigation_process",
+            "clarifying_government_position_under_alternative_circumstances",
+            "exploring_alternative_methods_of_racial_consideration",
+            "identifying_potential_discrimination_paradox",
+            "inviting_additional_questions_or_comments",
+            "testing_narrow_tailoring_hypothetical_scenarios",
+            "evaluating_progress_towards_race_neutral_goals",
+            "clarifying_race_neutral_alternatives",
+            "exploring_narrow_versus_broad_interpretation"
+        ]
+    },
+    "clarifying_previous_discussions_and_context": {
+        "description": "Properties related to clarifying previous discussions and context.",
+        "properties_in_category": [
+            "clarifying_previous_question",
+            "clarifying_specific_fact",
+            "clarifying_previous_discussion_points",
+            "clarifying_counsel_argument",
+            "comparing_precedents_and_applicability",
+            "acknowledging_legal_precedent_and_applicability",
+            "acknowledging_statutory_title_limitations"
+        ]
+    },
+    "evaluating_court_rulings_and_applications": {
+        "description": "Properties related to evaluating court rulings and applications.",
+        "properties_in_category": [
+            "evaluating_court_precedent_application",
+            "delving_into_definition_clarification",
+            "challenging_interpretation_with_hypothetical_scenario",
+            "examining_the_boundaries_of_culpability",
+            "urging_literal_statutory_interpretation",
+            "evaluating_court_ruling_uncertainty",
+            "clarifying_jurisdictional_thresholds"
+        ]
+    }
+}

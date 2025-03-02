@@ -1,0 +1,227 @@
+[
+    {
+        "category_name": "statutory_interpretation",
+        "description": "Properties related to the interpretation of statutes and their application to cases",
+        "properties_in_category": [
+            "evaluating_statutory_interpretation_and_legislative_history",
+            "seeking_clarification_on_statutory_language",
+            "clarifying_statutory_interpretation_through_counterexample",
+            "reinterpreting_statutory_language_and_intent",
+            "challenging_statutory_interpretation_and_policy_implications",
+            "applying_statutory_language_to_hypothetical_scenario",
+            "highlighting_statutory_inconsistencies_and_implications_for_interpretation",
+            "challenging_statutory_interpretation_details",
+            "clarifying_statutory_applicability_scope",
+            "clarifying_statutory_definitions_and_scope",
+            "clarifying_statutory_language_and_definitions",
+            "challenging_statutory_interpretation_basis",
+            "addressing_statutory_language_ambiguity",
+            "challenging_interpretation_of_statutory_intent",
+            "probing_underlying_practical_considerations",
+            "challenging_statutory_interpretation_clarification",
+            "clarifying_statutory_purpose",
+            "evaluating_jurisdictional_scope",
+            "clarifying_applicability_of_penalties",
+            "clarifying_key_statutory_distinctions",
+            "evaluating_alternative_statutory_frameworks",
+            "testing_statutory_application_under_different_scenarios",
+            "seeking_clarification_on_statute_applicability",
+            "clarifying_statutory_interpretation_assumptions",
+            "identifying_relevant_statutory_criteria"
+        ]
+    },
+    {
+        "category_name": "precedent_analysis",
+        "description": "Properties related to the analysis of precedents and their application to cases",
+        "properties_in_category": [
+            "assessing_precedent_clarification",
+            "evaluating_opinion_implications_for_future_cases",
+            "examining_historical_precedent",
+            "verifying_precedent_cases",
+            "inquiring_precedent_support",
+            "probing_clear_statement_rule_parameters",
+            "identifying_precedent_gaps",
+            "jurisdictional_limitations_under_precedent",
+            "examining_prosecutorial_discretion_and_indictment_sufficiency",
+            "clarifying_prior_precedent_application",
+            "clarifying_court_precedent",
+            "establishing_precedent_by_analogy"
+        ]
+    },
+    {
+        "category_name": "argument_evaluation",
+        "description": "Properties related to the evaluation of arguments and their strengths",
+        "properties_in_category": [
+            "evaluating_argument_strength_via_counterfactual",
+            "questioning_argument_structure_and_priority",
+            "identifying_disputed_testimony",
+            "evaluating_party_interests",
+            "clarifying_and_reframing_hypothetical",
+            "clarifying_previous_litigation_details",
+            "clarifying_hypothetical_situation",
+            "clarifying_opposing_party_argument",
+            "challenging_counsel_assumptions",
+            "alternatives_to_current_claim",
+            "highlighting_potential_conflict_between_legal_doctrines",
+            "evaluating_procedural_consistency_with_original_issue",
+            "evaluating_procedural_fairness_and_remedies"
+        ]
+    },
+    {
+        "category_name": "procedural_evaluation",
+        "description": "Properties related to the evaluation of procedural aspects of cases",
+        "properties_in_category": [
+            "evaluating_procedural_prudence",
+            "assessing_procedural_options_and_implications",
+            "examining_litigation_procedural_outcomes",
+            "evaluating_instruction_accuracy",
+            "assessing_jury_instruction_application",
+            "evaluating_prosecutorial_strategy_and_doctrine_alignment",
+            "clarifying_procedural_context_and_relevance",
+            "assessing_remedial_consequences_and_theoreticalBackdrop",
+            "evaluating_alternative_approaches_and_scope_of_review",
+            "clarifying_trigger_for_analysis"
+        ]
+    },
+    {
+        "category_name": "legal_basis_evaluation",
+        "description": "Properties related to the evaluation of the legal basis of arguments and claims",
+        "properties_in_category": [
+            "challenging_legal_basis",
+            "challenging_legal_precedent",
+            "clarifying_legal_obstacles",
+            "evaluating_legal_standard",
+            "clarifying_contractual_obligations",
+            "clarifying_property_rights_and_entitlements",
+            "probing_the_scope_of_fiduciary_obligations",
+            "clarifying_threshold_for_implied_duties",
+            "clarifying_reserved_water_rights_under_specific_conditions",
+            "clarifying_reserved_rights_priority",
+            "clarifying_trust_relationship",
+            "probing_limits_of_access_right",
+            "clarifying_intent_behind_original_agreement"
+        ]
+    },
+    {
+        "category_name": "factual_evaluation",
+        "description": "Properties related to the evaluation of factual aspects of cases",
+        "properties_in_category": [
+            "assessing_factual_underpinnings_of_claim",
+            "clarifying_factual_representation",
+            "evaluating_broader_national_implications",
+            "evaluating_broader_implications_for_similar_entities",
+            "evaluating_implications_of_ruling_on_one_claim_on_another",
+            "clarifying_and_applying_eighth_amendment_scrutiny",
+            "exploring_boundary_conditions_of_fraud",
+            "evaluating_alternative_theories_of_liability",
+            "alternative_theory_evaluation_with_narrower_scope"
+        ]
+    },
+    {
+        "category_name": "jurisdictional_evaluation",
+        "description": "Properties related to the evaluation of jurisdictional aspects of cases",
+        "properties_in_category": [
+            "evaluating_jurisdictional_scope",
+            "considering_state_defined_property_rights",
+            "comparing_degrees_of_noncompliance",
+            "identifying_unique_treaty_characteristics",
+            "clarifying_scope_of_existing_rights",
+            "clarifying_state_interests_and_litigation_bounds",
+            "challenging_the_scope_of_federal_responsibility"
+        ]
+    },
+    {
+        "category_name": "treaty_evaluation",
+        "description": "Properties related to the evaluation of treaties and their application to cases",
+        "properties_in_category": [
+            "examining_treaty_provisions",
+            "clarifying_intent_behind_original_agreement",
+            "clarifying_contractual_obligations",
+            "identifying_treaty_distinctions",
+            "clarifying_existing_obligations",
+            "challenging_interpretation_of_treaty_provisions",
+            "clarifying_reserved_water_rights_under_specific_conditions",
+            "clarifying_reserved_rights_priority"
+        ]
+    },
+    {
+        "category_name": "statutory_application",
+        "description": "Properties related to the application of statutes to specific cases",
+        "properties_in_category": [
+            "applying_statutory_language_to_hypothetical_scenario",
+            "testing_statutory_application_under_different_scenarios",
+            "seeking_clarification_on_statute_applicability",
+            "clarifying_statutory_applicability_scope",
+            "clarifying_statutory_definitions_and_scope",
+            "clarifying_statutory_language_and_definitions",
+            "evaluating_jurisdictional_scope",
+            "clarifying_key_statutory_distinctions",
+            "evaluating_alternative_statutory_frameworks"
+        ]
+    },
+    {
+        "category_name": "clarification_requests",
+        "description": "Properties related to requests for clarification on various aspects of cases",
+        "properties_in_category": [
+            "seeking_clarification_on_statutory_language",
+            "seeking_clarification_on_statute_applicability",
+            "seeking_clarification_on_definition_source",
+            "inviting_clarification_from_specific_justices",
+            "request_for_additional_comment",
+            "clarifying_contextual_limitations",
+            "clarifying_key_issues_and_distinctions",
+            "clarifying_prior_ruling_details",
+            "clarifying_reporting_requirements"
+        ]
+    },
+    {
+        "category_name": "procedural_defenses",
+        "description": "Properties related to procedural defenses and their evaluation",
+        "properties_in_category": [
+            "addressing_procedural_defenses",
+            "evaluating_procedural_consistency_with_original_issue",
+            "evaluating_procedural_fairness_and_remedies",
+            "clarifying_procedural_context_and_relevance",
+            "assessing_remedial_consequences_and_theoreticalBackdrop",
+            "evaluating_alternative_approaches_and_scope_of_review"
+        ]
+    },
+    {
+        "category_name": "hypothetical_evaluation",
+        "description": "Properties related to the evaluation of hypothetical scenarios and their implications",
+        "properties_in_category": [
+            "applying_statutory_language_to_hypothetical_scenario",
+            "testing_statutory_application_under_different_scenarios",
+            "clarifying_and_reframing_hypothetical",
+            "clarifying_hypothetical_situation",
+            "exploring_boundary_conditions_of_fraud",
+            "evaluating_alternative_theories_of_liability",
+            "alternative_theory_evaluation_with_narrower_scope"
+        ]
+    },
+    {
+        "category_name": "counterargument_evaluation",
+        "description": "Properties related to the evaluation of counterarguments and their implications",
+        "properties_in_category": [
+            "addressing_counterargument_weaknesses",
+            "challenging_argument_on_fairness_grounds",
+            "highlighting_potential_conflict_between_legal_doctrines",
+            "evaluating_argument_strength_via_counterfactual",
+            "questioning_argument_structure_and_priority",
+            "identifying_disputed_testimony"
+        ]
+    },
+    {
+        "category_name": "broader_implications",
+        "description": "Properties related to the evaluation of broader implications of cases",
+        "properties_in_category": [
+            "evaluating_broader_national_implications",
+            "evaluating_broader_implications_for_similar_entities",
+            "evaluating_implications_of_ruling_on_one_claim_on_another",
+            "clarifying_and_applying_eighth_amendment_scrutiny",
+            "exploring_boundary_conditions_of_fraud",
+            "evaluating_alternative_theories_of_liability",
+            "alternative_theory_evaluation_with_narrower_scope"
+        ]
+    }
+]
