@@ -1,0 +1,156 @@
+[
+    {
+        "category_name": "statutory_interpretation",
+        "description": "Properties related to interpreting and understanding statutory terms, language, and intent.",
+        "properties_in_category": [
+            "clarifying_interpretation_of_statutory_terms",
+            "clarifying_statutory_language",
+            "challenging_statutory_interpretation_through_dictionary_meaning",
+            "evaluating_statutory_authorization_scope",
+            "evaluating_congressional_intent_and_legislative_history",
+            "identifying_statutory_limitations",
+            "testing_statutory_interpretation_boundaries",
+            "clarifying_statutory_interpretation_through_existing_authority",
+            "evaluating_secretary_discretion_in_hypothetical_scenarios",
+            "comparing_statutory_authority_in_major_questions_cases",
+            "clarifying_initial_application_of_statutory_authority",
+            "requesting_application_of_major_questions_doctrine",
+            "examining_congressional_intent_under_major_questions_doctrine",
+            "assessing_economic_impact_on_states",
+            "examining_statutory_compliance",
+            "comparing_to_precedential_framework",
+            "clarifying_statutory_definition",
+            "testing_boundaries_with_statutory_evidence",
+            "testing_analogy_to_first_amendment_protection",
+            "arguing_statutory_interpretation",
+            "statutory_language_analysis",
+            "exploring_hypothetical_scenario_to_understand_congressional_intent",
+            "clarifying_relationship_between_statutory_sections",
+            "probing_prosecutorial_control_and_charging",
+            "clarifying_statutory_application",
+            "highlighting_prosecutorial_discretion",
+            "evaluating_alternative_procedural_outcomes",
+            "probing_counterfactual_hypothetical_scenarios",
+            "probing_prosecutorial_discretion",
+            "assessing_statutory_interplay_and_joint_application",
+            "testing_statutory_interpretation_with_textual_evidence",
+            "exploring_alternative_statutory_language",
+            "challenging_statutory_interpretation_by_highlighting_potential_redundancy",
+            "probing_the_necessity_of_statutory_language",
+            "examining_statutory_drafting_choices",
+            "challenging_interpretation_with_absurdity"
+        ]
+    },
+    {
+        "category_name": "procedural_implications",
+        "description": "Properties related to the procedural aspects of a case, including standing, jurisdiction, and judicial review.",
+        "properties_in_category": [
+            "clarifying_procedural_implications",
+            "assessing_standing_in_hypothetical_scenario",
+            "clarifying_procedural_parameters",
+            "evaluating_third_party_standing",
+            "evaluating_precedent_and_standing",
+            "considering_implications_for_judicial_review_and_governance",
+            "probing_the_boundaries_of_objective_reasonableness",
+            "clarifying_statutory_basis",
+            "challenging_applicability_to_edge_cases",
+            "assessing_practical_implications_and_litigation_consequences"
+        ]
+    },
+    {
+        "category_name": "argument_clarification",
+        "description": "Properties related to seeking clarification or challenging arguments made by the opposing party.",
+        "properties_in_category": [
+            "clarifying_opponent_argument",
+            "targeting_specific_argument_weakness",
+            "redefining_standards_for_proving_harm",
+            "exploring_alternative_litigation_strategies",
+            "responding_to_opponent_argument",
+            "challenging_inconsistency_in_argument",
+            "clarifying_underlying_argument_details",
+            "challenging_burden_of_proof",
+            "challenging_proxy_representation",
+            "exploring_entity_control_and_authority",
+            "seeking_clarification_on_argument",
+            "distinguishing_precedent",
+            "addressing_counterargument",
+            "clarifying_opponent_position",
+            "testing_expression_limits",
+            "clarifying_the_impact_of_discriminatory_action",
+            "clarifying_argument_dependencies",
+            "clarifying_scope_of_compelled_speech_doctrine"
+        ]
+    },
+    {
+        "category_name": "precedent_and_analogy",
+        "description": "Properties related to evaluating and applying precedent, as well as drawing analogies to similar cases or situations.",
+        "properties_in_category": [
+            "comparing_to_precedential_framework",
+            "evaluating_hypothetical_application_of_precedent",
+            "inquiring_about_legal_precedent_and_tradition",
+            "challenging_analogous_precedent",
+            "probing_analogy_application",
+            "testing_analogy_to_first_amendment_protection",
+            "highlighting_analogy_with_precedent_discrimination",
+            "drawing_analogy_to_establish_liability",
+            "challenging_analogy_by_counterexample"
+        ]
+    },
+    {
+        "category_name": "first_amendment_protections",
+        "description": "Properties related to evaluating and applying First Amendment protections, including free speech and compelled speech.",
+        "properties_in_category": [
+            "evaluating_speaker_neutrality_in_service_provision",
+            "analogizing_to_similar_professional_services",
+            "clarifying_the_scope_of_content_neutrality",
+            "challenging_Claims_of_authorship",
+            "exploring_boundary_conditions_for_discrimination",
+            "considering_hypothetical_extensions_to_facts",
+            "clarifying_hypothetical_comparison",
+            "examining_artist_discretion_and_message_content",
+            "testing_application_of_beliefs_to_hypothetical_scenarios",
+            "requesting_clarity_on_variable_application_of_compelled_speech_doctrine",
+            "clarifying_key_terms_and_positions",
+            "examining_limits_of_free_expression",
+            "probing_the_boundaries_of_belief_and_discrimination",
+            "clarifying_the_scope_of_speech",
+            "examining_statutory_application_scenarios",
+            "exploring_scope_of_applicability_via_analogy",
+            "clarifying_business_operations_and_first_amendment_protections",
+            "challenging_speech_conduct_distinction",
+            "evaluating_implications_for_precedent",
+            "identifying_key_distinctions",
+            "identifying_key_distinguishing_features",
+            "clarifying_statutory_protections",
+            "clarifying_first_amendment_applicability",
+            "exploring_analogies_and_distinctions",
+            "testing_the_boundaries_of_compelled_speech",
+            "expressing_concern_over_hypothetical_application",
+            "exploring_ruling_implications_with_hypotheticals",
+            "clarifying_key_elements_of_argument",
+            "refining_standard_for_first_amendment_protection"
+        ]
+    },
+    {
+        "category_name": "expert_opinion_and_discretion",
+        "description": "Properties related to evaluating expert opinions and discretion in various contexts.",
+        "properties_in_category": [
+            "evaluating_differing_expert_opinions",
+            "probing_prosecutorial_discretion",
+            "highlighting_prosecutorial_discretion",
+            "assessing_agency_expertise_limits",
+            "establishing_precedent_and_administration_authority",
+            "clarifying_scoper_of_subjective_beliefs_in_scienter_determination"
+        ]
+    },
+    {
+        "category_name": "judicial_role_and_review",
+        "description": "Properties related to the role of the judiciary in reviewing and interpreting laws and policies.",
+        "properties_in_category": [
+            "evaluating_judicial_role_in_separation_of_powers",
+            "considering_implications_for_judicial_review_and_governance",
+            "assessing_statutory_interplay_and_joint_application",
+            "evaluating_alternative_procedural_outcomes"
+        ]
+    }
+]

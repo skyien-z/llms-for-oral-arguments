@@ -1,0 +1,270 @@
+justice,transcript_id,source,metacog,count,proportion
+"Samuel A. Alito, Jr.",2024.22-7466-t01,Actual,argumentation_and_clarification,1,0.2
+"Samuel A. Alito, Jr.",2024.22-7466-t01,Actual,judicial_role_and_review,1,0.2
+"Samuel A. Alito, Jr.",2024.22-7466-t01,Actual,precedent_and_doctrine,2,0.4
+"Samuel A. Alito, Jr.",2024.22-7466-t01,Actual,procedural_matters,1,0.2
+"Samuel A. Alito, Jr.",2024.22-7466-t01,GPT-4,argumentation_and_clarification,2,0.13333333333333333
+"Samuel A. Alito, Jr.",2024.22-7466-t01,GPT-4,case_facts_and_context,5,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.22-7466-t01,GPT-4,judicial_role_and_review,3,0.2
+"Samuel A. Alito, Jr.",2024.22-7466-t01,GPT-4,precedent_and_doctrine,3,0.2
+"Samuel A. Alito, Jr.",2024.22-7466-t01,GPT-4,procedural_matters,1,0.06666666666666667
+"Samuel A. Alito, Jr.",2024.22-7466-t01,GPT-4,statutory_interpretation,1,0.06666666666666667
+"Samuel A. Alito, Jr.",2024.22-7466-t01,LLaMA-3.1,argumentation_and_clarification,3,0.25
+"Samuel A. Alito, Jr.",2024.22-7466-t01,LLaMA-3.1,judicial_role_and_review,7,0.5833333333333334
+"Samuel A. Alito, Jr.",2024.22-7466-t01,LLaMA-3.1,precedent_and_doctrine,2,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-1127-t01,Actual,argumentation_and_clarification,2,1.0
+"Samuel A. Alito, Jr.",2024.23-1127-t01,GPT-4,argumentation_and_clarification,2,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-1127-t01,GPT-4,case_facts_and_context,2,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-1127-t01,GPT-4,precedent_and_doctrine,2,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-1127-t01,GPT-4,statutory_interpretation,6,0.5
+"Samuel A. Alito, Jr.",2024.23-1127-t01,LLaMA-3.1,argumentation_and_clarification,4,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-1127-t01,LLaMA-3.1,judicial_role_and_review,2,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-1127-t01,LLaMA-3.1,statutory_interpretation,6,0.5
+"Samuel A. Alito, Jr.",2024.23-191 -t01,Actual,argumentation_and_clarification,2,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-191 -t01,Actual,case_facts_and_context,1,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-191 -t01,Actual,judicial_role_and_review,1,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-191 -t01,Actual,statutory_interpretation,2,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-191 -t01,GPT-4,argumentation_and_clarification,5,0.35714285714285715
+"Samuel A. Alito, Jr.",2024.23-191 -t01,GPT-4,constitutional_issues,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-191 -t01,GPT-4,judicial_role_and_review,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-191 -t01,GPT-4,precedent_and_doctrine,6,0.42857142857142855
+"Samuel A. Alito, Jr.",2024.23-191 -t01,GPT-4,statutory_interpretation,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-191 -t01,LLaMA-3.1,argumentation_and_clarification,4,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-191 -t01,LLaMA-3.1,case_facts_and_context,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-191 -t01,LLaMA-3.1,constitutional_issues,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-191 -t01,LLaMA-3.1,judicial_role_and_review,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-191 -t01,LLaMA-3.1,precedent_and_doctrine,2,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-191 -t01,LLaMA-3.1,statutory_interpretation,3,0.25
+"Samuel A. Alito, Jr.",2024.23-217-t01,Actual,statutory_interpretation,2,1.0
+"Samuel A. Alito, Jr.",2024.23-217-t01,GPT-4,argumentation_and_clarification,6,0.5454545454545454
+"Samuel A. Alito, Jr.",2024.23-217-t01,GPT-4,precedent_and_doctrine,2,0.18181818181818182
+"Samuel A. Alito, Jr.",2024.23-217-t01,GPT-4,statutory_interpretation,3,0.2727272727272727
+"Samuel A. Alito, Jr.",2024.23-217-t01,LLaMA-3.1,argumentation_and_clarification,3,0.25
+"Samuel A. Alito, Jr.",2024.23-217-t01,LLaMA-3.1,judicial_role_and_review,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-217-t01,LLaMA-3.1,precedent_and_doctrine,2,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-217-t01,LLaMA-3.1,statutory_interpretation,6,0.5
+"Samuel A. Alito, Jr.",2024.23-365 -t01,Actual,argumentation_and_clarification,1,0.25
+"Samuel A. Alito, Jr.",2024.23-365 -t01,Actual,case_facts_and_context,1,0.25
+"Samuel A. Alito, Jr.",2024.23-365 -t01,Actual,statutory_interpretation,2,0.5
+"Samuel A. Alito, Jr.",2024.23-365 -t01,GPT-4,argumentation_and_clarification,5,0.29411764705882354
+"Samuel A. Alito, Jr.",2024.23-365 -t01,GPT-4,judicial_role_and_review,1,0.058823529411764705
+"Samuel A. Alito, Jr.",2024.23-365 -t01,GPT-4,precedent_and_doctrine,2,0.11764705882352941
+"Samuel A. Alito, Jr.",2024.23-365 -t01,GPT-4,statutory_interpretation,9,0.5294117647058824
+"Samuel A. Alito, Jr.",2024.23-365 -t01,LLaMA-3.1,argumentation_and_clarification,3,0.21428571428571427
+"Samuel A. Alito, Jr.",2024.23-365 -t01,LLaMA-3.1,judicial_role_and_review,2,0.14285714285714285
+"Samuel A. Alito, Jr.",2024.23-365 -t01,LLaMA-3.1,precedent_and_doctrine,2,0.14285714285714285
+"Samuel A. Alito, Jr.",2024.23-365 -t01,LLaMA-3.1,statutory_interpretation,7,0.5
+"Samuel A. Alito, Jr.",2024.23-583 -t01,Actual,judicial_role_and_review,1,1.0
+"Samuel A. Alito, Jr.",2024.23-583 -t01,GPT-4,argumentation_and_clarification,3,0.2
+"Samuel A. Alito, Jr.",2024.23-583 -t01,GPT-4,judicial_role_and_review,3,0.2
+"Samuel A. Alito, Jr.",2024.23-583 -t01,GPT-4,precedent_and_doctrine,1,0.06666666666666667
+"Samuel A. Alito, Jr.",2024.23-583 -t01,GPT-4,statutory_interpretation,8,0.5333333333333333
+"Samuel A. Alito, Jr.",2024.23-583 -t01,LLaMA-3.1,argumentation_and_clarification,5,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-583 -t01,LLaMA-3.1,judicial_role_and_review,6,0.4
+"Samuel A. Alito, Jr.",2024.23-583 -t01,LLaMA-3.1,statutory_interpretation,4,0.26666666666666666
+"Samuel A. Alito, Jr.",2024.23-621-t01,Actual,argumentation_and_clarification,2,0.6666666666666666
+"Samuel A. Alito, Jr.",2024.23-621-t01,Actual,statutory_interpretation,1,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-621-t01,GPT-4,argumentation_and_clarification,5,0.38461538461538464
+"Samuel A. Alito, Jr.",2024.23-621-t01,GPT-4,judicial_role_and_review,1,0.07692307692307693
+"Samuel A. Alito, Jr.",2024.23-621-t01,GPT-4,precedent_and_doctrine,1,0.07692307692307693
+"Samuel A. Alito, Jr.",2024.23-621-t01,GPT-4,statutory_interpretation,6,0.46153846153846156
+"Samuel A. Alito, Jr.",2024.23-621-t01,LLaMA-3.1,argumentation_and_clarification,6,0.42857142857142855
+"Samuel A. Alito, Jr.",2024.23-621-t01,LLaMA-3.1,case_facts_and_context,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-621-t01,LLaMA-3.1,statutory_interpretation,7,0.5
+"Samuel A. Alito, Jr.",2024.23-677-t01,Actual,argumentation_and_clarification,1,0.14285714285714285
+"Samuel A. Alito, Jr.",2024.23-677-t01,Actual,precedent_and_doctrine,4,0.5714285714285714
+"Samuel A. Alito, Jr.",2024.23-677-t01,Actual,statutory_interpretation,2,0.2857142857142857
+"Samuel A. Alito, Jr.",2024.23-677-t01,GPT-4,argumentation_and_clarification,6,0.42857142857142855
+"Samuel A. Alito, Jr.",2024.23-677-t01,GPT-4,precedent_and_doctrine,3,0.21428571428571427
+"Samuel A. Alito, Jr.",2024.23-677-t01,GPT-4,statutory_interpretation,5,0.35714285714285715
+"Samuel A. Alito, Jr.",2024.23-677-t01,LLaMA-3.1,argumentation_and_clarification,4,0.3333333333333333
+"Samuel A. Alito, Jr.",2024.23-677-t01,LLaMA-3.1,judicial_role_and_review,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-677-t01,LLaMA-3.1,precedent_and_doctrine,2,0.16666666666666666
+"Samuel A. Alito, Jr.",2024.23-677-t01,LLaMA-3.1,statutory_interpretation,5,0.4166666666666667
+"Samuel A. Alito, Jr.",2024.23-713-t01,Actual,argumentation_and_clarification,2,0.5
+"Samuel A. Alito, Jr.",2024.23-713-t01,Actual,statutory_interpretation,2,0.5
+"Samuel A. Alito, Jr.",2024.23-713-t01,GPT-4,argumentation_and_clarification,3,0.21428571428571427
+"Samuel A. Alito, Jr.",2024.23-713-t01,GPT-4,case_facts_and_context,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-713-t01,GPT-4,judicial_role_and_review,3,0.21428571428571427
+"Samuel A. Alito, Jr.",2024.23-713-t01,GPT-4,precedent_and_doctrine,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-713-t01,GPT-4,statutory_interpretation,6,0.42857142857142855
+"Samuel A. Alito, Jr.",2024.23-713-t01,LLaMA-3.1,argumentation_and_clarification,3,0.23076923076923078
+"Samuel A. Alito, Jr.",2024.23-713-t01,LLaMA-3.1,judicial_role_and_review,2,0.15384615384615385
+"Samuel A. Alito, Jr.",2024.23-713-t01,LLaMA-3.1,statutory_interpretation,8,0.6153846153846154
+"Samuel A. Alito, Jr.",2024.23-715-t01,Actual,precedent_and_doctrine,1,1.0
+"Samuel A. Alito, Jr.",2024.23-715-t01,GPT-4,argumentation_and_clarification,1,0.06666666666666667
+"Samuel A. Alito, Jr.",2024.23-715-t01,GPT-4,case_facts_and_context,1,0.06666666666666667
+"Samuel A. Alito, Jr.",2024.23-715-t01,GPT-4,precedent_and_doctrine,1,0.06666666666666667
+"Samuel A. Alito, Jr.",2024.23-715-t01,GPT-4,statutory_interpretation,12,0.8
+"Samuel A. Alito, Jr.",2024.23-715-t01,LLaMA-3.1,argumentation_and_clarification,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-715-t01,LLaMA-3.1,judicial_role_and_review,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-715-t01,LLaMA-3.1,precedent_and_doctrine,1,0.08333333333333333
+"Samuel A. Alito, Jr.",2024.23-715-t01,LLaMA-3.1,statutory_interpretation,9,0.75
+"Samuel A. Alito, Jr.",2024.23-753-t01,Actual,argumentation_and_clarification,2,0.4
+"Samuel A. Alito, Jr.",2024.23-753-t01,Actual,case_facts_and_context,1,0.2
+"Samuel A. Alito, Jr.",2024.23-753-t01,Actual,statutory_interpretation,2,0.4
+"Samuel A. Alito, Jr.",2024.23-753-t01,GPT-4,argumentation_and_clarification,5,0.3125
+"Samuel A. Alito, Jr.",2024.23-753-t01,GPT-4,case_facts_and_context,1,0.0625
+"Samuel A. Alito, Jr.",2024.23-753-t01,GPT-4,precedent_and_doctrine,2,0.125
+"Samuel A. Alito, Jr.",2024.23-753-t01,GPT-4,statutory_interpretation,8,0.5
+"Samuel A. Alito, Jr.",2024.23-753-t01,LLaMA-3.1,argumentation_and_clarification,6,0.46153846153846156
+"Samuel A. Alito, Jr.",2024.23-753-t01,LLaMA-3.1,judicial_role_and_review,3,0.23076923076923078
+"Samuel A. Alito, Jr.",2024.23-753-t01,LLaMA-3.1,statutory_interpretation,4,0.3076923076923077
+"Samuel A. Alito, Jr.",2024.23-852-t01,Actual,argumentation_and_clarification,2,0.2222222222222222
+"Samuel A. Alito, Jr.",2024.23-852-t01,Actual,case_facts_and_context,1,0.1111111111111111
+"Samuel A. Alito, Jr.",2024.23-852-t01,Actual,statutory_interpretation,6,0.6666666666666666
+"Samuel A. Alito, Jr.",2024.23-852-t01,GPT-4,argumentation_and_clarification,1,0.0625
+"Samuel A. Alito, Jr.",2024.23-852-t01,GPT-4,constitutional_issues,1,0.0625
+"Samuel A. Alito, Jr.",2024.23-852-t01,GPT-4,judicial_role_and_review,1,0.0625
+"Samuel A. Alito, Jr.",2024.23-852-t01,GPT-4,precedent_and_doctrine,1,0.0625
+"Samuel A. Alito, Jr.",2024.23-852-t01,GPT-4,statutory_interpretation,12,0.75
+"Samuel A. Alito, Jr.",2024.23-852-t01,LLaMA-3.1,argumentation_and_clarification,2,0.14285714285714285
+"Samuel A. Alito, Jr.",2024.23-852-t01,LLaMA-3.1,precedent_and_doctrine,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-852-t01,LLaMA-3.1,procedural_matters,1,0.07142857142857142
+"Samuel A. Alito, Jr.",2024.23-852-t01,LLaMA-3.1,statutory_interpretation,10,0.7142857142857143
+"Samuel A. Alito, Jr.",2024.23-980-t01,Actual,argumentation_and_clarification,7,1.0
+"Samuel A. Alito, Jr.",2024.23-980-t01,GPT-4,argumentation_and_clarification,11,0.6875
+"Samuel A. Alito, Jr.",2024.23-980-t01,GPT-4,judicial_role_and_review,1,0.0625
+"Samuel A. Alito, Jr.",2024.23-980-t01,GPT-4,precedent_and_doctrine,2,0.125
+"Samuel A. Alito, Jr.",2024.23-980-t01,GPT-4,statutory_interpretation,2,0.125
+"Samuel A. Alito, Jr.",2024.23-980-t01,LLaMA-3.1,argumentation_and_clarification,9,0.6923076923076923
+"Samuel A. Alito, Jr.",2024.23-980-t01,LLaMA-3.1,case_facts_and_context,1,0.07692307692307693
+"Samuel A. Alito, Jr.",2024.23-980-t01,LLaMA-3.1,statutory_interpretation,3,0.23076923076923078
+Sonia Sotomayor,2024.22-7466-t01,Actual,argumentation_and_clarification,9,0.47368421052631576
+Sonia Sotomayor,2024.22-7466-t01,Actual,case_facts_and_context,1,0.05263157894736842
+Sonia Sotomayor,2024.22-7466-t01,Actual,judicial_role_and_review,6,0.3157894736842105
+Sonia Sotomayor,2024.22-7466-t01,Actual,procedural_matters,1,0.05263157894736842
+Sonia Sotomayor,2024.22-7466-t01,Actual,statutory_interpretation,2,0.10526315789473684
+Sonia Sotomayor,2024.22-7466-t01,GPT-4,argumentation_and_clarification,5,0.38461538461538464
+Sonia Sotomayor,2024.22-7466-t01,GPT-4,case_facts_and_context,1,0.07692307692307693
+Sonia Sotomayor,2024.22-7466-t01,GPT-4,judicial_role_and_review,2,0.15384615384615385
+Sonia Sotomayor,2024.22-7466-t01,GPT-4,precedent_and_doctrine,2,0.15384615384615385
+Sonia Sotomayor,2024.22-7466-t01,GPT-4,procedural_matters,2,0.15384615384615385
+Sonia Sotomayor,2024.22-7466-t01,GPT-4,statutory_interpretation,1,0.07692307692307693
+Sonia Sotomayor,2024.22-7466-t01,LLaMA-3.1,argumentation_and_clarification,7,0.5833333333333334
+Sonia Sotomayor,2024.22-7466-t01,LLaMA-3.1,case_facts_and_context,2,0.16666666666666666
+Sonia Sotomayor,2024.22-7466-t01,LLaMA-3.1,judicial_role_and_review,3,0.25
+Sonia Sotomayor,2024.23-1127-t01,Actual,argumentation_and_clarification,3,0.6
+Sonia Sotomayor,2024.23-1127-t01,Actual,statutory_interpretation,2,0.4
+Sonia Sotomayor,2024.23-1127-t01,GPT-4,argumentation_and_clarification,1,0.0625
+Sonia Sotomayor,2024.23-1127-t01,GPT-4,case_facts_and_context,1,0.0625
+Sonia Sotomayor,2024.23-1127-t01,GPT-4,judicial_role_and_review,4,0.25
+Sonia Sotomayor,2024.23-1127-t01,GPT-4,precedent_and_doctrine,1,0.0625
+Sonia Sotomayor,2024.23-1127-t01,GPT-4,statutory_interpretation,9,0.5625
+Sonia Sotomayor,2024.23-1127-t01,LLaMA-3.1,argumentation_and_clarification,6,0.5
+Sonia Sotomayor,2024.23-1127-t01,LLaMA-3.1,case_facts_and_context,1,0.08333333333333333
+Sonia Sotomayor,2024.23-1127-t01,LLaMA-3.1,statutory_interpretation,5,0.4166666666666667
+Sonia Sotomayor,2024.23-191 -t01,Actual,argumentation_and_clarification,6,0.75
+Sonia Sotomayor,2024.23-191 -t01,Actual,case_facts_and_context,2,0.25
+Sonia Sotomayor,2024.23-191 -t01,GPT-4,argumentation_and_clarification,2,0.14285714285714285
+Sonia Sotomayor,2024.23-191 -t01,GPT-4,constitutional_issues,1,0.07142857142857142
+Sonia Sotomayor,2024.23-191 -t01,GPT-4,judicial_role_and_review,3,0.21428571428571427
+Sonia Sotomayor,2024.23-191 -t01,GPT-4,precedent_and_doctrine,4,0.2857142857142857
+Sonia Sotomayor,2024.23-191 -t01,GPT-4,statutory_interpretation,4,0.2857142857142857
+Sonia Sotomayor,2024.23-191 -t01,LLaMA-3.1,argumentation_and_clarification,6,0.46153846153846156
+Sonia Sotomayor,2024.23-191 -t01,LLaMA-3.1,judicial_role_and_review,3,0.23076923076923078
+Sonia Sotomayor,2024.23-191 -t01,LLaMA-3.1,precedent_and_doctrine,2,0.15384615384615385
+Sonia Sotomayor,2024.23-191 -t01,LLaMA-3.1,procedural_matters,1,0.07692307692307693
+Sonia Sotomayor,2024.23-191 -t01,LLaMA-3.1,statutory_interpretation,1,0.07692307692307693
+Sonia Sotomayor,2024.23-217-t01,Actual,argumentation_and_clarification,2,1.0
+Sonia Sotomayor,2024.23-217-t01,GPT-4,argumentation_and_clarification,4,0.3076923076923077
+Sonia Sotomayor,2024.23-217-t01,GPT-4,case_facts_and_context,1,0.07692307692307693
+Sonia Sotomayor,2024.23-217-t01,GPT-4,precedent_and_doctrine,2,0.15384615384615385
+Sonia Sotomayor,2024.23-217-t01,GPT-4,statutory_interpretation,6,0.46153846153846156
+Sonia Sotomayor,2024.23-217-t01,LLaMA-3.1,argumentation_and_clarification,6,0.46153846153846156
+Sonia Sotomayor,2024.23-217-t01,LLaMA-3.1,judicial_role_and_review,2,0.15384615384615385
+Sonia Sotomayor,2024.23-217-t01,LLaMA-3.1,precedent_and_doctrine,2,0.15384615384615385
+Sonia Sotomayor,2024.23-217-t01,LLaMA-3.1,statutory_interpretation,3,0.23076923076923078
+Sonia Sotomayor,2024.23-365 -t01,GPT-4,argumentation_and_clarification,4,0.26666666666666666
+Sonia Sotomayor,2024.23-365 -t01,GPT-4,precedent_and_doctrine,4,0.26666666666666666
+Sonia Sotomayor,2024.23-365 -t01,GPT-4,statutory_interpretation,7,0.4666666666666667
+Sonia Sotomayor,2024.23-365 -t01,LLaMA-3.1,argumentation_and_clarification,1,0.07692307692307693
+Sonia Sotomayor,2024.23-365 -t01,LLaMA-3.1,precedent_and_doctrine,1,0.07692307692307693
+Sonia Sotomayor,2024.23-365 -t01,LLaMA-3.1,statutory_interpretation,11,0.8461538461538461
+Sonia Sotomayor,2024.23-583 -t01,Actual,argumentation_and_clarification,2,1.0
+Sonia Sotomayor,2024.23-583 -t01,GPT-4,argumentation_and_clarification,5,0.3333333333333333
+Sonia Sotomayor,2024.23-583 -t01,GPT-4,judicial_role_and_review,4,0.26666666666666666
+Sonia Sotomayor,2024.23-583 -t01,GPT-4,precedent_and_doctrine,1,0.06666666666666667
+Sonia Sotomayor,2024.23-583 -t01,GPT-4,procedural_matters,1,0.06666666666666667
+Sonia Sotomayor,2024.23-583 -t01,GPT-4,statutory_interpretation,4,0.26666666666666666
+Sonia Sotomayor,2024.23-583 -t01,LLaMA-3.1,argumentation_and_clarification,2,0.15384615384615385
+Sonia Sotomayor,2024.23-583 -t01,LLaMA-3.1,judicial_role_and_review,8,0.6153846153846154
+Sonia Sotomayor,2024.23-583 -t01,LLaMA-3.1,precedent_and_doctrine,1,0.07692307692307693
+Sonia Sotomayor,2024.23-583 -t01,LLaMA-3.1,statutory_interpretation,2,0.15384615384615385
+Sonia Sotomayor,2024.23-621-t01,Actual,argumentation_and_clarification,1,0.5
+Sonia Sotomayor,2024.23-621-t01,Actual,case_facts_and_context,1,0.5
+Sonia Sotomayor,2024.23-621-t01,GPT-4,argumentation_and_clarification,6,0.5
+Sonia Sotomayor,2024.23-621-t01,GPT-4,judicial_role_and_review,1,0.08333333333333333
+Sonia Sotomayor,2024.23-621-t01,GPT-4,precedent_and_doctrine,2,0.16666666666666666
+Sonia Sotomayor,2024.23-621-t01,GPT-4,statutory_interpretation,3,0.25
+Sonia Sotomayor,2024.23-621-t01,LLaMA-3.1,argumentation_and_clarification,5,0.4166666666666667
+Sonia Sotomayor,2024.23-621-t01,LLaMA-3.1,case_facts_and_context,1,0.08333333333333333
+Sonia Sotomayor,2024.23-621-t01,LLaMA-3.1,judicial_role_and_review,1,0.08333333333333333
+Sonia Sotomayor,2024.23-621-t01,LLaMA-3.1,precedent_and_doctrine,2,0.16666666666666666
+Sonia Sotomayor,2024.23-621-t01,LLaMA-3.1,statutory_interpretation,3,0.25
+Sonia Sotomayor,2024.23-677-t01,Actual,argumentation_and_clarification,1,0.2
+Sonia Sotomayor,2024.23-677-t01,Actual,case_facts_and_context,2,0.4
+Sonia Sotomayor,2024.23-677-t01,Actual,statutory_interpretation,2,0.4
+Sonia Sotomayor,2024.23-677-t01,GPT-4,argumentation_and_clarification,6,0.375
+Sonia Sotomayor,2024.23-677-t01,GPT-4,case_facts_and_context,1,0.0625
+Sonia Sotomayor,2024.23-677-t01,GPT-4,precedent_and_doctrine,3,0.1875
+Sonia Sotomayor,2024.23-677-t01,GPT-4,statutory_interpretation,6,0.375
+Sonia Sotomayor,2024.23-677-t01,LLaMA-3.1,argumentation_and_clarification,4,0.3076923076923077
+Sonia Sotomayor,2024.23-677-t01,LLaMA-3.1,judicial_role_and_review,1,0.07692307692307693
+Sonia Sotomayor,2024.23-677-t01,LLaMA-3.1,precedent_and_doctrine,3,0.23076923076923078
+Sonia Sotomayor,2024.23-677-t01,LLaMA-3.1,statutory_interpretation,5,0.38461538461538464
+Sonia Sotomayor,2024.23-713-t01,Actual,argumentation_and_clarification,2,0.2857142857142857
+Sonia Sotomayor,2024.23-713-t01,Actual,statutory_interpretation,5,0.7142857142857143
+Sonia Sotomayor,2024.23-713-t01,GPT-4,argumentation_and_clarification,5,0.35714285714285715
+Sonia Sotomayor,2024.23-713-t01,GPT-4,case_facts_and_context,1,0.07142857142857142
+Sonia Sotomayor,2024.23-713-t01,GPT-4,judicial_role_and_review,1,0.07142857142857142
+Sonia Sotomayor,2024.23-713-t01,GPT-4,precedent_and_doctrine,1,0.07142857142857142
+Sonia Sotomayor,2024.23-713-t01,GPT-4,statutory_interpretation,6,0.42857142857142855
+Sonia Sotomayor,2024.23-713-t01,LLaMA-3.1,argumentation_and_clarification,1,0.07142857142857142
+Sonia Sotomayor,2024.23-713-t01,LLaMA-3.1,case_facts_and_context,1,0.07142857142857142
+Sonia Sotomayor,2024.23-713-t01,LLaMA-3.1,judicial_role_and_review,3,0.21428571428571427
+Sonia Sotomayor,2024.23-713-t01,LLaMA-3.1,precedent_and_doctrine,1,0.07142857142857142
+Sonia Sotomayor,2024.23-713-t01,LLaMA-3.1,statutory_interpretation,8,0.5714285714285714
+Sonia Sotomayor,2024.23-715-t01,Actual,argumentation_and_clarification,2,0.6666666666666666
+Sonia Sotomayor,2024.23-715-t01,Actual,statutory_interpretation,1,0.3333333333333333
+Sonia Sotomayor,2024.23-715-t01,GPT-4,argumentation_and_clarification,4,0.26666666666666666
+Sonia Sotomayor,2024.23-715-t01,GPT-4,case_facts_and_context,3,0.2
+Sonia Sotomayor,2024.23-715-t01,GPT-4,statutory_interpretation,8,0.5333333333333333
+Sonia Sotomayor,2024.23-715-t01,LLaMA-3.1,argumentation_and_clarification,3,0.25
+Sonia Sotomayor,2024.23-715-t01,LLaMA-3.1,judicial_role_and_review,2,0.16666666666666666
+Sonia Sotomayor,2024.23-715-t01,LLaMA-3.1,precedent_and_doctrine,2,0.16666666666666666
+Sonia Sotomayor,2024.23-715-t01,LLaMA-3.1,statutory_interpretation,5,0.4166666666666667
+Sonia Sotomayor,2024.23-753-t01,Actual,argumentation_and_clarification,3,0.375
+Sonia Sotomayor,2024.23-753-t01,Actual,case_facts_and_context,2,0.25
+Sonia Sotomayor,2024.23-753-t01,Actual,statutory_interpretation,3,0.375
+Sonia Sotomayor,2024.23-753-t01,GPT-4,argumentation_and_clarification,5,0.3333333333333333
+Sonia Sotomayor,2024.23-753-t01,GPT-4,case_facts_and_context,1,0.06666666666666667
+Sonia Sotomayor,2024.23-753-t01,GPT-4,judicial_role_and_review,1,0.06666666666666667
+Sonia Sotomayor,2024.23-753-t01,GPT-4,precedent_and_doctrine,1,0.06666666666666667
+Sonia Sotomayor,2024.23-753-t01,GPT-4,statutory_interpretation,7,0.4666666666666667
+Sonia Sotomayor,2024.23-753-t01,LLaMA-3.1,argumentation_and_clarification,2,0.14285714285714285
+Sonia Sotomayor,2024.23-753-t01,LLaMA-3.1,judicial_role_and_review,8,0.5714285714285714
+Sonia Sotomayor,2024.23-753-t01,LLaMA-3.1,statutory_interpretation,4,0.2857142857142857
+Sonia Sotomayor,2024.23-852-t01,Actual,argumentation_and_clarification,2,0.2222222222222222
+Sonia Sotomayor,2024.23-852-t01,Actual,case_facts_and_context,1,0.1111111111111111
+Sonia Sotomayor,2024.23-852-t01,Actual,judicial_role_and_review,1,0.1111111111111111
+Sonia Sotomayor,2024.23-852-t01,Actual,precedent_and_doctrine,1,0.1111111111111111
+Sonia Sotomayor,2024.23-852-t01,Actual,statutory_interpretation,4,0.4444444444444444
+Sonia Sotomayor,2024.23-852-t01,GPT-4,argumentation_and_clarification,2,0.14285714285714285
+Sonia Sotomayor,2024.23-852-t01,GPT-4,case_facts_and_context,1,0.07142857142857142
+Sonia Sotomayor,2024.23-852-t01,GPT-4,statutory_interpretation,11,0.7857142857142857
+Sonia Sotomayor,2024.23-852-t01,LLaMA-3.1,argumentation_and_clarification,2,0.15384615384615385
+Sonia Sotomayor,2024.23-852-t01,LLaMA-3.1,case_facts_and_context,2,0.15384615384615385
+Sonia Sotomayor,2024.23-852-t01,LLaMA-3.1,judicial_role_and_review,4,0.3076923076923077
+Sonia Sotomayor,2024.23-852-t01,LLaMA-3.1,statutory_interpretation,5,0.38461538461538464
+Sonia Sotomayor,2024.23-980-t01,Actual,argumentation_and_clarification,1,0.3333333333333333
+Sonia Sotomayor,2024.23-980-t01,Actual,case_facts_and_context,1,0.3333333333333333
+Sonia Sotomayor,2024.23-980-t01,Actual,statutory_interpretation,1,0.3333333333333333
+Sonia Sotomayor,2024.23-980-t01,GPT-4,argumentation_and_clarification,11,0.6875
+Sonia Sotomayor,2024.23-980-t01,GPT-4,judicial_role_and_review,1,0.0625
+Sonia Sotomayor,2024.23-980-t01,GPT-4,precedent_and_doctrine,1,0.0625
+Sonia Sotomayor,2024.23-980-t01,GPT-4,statutory_interpretation,3,0.1875
+Sonia Sotomayor,2024.23-980-t01,LLaMA-3.1,argumentation_and_clarification,9,0.6428571428571429
+Sonia Sotomayor,2024.23-980-t01,LLaMA-3.1,judicial_role_and_review,1,0.07142857142857142
+Sonia Sotomayor,2024.23-980-t01,LLaMA-3.1,precedent_and_doctrine,1,0.07142857142857142
+Sonia Sotomayor,2024.23-980-t01,LLaMA-3.1,statutory_interpretation,3,0.21428571428571427

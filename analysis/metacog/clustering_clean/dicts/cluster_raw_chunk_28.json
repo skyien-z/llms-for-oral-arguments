@@ -1,0 +1,95 @@
+{
+    "clarifying_and_interpreting_statutes": {
+        "description": "Properties related to understanding and clarifying the meaning and application of statutes.",
+        "properties_in_category": [
+            "clarifying_statutory_grounding",
+            "clarifying_clear_statement_requirement",
+            "clarifying_ambiguity_in_statutory_definition",
+            "questioning_statutory_language_omission",
+            "questioning_statutory_intent",
+            "considering_statutory_interpretation_alternatives",
+            "challenging_statutory_interpretation_through_clear_statement_rule",
+            "evaluating_statutory_language_clarity",
+            "evaluating_statute_clarity_and_notice_to_unintended_parties"
+        ]
+    },
+    "examining_precedent_and_analogies": {
+        "description": "Properties related to analyzing and applying precedent and analogies to the case at hand.",
+        "properties_in_category": [
+            "distinguishing_from_precedent",
+            "distinguishing_precedent_from_facts",
+            "distinguishing_precedent_and_analogies",
+            "comparing_to_precedent_cases",
+            "inviting_comparative_analysis_to_similar_precedent",
+            "highlighting_analogies_and_distinctions",
+            "challenging_analogy_to_tribal_instrumentalities",
+            "challenging_analogy_and_implications"
+        ]
+    },
+    "understanding_counsel_arguments_and_theories": {
+        "description": "Properties related to understanding and clarifying the arguments and theories presented by counsel.",
+        "properties_in_category": [
+            "understanding_counsel_theory",
+            "clarifying_counsel_argument_and_implications",
+            "acknowledging_opposing_argument",
+            "addressing_counterargument_by_opposing_counsel",
+            "challenging_argument_by_identifying_alternative_processes"
+        ]
+    },
+    "evaluating_evidence_and_relevance": {
+        "description": "Properties related to evaluating the relevance and admissibility of evidence.",
+        "properties_in_category": [
+            "challenging_evidentiary_relevance",
+            "assessing_evidence_admissibility",
+            "scrutinizing_evidentiary_hierarchy",
+            "examining_circumstantial_evidence_for_agency",
+            "examining_circumstantial_evidence_for_agency_relationship"
+        ]
+    },
+    "probing_limits_and_boundaries": {
+        "description": "Properties related to testing the limits and boundaries of rules, laws, and concepts.",
+        "properties_in_category": [
+            "probing_limits_of_evidentiary_rules_in_trial_practice",
+            "testing_expert_testimony_limits",
+            "testing_rule_application_with_hypothetical_scenarios",
+            "probing_hypothetical_edge_cases",
+            "testing_hypothetical_scenarios_to_examine_scope"
+        ]
+    },
+    "clarifying_definitions_and_elements": {
+        "description": "Properties related to clarifying definitions and elements of laws, rules, and concepts.",
+        "properties_in_category": [
+            "clarifying_key_terms_or_elements",
+            "clarifying_element_of_crime",
+            "clarifying_legal_element_definition",
+            "clarifying_clear_statement_requirement",
+            "clarifying_key_elements_of_proposed_test"
+        ]
+    },
+    "examining_agency_relationships_and_authority": {
+        "description": "Properties related to examining agency relationships and authority.",
+        "properties_in_category": [
+            "examining_the_boundaries_of_official_authority",
+            "clarifying_agency_review_process",
+            "probing_boundaries_of_statutory_coverage"
+        ]
+    },
+    "considering_statutory_interpretation_and_application": {
+        "description": "Properties related to considering statutory interpretation and application.",
+        "properties_in_category": [
+            "examining_statutory_interpretation_and_argument_preservation",
+            "request_for_statutory_analysis",
+            "clarifying_scope_of_private_remedy_preclusion",
+            "evaluating_request_to_overturn_precedent"
+        ]
+    },
+    "highlighting_potential_problems_and_consequences": {
+        "description": "Properties related to highlighting potential problems and consequences of laws, rules, and concepts.",
+        "properties_in_category": [
+            "highlighting_potential_defense_drawbacks",
+            "assessing_unintended_consequences_on_interested_party",
+            "evaluating_effectiveness_of_alleged_remedy",
+            "testing_counterfactual_scenarios"
+        ]
+    }
+}

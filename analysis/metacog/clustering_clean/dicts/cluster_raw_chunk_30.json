@@ -1,0 +1,132 @@
+{
+    "clarifying_statutory_interpretation": {
+        "description": "Properties related to clarifying statutory interpretation, understanding legislative intent, and exploring boundaries of statutory language.",
+        "properties_in_category": [
+            "clarifying_statutory_interpretation_disagreement",
+            "clarifying_statutory_interpretation_and_argument",
+            "clarifying_statutory_boundaries",
+            "clarifying_statutory_protections_for_neutral_or_non_neutral_content",
+            "clarifying_statutory_application_to_specific_scenarios",
+            "clarifying_statutory_application_to_specific_scenario",
+            "evaluating_statutory_interpretation_and_intent",
+            "evaluating_alternative_interpretations_and_implications",
+            "challenging_statutory_interpretation_and_argument",
+            "challenging_statutory_interpretation_method",
+            "challenging_statutory_interpretation_through_legislative_history",
+            "examining_interpretation_of_statutory_language",
+            "applying_statutory_language_to_hypothetical_situations",
+            "applying_statutory_language_to_specific_scenarios",
+            "probing_statutory_intent_and_legislative_history",
+            "probing_statutory_application_boundaries",
+            "testing_statutory_application_to_specific_scenarios",
+            "challenging_statutory_interpretation_by_absence_of_explicit_exclusion",
+            "challenging_statutory_interpretation_for_internal_consistency",
+            "reconciling_statutory_language_with_title",
+            "exploring_statutory_application_to_specific_scenarios"
+        ]
+    },
+    "assessing_argument_strength": {
+        "description": "Properties related to assessing the strength of an argument, evaluating its implications, and identifying potential weaknesses.",
+        "properties_in_category": [
+            "assessing_opponent's_argument",
+            "evaluating_necessity_of_further_proceedings",
+            "evaluating_proportionality_and_fairness",
+            "evaluating_theory_applications_and_distinctions",
+            "evaluating_extreme_scenario_implications",
+            "evaluating_liability_thresholds",
+            "evaluating_alternative_outcomes_and_remand_options",
+            "evaluating_judicial_impact_on_stakeholders",
+            "assessing_broader_litigation_implications",
+            "assessing_claimants_position_on_procedural_requirements",
+            "assessing_definition_implications_across_statutes",
+            "assessing_statutory_application_in_modern_context"
+        ]
+    },
+    "probing_congressional_intent": {
+        "description": "Properties related to probing congressional intent, understanding legislative history, and exploring the boundaries of statutory language.",
+        "properties_in_category": [
+            "probing_congressional_intent_and_policy",
+            "probing_statutory_intent_and_legislative_history",
+            "examining_congressional_authority_limits",
+            "examining_statutory_exceptions_and_precedents",
+            "examining_statutory_interpretation_options",
+            "inviting_congressional_intervention_due_to_interpretation_complexity"
+        ]
+    },
+    "examining_argument_components": {
+        "description": "Properties related to examining the components of an argument, identifying key assumptions, and evaluating the argument's core.",
+        "properties_in_category": [
+            "identifying_crux_of_the_issue",
+            "identifying_foundational_principles",
+            "identifying_underlying_concerns",
+            "identifying_limitations_of_proposed_rule",
+            "clarifying_argument_core",
+            "clarifying_argument_means_and_ends",
+            "clarifying_central_argument",
+            "reconciling_precedents_with_current_argument"
+        ]
+    },
+    "challenging_statutory_application": {
+        "description": "Properties related to challenging statutory application, testing alternative views, and exploring the boundaries of statutory language.",
+        "properties_in_category": [
+            "challenging_statutory_application",
+            "challenging_statutory_interpretation_and_testing_alternative_views",
+            "challenging_statutory_interpretation_by_absence_of_explicit_exclusion",
+            "challenging_statutory_interpretation_for_internal_consistency",
+            "testing_statutory_application_to_specific_scenarios",
+            "applying_statutory_language_to_hypothetical_situations",
+            "applying_statutory_language_to_specific_scenarios",
+            "probing_statutory_application_boundaries"
+        ]
+    },
+    "clarifying_legal_concepts": {
+        "description": "Properties related to clarifying legal concepts, understanding key entities, and exploring analogies to understand delegated authority.",
+        "properties_in_category": [
+            "clarifying_government_power_limits",
+            "clarifying_the_timing_of_the_taking",
+            "clarifying_scope_of_theory",
+            "clarifying_counterarguments",
+            "clarifying_litigation_strategy_shift",
+            "clarifying_liability_scope",
+            "clarifying_publisher_definition",
+            "clarifying_exceptions_to_immunity",
+            "clarifying_applicability_to_specific_scenarios",
+            "clarifying_and_summarizing_argument",
+            "drawing_analogy_with_existing_doctrine",
+            "understanding_key_entities_by_analogy",
+            "exploring_analogies_to_understand_delegated_authority"
+        ]
+    },
+    "evaluating_precedent": {
+        "description": "Properties related to evaluating precedent, reconciling precedents with current arguments, and exploring the implications of precedent.",
+        "properties_in_category": [
+            "evaluating_precedent_and_external_implications",
+            "reconciling_precedents_with_current_argument",
+            "challenging_precedent_and_revision_of_standard",
+            "clarifying_existing_framework"
+        ]
+    },
+    "proposing_alternative_solutions": {
+        "description": "Properties related to proposing alternative solutions, exploring alternative scenarios, and evaluating the implications of alternative solutions.",
+        "properties_in_category": [
+            "proposing_alternative_remedies",
+            "comparing_alternative_plans",
+            "examining_alternative_redistricting_scenarios",
+            "exploring_alternative_authority_structures",
+            "evaluating_alternative_outcomes_and_remand_options",
+            "examining_hypothetical_compliance_with_statutory_requirements"
+        ]
+    },
+    "clarifying_agency_authority": {
+        "description": "Properties related to clarifying agency authority, understanding agency hierarchy, and exploring the boundaries of agency power.",
+        "properties_in_category": [
+            "clarifying_authority_and_jurisdiction",
+            "clarifying_dual_status_employment",
+            "congressional_intent_and_agency_authority",
+            "clarifying_applicable_law",
+            "clarifying_agent_representation_relationship",
+            "examining_agency_hierarchy_and_authority",
+            "clarifying_scope_of_agency_status"
+        ]
+    }
+}

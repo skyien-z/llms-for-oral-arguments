@@ -1,0 +1,153 @@
+{
+    "clarifying_regulations": {
+        "description": "Properties related to clarifying regulations, laws, and statutes.",
+        "properties_in_category": [
+            "clarifying_regulatory_application_requirements",
+            "clarifying_interpretation_of_regulation",
+            "challenging_interpretation_of_regulatory_language",
+            "clarifying_regulatory_language",
+            "assessing_compliance_with_regulatory_requirements",
+            "clarifying_regulatory_terms_and_applications",
+            "understanding_regulatory_structure_and_applicability",
+            "clarifying_agency_guidance",
+            "clarifying_agency_regulations",
+            "clarifying_regulatory_relationships"
+        ]
+    },
+    "evaluating_statutes": {
+        "description": "Properties related to evaluating statutes, laws, and provisions.",
+        "properties_in_category": [
+            "evaluating_statutory_language_alternatives",
+            "evaluating_statutory_relationships",
+            "examining_statutory_language_and_intent",
+            "interpreting_statutory_language_and_intent",
+            "evaluating_congressional_intent_and_clear_statement_requirements",
+            "clarifying_statutory_language_requirements",
+            "testing_statutory_language_for_jurisdictional_implications"
+        ]
+    },
+    "clarifying_procedures": {
+        "description": "Properties related to clarifying procedures, processes, and standards.",
+        "properties_in_category": [
+            "clarifying_evidentiary_standards",
+            "clarifying_appellate_review_proceedings",
+            "seeking_clarification_on_procedural_steps",
+            "assessing_procedural_timing",
+            "evaluating_procedural_options",
+            "clarifying_certiorari_grant_scope"
+        ]
+    },
+    "examining_analogies": {
+        "description": "Properties related to examining analogies, comparisons, and distinctions.",
+        "properties_in_category": [
+            "challenging_analogy_extension",
+            "challenging_analogy_between_legal_concepts",
+            "analogy_based_limitations_testing"
+        ]
+    },
+    "clarifying_facts": {
+        "description": "Properties related to clarifying facts, assumptions, and hypotheticals.",
+        "properties_in_category": [
+            "clarifying_facts",
+            "requesting_clarification_on_historical_context",
+            "eliciting_factual_details",
+            "eliciting_factual_context_for_navigability",
+            "clarifying_facts_about_respondent_job_duties",
+            "establishing_contextual_facts"
+        ]
+    },
+    "evaluating_test_applicability": {
+        "description": "Properties related to evaluating test applicability, clarity, and limitations.",
+        "properties_in_category": [
+            "evaluating_test_applicability_and_clarity",
+            "testing_the_limits_of_agency_interpretation",
+            "testing_limitations_of_proposed_standard",
+            "probing_application_of_proposed_test",
+            "examining_test_application_challenges"
+        ]
+    },
+    "clarifying_statutory_history": {
+        "description": "Properties related to clarifying statutory history, intent, and purpose.",
+        "properties_in_category": [
+            "clarifying_statutory_history",
+            "understanding_statutory_intent",
+            "understanding_statutory_history_and_purpose",
+            "historical_contextualization",
+            "historical_context_clarification"
+        ]
+    },
+    "challenging_interpretations": {
+        "description": "Properties related to challenging interpretations, assumptions, and applications.",
+        "properties_in_category": [
+            "challenging_interpretation_with_alternative_view",
+            "challenging_interpretation_of_salary_basis_test",
+            "challenging_interpretation_of_regulatory_language",
+            "challenging_attorney_client_privilege_application",
+            "challenging_fact_assumptions"
+        ]
+    },
+    "clarifying_definitions": {
+        "description": "Properties related to clarifying definitions, terms, and concepts.",
+        "properties_in_category": [
+            "clarifying_legal_definitions",
+            "clarifying_key_language_elements",
+            "clarifying_meaning_of_terms_through_hypotheticals",
+            "clarifying_test_definitions",
+            "clarifying_interpreter's_definition"
+        ]
+    },
+    "evaluating_implications": {
+        "description": "Properties related to evaluating implications, consequences, and potential flaws.",
+        "properties_in_category": [
+            "evaluating_implications_on_precedent",
+            "evaluating_preferred_outcome_in_adverse_ruling",
+            "evaluating_regulatory_clarity_and_application",
+            "assessing_agency_discretion",
+            "addressing_potential_theory_flaws"
+        ]
+    },
+    "probing_limits": {
+        "description": "Properties related to probing limits, exceptions, and jurisdictional implications.",
+        "properties_in_category": [
+            "probing_scope_of_constitutional_remedy",
+            "probing_limits_of_doctrine_application",
+            "testing_statutory_language_for_jurisdictional_implications",
+            "highlighting_jurisdictional_distinctions"
+        ]
+    },
+    "seeking_clarification": {
+        "description": "Properties related to seeking clarification, justification, and authority.",
+        "properties_in_category": [
+            "requesting_authoritative_precedent",
+            "requesting_clarification_on_legal_path_forward",
+            "requesting_clarification_of_facts_specific_to_the_case",
+            "request_for_clarification_on_statutory_interpretation",
+            "requesting_justification_for_agency_interpretation"
+        ]
+    },
+    "comparing_alternatives": {
+        "description": "Properties related to comparing alternatives, provisions, and entities.",
+        "properties_in_category": [
+            "comparing_statutory_provisions_for_consistency",
+            "comparing_alternative_tests_for_privilege",
+            "comparing_applicability_to_similar_entities"
+        ]
+    },
+    "highlighting_limitations": {
+        "description": "Properties related to highlighting limitations, complexities, and potential abuse.",
+        "properties_in_category": [
+            "highlighting_existing_limitations",
+            "highlighting_practical_challenges_of_applying_a_test",
+            "assessing_rule_Complexity_and_abuse_potential"
+        ]
+    },
+    "confronting_statutory_interpretation": {
+        "description": "Properties related to confronting statutory interpretation, assumptions, and underlying analysis.",
+        "properties_in_category": [
+            "confronting_statutory_interpretation",
+            "scrutinizing_statutory_language",
+            "challenging_statutory_interpretation_breadth",
+            "challenging_statutory_interpretation_through_statutory_analysis"
+        ]
+    }
+}

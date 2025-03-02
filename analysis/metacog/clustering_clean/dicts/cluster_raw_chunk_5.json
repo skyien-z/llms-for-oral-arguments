@@ -1,0 +1,134 @@
+{
+    "clarifying_statutory_authority": {
+        "description": "Properties related to understanding and clarifying the scope and limits of statutory authority.",
+        "properties_in_category": [
+            "clarifying_statutory_authority",
+            "clarifying_statutory_scope_and_intent",
+            "clarifying_statutory_limits_and_state_discretion",
+            "clarifying_statutory_applications",
+            "clarifying_statutory_language_and_implications",
+            "clarifying_statutory_definitions",
+            "raising_statutory_interpretation_concerns",
+            "probing_interpreter's_confidence_in_statutory_clarity",
+            "seeking_clarification_on_statutory_definition",
+            "assessing_statutory_interplay_and_preemption",
+            "highlighting_statutory_inconsistencies",
+            "challenging_statutory_interpretation_and_identifying_potential_conflicts",
+            "examining_statutory_application_and_procedural_limits"
+        ]
+    },
+    "examining_federalism_and_jurisdiction": {
+        "description": "Properties related to examining federalism, jurisdiction, and the implications of state and national authority.",
+        "properties_in_category": [
+            "challenging_federalism_and_jurisdiction",
+            "examining_state_authority_and_national_implications",
+            "examining_standard_of_review_and_federalism_implications",
+            "testing_state_authority_limits",
+            "testing_limits_of_state_discretion",
+            "challenging_federalism_boundary",
+            "clarifying_limits_of_state_authority",
+            "evaluating_democratic_implications",
+            "identifying_potential_conflicts_between_federal_and_state_laws",
+            "testing_the_boundaries_of_state_law_preemption",
+            "challenging_federal_preemption_analysis"
+        ]
+    },
+    "clarifying_precedent_and_procedural_analogy": {
+        "description": "Properties related to understanding and clarifying precedent and procedural analogy.",
+        "properties_in_category": [
+            "acknowledging_and_confirming_existing_precedent",
+            "clarifying_preceding_argument",
+            "inquiring_about_precedent_and_procedural_analogy",
+            "identifying_standard_procedural_practice",
+            "precedent_searching_and_comparing",
+            "evaluating_procedural_relevance",
+            "challenging_precedent_avoidance_strategy",
+            "evaluating_exception_to_prudential_standards"
+        ]
+    },
+    "examining_argument_clarification_and_application": {
+        "description": "Properties related to examining argument clarification and application, including testing boundaries and implications.",
+        "properties_in_category": [
+            "clarifying_scope_of_argument",
+            "clarifying_theory_of_disqualification",
+            "assessing_implications_of_disqualification",
+            "challenging_theory_with_hypothetical_scenario",
+            "probing_argument_clarification_on_officer_office_distinction",
+            "clarifying_key_definitions",
+            "clarifying_application_scope",
+            "clarifying_liability_implications",
+            "examining_implications_of_emerging_technology_on_existing_rules",
+            "challenging_test_application_with_hypothetical_scenario",
+            "clarifying_capacity_determination",
+            "identifying_key_elements_of_dispute",
+            "clarifying_test_parameters",
+            "distinguishing_between_official_and_personal_capacity",
+            "clarifying_boundary_conditions",
+            "probing_the_line_between_personal_and_official_capacity",
+            "applying_the_state_action_test_to_a_hypothetical_scenario",
+            "clarifying_state_action_test_criteria",
+            "evaluating_and_refining_alternative_tests",
+            "applying_test_to_specific_scenario",
+            "seeking_clarification_through_analogy",
+            "probing_boundary_cases",
+            "clarifying_definition_of_key_terms",
+            "comparing_competing_tests_for_state_action",
+            "highlighting_difficulty_in_applying_test_to_various_officials",
+            "identifying_official_capacity_determination_issues",
+            "clarifying_capacity_determination_for_blocking",
+            "probing_the_burden_of_proof",
+            "challenging_test_boundaries",
+            "clarifying_key_term_definition",
+            "testing_framework_with_edge_cases",
+            "examining_customary_duty_implications",
+            "clarifying_key_factors_for_state_action",
+            "evaluating_framework_exceptions",
+            "testing_framework_with_hypothetical_variations",
+            "examining_underlying_duty_definitions",
+            "examining_potential_abuses_and_loopholes",
+            "challenging_the_implication_of_state_action_classification",
+            "clarifying_the_proposed_test",
+            "clarifying_and_challenging_definition_of_key_concept",
+            "distinguishing_public_and_private_action",
+            "clarifying_key_terms_and_definitions",
+            "clarifying_implications_of_additional_context",
+            "exploring_boundary_conditions_of_policy_test"
+        ]
+    },
+    "assessing_procedural_implications_and_jurisdictional_manipulation": {
+        "description": "Properties related to assessing procedural implications and jurisdictional manipulation, including evaluating procedural efficiency and proposing alternative procedural resolutions.",
+        "properties_in_category": [
+            "evaluating_procedural_implications_and_jurisdictional_manipulation",
+            "probing_alternative_procedural_strategies",
+            "evaluating_procedural_efficiency",
+            "proposing_alternative_procedural_resolution",
+            "understanding_procedural_priority",
+            "assessing_mootness_and_case_relevance",
+            "inviting_precedent_setting",
+            "evaluating_procedural_relevance",
+            "challenging_precedent_avoidance_strategy"
+        ]
+    },
+    "examining_litigant_motivations_and_interests": {
+        "description": "Properties related to examining litigant motivations and interests, including understanding litigant actions and motivations, and identifying potential abuse of legal loopholes.",
+        "properties_in_category": [
+            "understanding_litigant_motivations_and_interests",
+            "clarifying_petitioner_position",
+            "clarifying_plaintiff_actions_and_motivations",
+            "drawing_analogies_to_understand_key_differences",
+            "identifying_litigant_motive",
+            "confronting_argument_with_counterexample",
+            "identifying_potential_abuse_of_legal_loopholes"
+        ]
+    },
+    "assessing_medical_judgment_criteria": {
+        "description": "Properties related to assessing medical judgment criteria, including evaluating medical implications and assessing impact of denied care.",
+        "properties_in_category": [
+            "assessing_medical_judgment_criteria",
+            "assessing_impact_of_denied_care",
+            "assessing_noncompliance_penalties",
+            "clarifying_scope_of_stabilizing_treatment",
+            "assessing_practical_enforcement_challenges"
+        ]
+    }
+}

@@ -1,0 +1,174 @@
+[
+    {
+        "category_name": "clarification_and_explanation",
+        "description": "Properties related to seeking clarification or explanation on a concept, term, or process.",
+        "properties_in_category": [
+            "clarifying_analogous_scenarios",
+            "clarifying_attenuation_boundaries",
+            "clarifying_the_proposed_standard",
+            "clarifying_the_theoretical_framework",
+            "clarifying_the_scope_of_impermissible_regulation",
+            "clarifying_moral_versus_health_interests",
+            "clarifying_factual_basis",
+            "clarifying_counsel_position_on_alternatives",
+            "clarifying_opponent_policy_application",
+            "clarifying_admissions_process_details",
+            "clarifying_opponent's_position_on_alternatives",
+            "clarifying_precedent_interpretation",
+            "clarifying_petitioner.position",
+            "clarifying_admissible_characteristics",
+            "clarifying_the_definition_of_success",
+            "clarifying_key_terms_and_their_significance",
+            "clarifying_definition_of_diversity",
+            "understanding_application_process",
+            "understanding_contextual_background",
+            "clarifying_informational_value_of_race_data",
+            "clarifying_definitions_and_boundary_conditions",
+            "clarifying_application_of_diversity_policy",
+            "clarifying_race_classification_process",
+            "clarifying_key_issue",
+            "clarifying_evaluation_process",
+            "clarifying_the_application_process",
+            "clarifying_role_of_race_in_application_process",
+            "clarifying_definition_of_key_concept",
+            "clarifying_the_role_of_race_in_admissions",
+            "clarifying_statutory_interpretation_through_contextual_analysis",
+            "clarifying_relationship_between_statutory_components",
+            "clarifying_clear_statement_rule_application",
+            "clarifying_expert_testimony_on_statutory_interpretation",
+            "clarifying_previous_statement",
+            "clarifying_foundational_assumptions",
+            "clarifying_statutory_application_hypothesis",
+            "clarifying_interpretation_of_statutory_language",
+            "clarifying_key_issues_and_framing_legal_analysis",
+            "clarifying_interpreter's_statutory_understanding"
+        ]
+    },
+    {
+        "category_name": "evaluation_and_analysis",
+        "description": "Properties related to evaluating or analyzing a concept, policy, or argument.",
+        "properties_in_category": [
+            "evaluating_retaliatory_policy_implications",
+            "evaluating_precedent_adherence",
+            "evaluating_clash_of_values_in_regulatory_framework",
+            "assessing_state_autonomy_conflicts",
+            "assessing_discrimination_thresholds",
+            "evaluating_long_term_necessity_and_implications",
+            "evaluating_consistency_in_constitutional_interpretation",
+            "evaluating_conflicting_powers_and_state_actions",
+            "evaluating_mootness_implications"
+        ]
+    },
+    {
+        "category_name": "argumentation_and_challenging",
+        "description": "Properties related to challenging or arguing against a concept, policy, or argument.",
+        "properties_in_category": [
+            "challenging_argument_by_clarifying_existing_practice",
+            "challenging_causality_and_burden_of_proof",
+            "challenging_petitioners_harm_claim",
+            "challenging_evidence_and_facts",
+            "challenging_distinction_between_race_and_culture",
+            "confronting_the_logic_of_absolute_prohibition",
+            "challenging_deference_to_discriminators",
+            "challenging_categorical_definitions",
+            "challenging_grouping_or_classification_criteria",
+            "challenging_war_power_uniqueness",
+            "challenging_congressional_judgment_on_essentiality",
+            "challenging_representation_of_congressional_powers",
+            "challenging_congressional_intent",
+            "challenging_statutory_interpretation_assumptions"
+        ]
+    },
+    {
+        "category_name": "alternatives_and_hypotheticals",
+        "description": "Properties related to exploring alternative scenarios, policies, or hypothetical situations.",
+        "properties_in_category": [
+            "proposing_alternative_regulatory_approach",
+            "probing_alternatives_to_race_in_admissions",
+            "examining_race_neutral_alternatives_and_their_motivations",
+            "probing_for_racial_neutral_alternatives",
+            "probing_scope_of_compelling_interest",
+            "exploring_alternative_methods",
+            "probing_diversity_implementation_methods",
+            "comparing_alternative_approaches",
+            "analyzing_alternative_means_to_achieve_diversity",
+            "probing_alternative_race_neutral_solutions",
+            "exploring_argument_boundaries_with_hypothetical",
+            "probing_hypothetical_impact_on_individuals",
+            "assessing_alternative_scenarios_and_procedural_implications",
+            "probing_motive_and_stake"
+        ]
+    },
+    {
+        "category_name": "precedent_and_history",
+        "description": "Properties related to referencing or analyzing precedents, historical context, or constitutional intent.",
+        "properties_in_category": [
+            "evaluating_precedent_adherence",
+            "invoking_precedent_to_resolve_ambiguity",
+            "comparing_historical_precedents",
+            "examining_historical_context_and_constitutional_intent",
+            "bridging_historical_precedents_to_current_claim"
+        ]
+    },
+    {
+        "category_name": "implications_and_consequences",
+        "description": "Properties related to exploring the implications or consequences of a concept, policy, or argument.",
+        "properties_in_category": [
+            "evaluating_retaliatory_policy_implications",
+            "evaluating_long_term_necessity_and_implications",
+            "evaluating_conflicting_powers_and_state_actions",
+            "evaluating_mootness_implications",
+            "raising_counterarguments_and_imploring_consequences",
+            "addressing_counterarguments_and_opposing_views",
+            "addressing_counterarguments_and_consequences",
+            "addressing_counterargument_through_precedent_comparison",
+            "assessing_negative_consequences_of_failure",
+            "identifying_unintended_consequences_of_diversity_policies"
+        ]
+    },
+    {
+        "category_name": "probing_and_inquiry",
+        "description": "Properties related to asking questions or probing for more information.",
+        "properties_in_category": [
+            "probing_state_authority",
+            "probing_for_clear_end_point_or_metric",
+            "probing_opponent_expert_testimony",
+            "probing_counsel_for_delayed_argument",
+            "probing_motive_and_stake",
+            "requesting_evidence_for_claims",
+            "requesting_clarification_on_distinctive_characteristics",
+            "requesting_clarification_on_mootness_implications",
+            "requesting_precedent_or_analogous_example",
+            "inquiring_about_metric_for_success"
+        ]
+    },
+    {
+        "category_name": "comparison_and_contrast",
+        "description": "Properties related to comparing or contrasting different concepts, policies, or arguments.",
+        "properties_in_category": [
+            "comparing_alternative_approaches",
+            "comparing_historical_precedents",
+            "comparing_federal_authority_under_different_constitutional_clauses",
+            "comparing_race_use_in_different_contexts"
+        ]
+    },
+    {
+        "category_name": "statutory_interpretation",
+        "description": "Properties related to interpreting or analyzing statutory language or provisions.",
+        "properties_in_category": [
+            "clarifying_statutory_interpretation_through_contextual_analysis",
+            "evaluating_statutory_contextual_exceptions",
+            "challenging_application_of_presumption",
+            "examining_statutory_context_and_inferences",
+            "assessing_statutory_provision_relevance",
+            "examining_statutory_provision_interpretation",
+            "testing_statutory_language_variations",
+            "clarifying_relationship_between_statutory_components",
+            "resolving_statutory_ambiguity",
+            "clarifying_clear_statement_rule_application",
+            "clarifying_expert_testimony_on_statutory_interpretation",
+            "addressing_statutory_interpretation_ambiguity",
+            "probing_statutory_interpretation"
+        ]
+    }
+]

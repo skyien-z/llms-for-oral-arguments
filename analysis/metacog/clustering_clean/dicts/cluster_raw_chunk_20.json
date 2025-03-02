@@ -1,0 +1,153 @@
+{
+    "burden_shifting_and_causation": {
+        "description": "Properties related to burden shifting, causation, and their implications in the case.",
+        "properties_in_category": [
+            "seeking_clarification_on_burden_shifting_framework",
+            "clarifying_causal_linkage",
+            "assessing_implications_of_partial_ruling",
+            "clarifying_causation_intent_distinction",
+            "clarifying_causal_link_between_intent_and_contributing_factor",
+            "challenging_retaliation_definition",
+            "clarifying_burden_of_proof_requirements",
+            "clarifying_burden_shifting_procedure",
+            "clarifying_evidence_requirements",
+            "clarifying_causal_link_between_harm_and_relie",
+            "clarifying_causation_standards"
+        ]
+    },
+    "statutory_interpretation": {
+        "description": "Properties related to the interpretation of statutes and their application to the case.",
+        "properties_in_category": [
+            "describing_typical_application_of_law",
+            "examining_statutory_language_and_omissions",
+            "understanding_burden_shifting_mechanisms_in_statutes",
+            "clarifying_statutory_interpretation_elements",
+            "clarifying_statutory_restrictions",
+            "reconciling_statutory_interpretation_with_rule_of_construction",
+            "clarifying_statutory_interpretation_standards",
+            "examining_statutory_interpretation_and_requirements",
+            "clarifying_statutory_language_and_scope",
+            "examining_statutory_connection",
+            "evaluating_alternative_statutory_interpretations",
+            "probing_the_order_of_legal_analysis",
+            "clarifying_statutory_interpretation_and_its_implications",
+            "examining_statutory_interpretation_methodology",
+            "acknowledging_statutory_text_relevance"
+        ]
+    },
+    "contractual_issues": {
+        "description": "Properties related to contractual agreements, their terms, and their application to the case.",
+        "properties_in_category": [
+            "clarifying_contract_terms",
+            "clarifying_contract_purpose",
+            "clarifying_contract_scope",
+            "evaluating_contract_flexibility",
+            "clarifying_contract_purpose_and_scope",
+            "clarifying_contract_specifics_and_applicability",
+            "clarifying_contractual_scope",
+            "clarifying_contractual_responsibilities",
+            "seeking_clarification_on_contract_terms",
+            "identifying_statutory_exceptions_and_analogies",
+            "examining_contract_service_allocation_details"
+        ]
+    },
+    "procedural_context": {
+        "description": "Properties related to the procedural context of the case, including lower court decisions and jurisdiction.",
+        "properties_in_category": [
+            "clarifying_procedural_preliminaries",
+            "clarifying_procedural_context",
+            "examining_trial_proceedings_and_burden_of_proof",
+            "assessing_harm_to_the_government",
+            "examining_lower_court_decision_making",
+            "examining_lower_court_procedures",
+            "challenging_jurisdictional_focus",
+            "understanding_rule_applicability_and_prevalence",
+            "assessing_cert_worthiness_of_preliminary_issues"
+        ]
+    },
+    "argumentation_and_clarification": {
+        "description": "Properties related to the clarification of arguments, assumptions, and the seeking of additional information.",
+        "properties_in_category": [
+            "calling_next_questioner",
+            "requesting_underlying_reasoning_principle",
+            "challenging_assumptions_by_examining_alternative_perspectives",
+            "probing_the_boundaries_of_the_argument",
+            "requesting_specific_evidence_of_government_culpability",
+            "requesting_contextualization_of_data",
+            "acknowledging_possible_exceptions",
+            "identifying_key_issue",
+            "inviting_additional_questions",
+            "acknowledging_and_inviting_questions_from_justices"
+        ]
+    },
+    "legal_frameworks_and_doctrine": {
+        "description": "Properties related to the understanding and application of legal frameworks and doctrines.",
+        "properties_in_category": [
+            "clarifying_legal_framework",
+            "clarifying_legal_standard_elucidation",
+            "clarifying_scope_of_ruling",
+            "clarifying_applicability_of_legal_doctrine",
+            "clarifying_distinctions_in_legal_doctrine",
+            "clarifying_distinctions_between_legal_frameworks",
+            "clarifying_distinctions_between_coercion_and_persuasion",
+            "evaluating_historical_and_judicial_precedent",
+            "comparing_and_contrasting_legal_precedents",
+            "distinguishing_permission_from_prohibition",
+            "applying_legal_framework_to_facts"
+        ]
+    },
+    "government_action_and_coercion": {
+        "description": "Properties related to government action, coercion, and their implications in the case.",
+        "properties_in_category": [
+            "challenging_coercion_definition",
+            "clarifying_coercion_criteria",
+            "clarifying_coercion_threshold",
+            "probing_the_boundary_between_persuasion_and_coercion",
+            "exploring_coercion_boundaries",
+            "identifying_coercion_threshold",
+            "probing_coercion_definitions",
+            "probing_government_censorship_boundaries",
+            "assessing_coercion_mechanisms_and_internal_government_dynamics",
+            "considering_conflicting_government_interests",
+            "probing_the_limits_of_government_persuasion",
+            "defining_limits_of_government_persuasion",
+            "drawing_analogies_to_historical_practices",
+            "clarifying_scope_of_encouragement"
+        ]
+    },
+    "case_facts_and_context": {
+        "description": "Properties related to the facts of the case and their context.",
+        "properties_in_category": [
+            "clarifying_facts_of_the_case",
+            "clarifying_inconsistent_jury_findings",
+            "investigating_state_legal_variations",
+            "clarifying_factual_context_and_procedural_details",
+            "gathering_case_specific_facts",
+            "clarifying_analogous_situation"
+        ]
+    },
+    "alternative_scenarios_and_solutions": {
+        "description": "Properties related to alternative scenarios, solutions, and their implications in the case.",
+        "properties_in_category": [
+            "proposing_alternative_solutions_for_futuristic_application",
+            "exploring_alternative_procedural_approaches",
+            "exploring_alternative_means_of_government_influence",
+            "evaluating_alternative_solutions_and_government_duties",
+            "considering_legislative_alternatives",
+            "examining_alternative_scenario_and_financial_implications"
+        ]
+    },
+    "challenging_arguments_and_assumptions": {
+        "description": "Properties related to challenging arguments, assumptions, and their basis in the case.",
+        "properties_in_category": [
+            "challenging_argument_basis",
+            "challenging_assumptions_by_examining_alternative_perspectives",
+            "challenging_causal_connection",
+            "challenging_litigant_standing_and_remedy_scope",
+            "challenging_specific_litigant_standing",
+            "challenging_causality_requirements",
+            "challenging_interpretation_of_contract_terms",
+            "challenging_factual_assumptions_and_hypothetical_scales"
+        ]
+    }
+}
