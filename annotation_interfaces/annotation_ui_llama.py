@@ -4,6 +4,10 @@ import re
 import json
 import pandas as pd
 
+######
+## From what I remember, there's some issue with transcript name slicing and possibly I/O loading.
+######
+
 ##########################################################################
 ### CONSTANTS -- QUESTIONS  
 ##########################################################################
@@ -16,10 +20,10 @@ q5_preference = "If you were preparing for oral arguments, would you prefer the 
 ##########################################################################
 ### INPUT -- JSONs
 ##########################################################################
-with open('datasets/2024_questions_for_eval_llama70b.json') as f:
+with open('../datasets/2024_questions_for_eval_llama70b.json') as f:
     all_data_to_annotate = json.load(f)
 
-BRIEF_TRANSCRIPTS_DIR = "2023-2024_case_briefs/"
+BRIEF_TRANSCRIPTS_DIR = "../2023-2024_case_briefs/"
 def get_brief_json(transcript_id):
     brief_name = transcript_id[:11] + ".json"
     with open(BRIEF_TRANSCRIPTS_DIR + brief_name) as json_file:
@@ -97,7 +101,7 @@ def go_to_transcript_select():
 ##########################################################################
 #### OUPUT LOADING -- PANDAS
 ##########################################################################
-QID_DATA_DIR = "datasets/2024_questions/with_qid/"
+QID_DATA_DIR = "../datasets/2024_questions/with_qid/"
 FILE_TO_SAVE = "2024_llm_questions_Meta-Llama-3.1-70B-Instruct_qid-manual-labels.csv"
 manual_annotations_df = pd.read_csv(QID_DATA_DIR + FILE_TO_SAVE)
 manual_annotations_df.drop("Unnamed: 0", axis=1, inplace=True)
