@@ -5,8 +5,7 @@ import re
 import pandas as pd
 
 # Non-fine-tuned model
-# model_id = '/scratch/gpfs/kz9921/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit' 
-model_id = '/scratch/gpfs/kz9921/oral_args_finetune' 
+model_id = '/scratch/gpfs/kz9921/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit' 
 
 pipeline = transformers.pipeline(
     "text-generation",
