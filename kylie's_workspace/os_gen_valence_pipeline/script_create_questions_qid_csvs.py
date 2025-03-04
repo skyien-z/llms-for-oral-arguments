@@ -1,14 +1,20 @@
 import pandas as pd
 import hashlib
+from pathlib import Path
+import os
 
-io_dir = "../datasets/llm_outputs/generate_questions/"
-#################################################################################
-## REPLACE WITH YOUR INPUT DIRECTORY
-input_file_path = "2024_full_text_all_justices_questions_llama70b.csv"
-#################################################################################
+# Find file in git repo
+def get_file_path(filename):
+    repo_root = Path(os.getcwd()).resolve().parents[0]
+    for file in repo_root.rglob(filename):
+        return file
+    return None
 
-all_questions_csv = io_dir + input_file_path
-df = pd.read_csv(all_questions_csv)
+#################################################################################
+## REPLACE WITH YOUR INPUT FILE NAME -- DON'T WORRY ABOUT PATH
+input_file_name = "2024_full_text_all_justices_questions_llama70b.csv"
+#################################################################################
+df = pd.read_csv(get_file_path(input_file_name))
 
 #################################################################################
 ## Assumes that the csv you're reading has column "Unnamed: 0", "petitioner_opening_text"
@@ -45,7 +51,8 @@ for justice in current_justices:
 
 #################################################################################
 ## REPLACE WITH YOUR OUTPUT FILE PATH
+output_dir = "./"
 output_file_path = "2024_questions_all_justices_llama70b_with_qids.csv"
 #################################################################################
 
-all_questions_df.to_csv(io_dir+output_file_path)
+all_questions_df.to_csv(output_dir+output_file_path)
