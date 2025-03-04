@@ -3,6 +3,15 @@ import transformers
 import torch
 import re
 import pandas as pd
+from pathlib import Path
+import os
+
+# Find file in git repo
+def get_file_path(filename):
+    repo_root = Path(os.getcwd()).resolve().parents[0]
+    for file in repo_root.rglob(filename):
+        return file
+    return None
 
 ##################################################################################
 ## Change to your classification model
@@ -100,24 +109,21 @@ def classify_questions_valence(opening_statement, question):
     valence_classification = parse_response(response)
     print(valence_classification)
     return valence_classification
-
-input_dir = '../datasets/llm_outputs/generate_questions/'
 ############################################################################
 ## Update Input File Path!
 input_file = '2024_questions_all_justices_llama70b_with_qids.csv'
 ############################################################################
-input_fp = input_dir + input_file
-all_questions_df = pd.read_csv(input_fp)
+all_questions_df = pd.read_csv(get_file_path(input_file))
 
 all_questions_df['valence'] = all_questions_df.apply(
     lambda row: classify_questions_valence(row['opening_statement'], row['question_text']), axis=1
 )
 
-output_dir = '../datasets/llm_outputs/valence/'
 ############################################################################
 ## Update Output File Path!
+output_dir = '../datasets/llm_outputs/valence/'
 output_file = '2024_questions_all_justices_llama70b_with_qids_valence.csv'
 ############################################################################
-out_fp = output_dir + output_file
-all_questions_df.to_csv(out_fp, index=False)
+
+all_questions_df.to_csv(output_dir + output_file, index=False)
 
