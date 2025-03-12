@@ -1,28 +1,52 @@
 Finetuning
 
-## NOTES
+## Basic SETUP (from Dominik's repo)
 
-The --num_processes arg passed to accelerate must match the number of gpus requested in the slurm job. For example:
-* if `--num_processes 4` then `—gres=gpu:4`
-* if `--num_processes 1` then `—gres=gpu:1`
+#### Installation
+```shell
+ssh <USER_ID>@della-gpu.princeton.edu # log in to della
 
+module load anaconda3/2024.6 # load anaconda
 
-*CONTAMINATED FT*: First round of finetuning was done on contaminated train/test split. Have moved both the data and the models in `finetune-llama-models` into subfolders labelled "contaminated".
+conda create --name llama_finetuning_env python=3.11 pytorch-cuda=12.1 pytorch cudatoolkit xformers -c pytorch -c nvidia -c xformers -y
+conda activate llama_finetuning_env
 
-### Handling OOME Errors
+pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+pip install --no-deps trl peft accelerate bitsandbytes
+```
 
-Use a Smaller Batch Size
-* Lower --per_device_train_batch_size (and/or --gradient_accumulation_steps) until you fit in memory. Start with `--per_device_train_batch_size=1` and see if you still get OOM.
-Shorten Your Input Sequence
-* Default max_seq_length=2048 can be very memory-intensive on a large model. Try reducing this to 512 or 1024, will significantly lower memory usage.
-Ensure Gradient Checkpointing is Actually On
-* verify --gradient_checkpointing is enabled. Gradient checkpointing helps reduce activation memory but can’t fix everything if the overall model + batch is too big.
-Use 8-bit or 4-bit Training (bitsandbytes / QLoRA)
-* If available, you can quantize your model weights down to 8-bit or 4-bit during training (using bitsandbytes, peft, or QLoRA).
-Double-Check Offloading Settings
-* If using DeepSpeed Zero-3 with offloading, confirm that CPU or disk offload is actually configured in your accelerate_configs/deepspeed_zero3.yaml and that you’re not just leaving all parameters on the GPU. True offload can be slow over standard PCIe but can help if you have large CPU memory available.
-Run on a Larger GPU
-* Request a GPU with more memory (e.g., A100 80GB).
+#### Download Llama Models
+```shell
+mkdir /scratch/gpfs/ds8100/transformer_cache # cache dir in /scratch
+cd /scratch/gpfs/ds8100/transformer_cache
+git clone git@hf.co:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+# git clone git@hf.co:unsloth/Llama-3.3-70B-Instruct-bnb-4bit # and this is llama 3.3 70B
+```
+
+#### Test on compute node
+```shell
+salloc --nodes=1 --ntasks=1 --time=59:00 --mem=24G --gres=gpu:1 --partition=pli-c # test
+# as soon as we're on compute instance, we have to reload environment
+conda activate llama_finetuning_env
+MODEL_NAME="/scratch/gpfs/ds8100/transformer_cache/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+python finetune_llama_70B.py --model_name $MODEL_NAME
+```
+
+#### Submit compute run
+```shell
+conda activate llama_finetuning_env
+MODEL_NAME="/scratch/gpfs/ds8100/transformer_cache/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+sbatch --nodes=1 --ntasks=1 --time=3:59:00 --mem=24G --gres=gpu:1 --partition=pli-c --wrap "python finetune_llama_70B.py --model_name $MODEL_NAME"
+```
+
+#### Compute run with llama 3.3 70B
+```shell
+conda activate llama_finetuning_env
+MODEL_NAME="/scratch/gpfs/ds8100/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit"
+sbatch --nodes=1 --ntasks=1 --time=11:59:00 --mem=93G --gres=gpu:1 --partition=pli-c --wrap "python finetune_llama_70B.py --model_name $MODEL_NAME"
+# Note how this requires 96GB memory, and runs very slowlys
+```
+
 
 ## Workflows 
 
@@ -338,3 +362,28 @@ accelerate launch --config_file=accelerate_configs/deepspeed_zero3.yaml \
 done
 
 ```
+
+
+## NOTES
+
+The --num_processes arg passed to accelerate must match the number of gpus requested in the slurm job. For example:
+* if `--num_processes 4` then `—gres=gpu:4`
+* if `--num_processes 1` then `—gres=gpu:1`
+
+
+*CONTAMINATED FT*: First round of finetuning was done on contaminated train/test split. Have moved both the data and the models in `finetune-llama-models` into subfolders labelled "contaminated".
+
+### Handling OOME Errors
+
+Use a Smaller Batch Size
+* Lower --per_device_train_batch_size (and/or --gradient_accumulation_steps) until you fit in memory. Start with `--per_device_train_batch_size=1` and see if you still get OOM.
+Shorten Your Input Sequence
+* Default max_seq_length=2048 can be very memory-intensive on a large model. Try reducing this to 512 or 1024, will significantly lower memory usage.
+Ensure Gradient Checkpointing is Actually On
+* verify --gradient_checkpointing is enabled. Gradient checkpointing helps reduce activation memory but can’t fix everything if the overall model + batch is too big.
+Use 8-bit or 4-bit Training (bitsandbytes / QLoRA)
+* If available, you can quantize your model weights down to 8-bit or 4-bit during training (using bitsandbytes, peft, or QLoRA).
+Double-Check Offloading Settings
+* If using DeepSpeed Zero-3 with offloading, confirm that CPU or disk offload is actually configured in your accelerate_configs/deepspeed_zero3.yaml and that you’re not just leaving all parameters on the GPU. True offload can be slow over standard PCIe but can help if you have large CPU memory available.
+Run on a Larger GPU
+* Request a GPU with more memory (e.g., A100 80GB).
