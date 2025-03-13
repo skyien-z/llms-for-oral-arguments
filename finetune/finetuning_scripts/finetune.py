@@ -20,12 +20,12 @@ import argparse
 # MODEL_NAME = "Llama-3.3-70B-Instruct-bnb-4bit"
 # MODEL_NAME = "Meta-Llama-3.1-8B-Instruct-bnb-4bit"
 MODEL_NAME = "Qwen2.5-32B-bnb-4bit"
-DATASET_NAME = "oral_args_questions"
+DATASET_NAME = "train.jsonl"
+USER = "nnadeem"
 
-
-MODEL_PATH = f"/scratch/gpfs/nnadeem/transformer_cache/{MODEL_NAME}/"
-DATA_PATH = f"/scratch/gpfs/nnadeem/finetune-llama-models/data/{DATASET_NAME}/train.jsonl"
-OUTPUT_DIR = f"/scratch/gpfs/nnadeem/finetune-llama-models/models/finetuned_{MODEL_NAME}_{DATASET_NAME}"
+MODEL_PATH = f"/scratch/gpfs/{USER}/transformer_cache/{MODEL_NAME}/"
+DATA_PATH = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/datasets/finetune/{DATASET_NAME}"
+OUTPUT_DIR = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/models/finetuned_{MODEL_NAME}_{DATASET_NAME}"
 
 def set_chat_template():
     return """{% if not add_generation_prompt is defined %}{% set add_generation_prompt = false %}{% endif %}{% set ns = namespace(is_first=false, is_tool=false, is_output_first=true, system_prompt='') %}{%- for message in messages %}{%- if message['role'] == 'system' %}{% set ns.system_prompt = message['content'] %}{%- endif %}{%- endfor %}{{bos_token}}{{ns.system_prompt}}{%- for message in messages %}{%- if message['role'] == 'user' %}{%- set ns.is_tool = false -%}{{'<｜User｜>' + message['content']}}{%- endif %}{%- if message['role'] == 'assistant' and message['content'] is none %}{%- set ns.is_tool = false -%}{%- for tool in message['tool_calls']%}{%- if not ns.is_first %}{{'<｜Assistant｜><｜tool▁calls▁begin｜><｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\\n' + '```json' + '\\n' + tool['function']['arguments'] + '\\n' + '```' + '<｜tool▁call▁end｜>'}}{%- set ns.is_first = true -%}{%- else %}{{'\\n' + '<｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\\n' + '```json' + '\\n' + tool['function']['arguments'] + '\\n' + '```' + '<｜tool▁call▁end｜>'}}{{'<｜tool▁calls▁end｜><｜end▁of▁sentence｜>'}}{%- endif %}{%- endfor %}{%- endif %}{%- if message['role'] == 'assistant' and message['content'] is not none %}{%- if ns.is_tool %}{{'<｜tool▁outputs▁end｜>' + message['content'] + '<｜end▁of▁sentence｜>'}}{%- set ns.is_tool = false -%}{%- else %}{% set content = message['content'] %}{{'<｜Assistant｜>' + content + '<｜end▁of▁sentence｜>'}}{%- endif %}{%- endif %}{%- if message['role'] == 'tool' %}{%- set ns.is_tool = true -%}{%- if ns.is_output_first %}{{'<｜tool▁outputs▁begin｜><｜tool▁output▁begin｜>' + message['content'] + '<｜tool▁output▁end｜>'}}{%- set ns.is_output_first = false %}{%- else %}{{'\\n<｜tool▁output▁begin｜>' + message['content'] + '<｜tool▁output▁end｜>'}}{%- endif %}{%- endif %}{%- endfor -%}{% if ns.is_tool %}{{'<｜tool▁outputs▁end｜>'}}{% endif %}{% if add_generation_prompt and not ns.is_tool %}{{'<｜Assistant｜>'}}{% endif %}"""

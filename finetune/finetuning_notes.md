@@ -1,10 +1,10 @@
-Finetuning
+# Finetuning Guide
 
 ## Basic SETUP (from Dominik's repo)
 
-#### Installation
+#### Create conda environment
 ```shell
-ssh <USER_ID>@della-gpu.princeton.edu # log in to della
+ssh $USER@della-gpu.princeton.edu # log in to della
 
 module load anaconda3/2024.6 # load anaconda
 
@@ -17,68 +17,41 @@ pip install --no-deps trl peft accelerate bitsandbytes
 
 #### Download Llama Models
 ```shell
-mkdir /scratch/gpfs/ds8100/transformer_cache # cache dir in /scratch
-cd /scratch/gpfs/ds8100/transformer_cache
+mkdir /scratch/gpfs/$USER/transformer_cache # cache dir in /scratch
+cd /scratch/gpfs/$USER/transformer_cache
 git clone git@hf.co:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 # git clone git@hf.co:unsloth/Llama-3.3-70B-Instruct-bnb-4bit # and this is llama 3.3 70B
 ```
-
-#### Test on compute node
-```shell
-salloc --nodes=1 --ntasks=1 --time=59:00 --mem=24G --gres=gpu:1 --partition=pli-c # test
-# as soon as we're on compute instance, we have to reload environment
-conda activate llama_finetuning_env
-MODEL_NAME="/scratch/gpfs/ds8100/transformer_cache/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
-python finetune_llama_70B.py --model_name $MODEL_NAME
-```
-
-#### Submit compute run
-```shell
-conda activate llama_finetuning_env
-MODEL_NAME="/scratch/gpfs/ds8100/transformer_cache/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
-sbatch --nodes=1 --ntasks=1 --time=3:59:00 --mem=24G --gres=gpu:1 --partition=pli-c --wrap "python finetune_llama_70B.py --model_name $MODEL_NAME"
-```
-
-#### Compute run with llama 3.3 70B
-```shell
-conda activate llama_finetuning_env
-MODEL_NAME="/scratch/gpfs/ds8100/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit"
-sbatch --nodes=1 --ntasks=1 --time=11:59:00 --mem=93G --gres=gpu:1 --partition=pli-c --wrap "python finetune_llama_70B.py --model_name $MODEL_NAME"
-# Note how this requires 96GB memory, and runs very slowlys
-```
-
 
 ## Workflows 
 
 #### Running PEFT FT
 
-1. Upload train/test/val .jsonl files to della in finetune-llama-models repo at data/oral_args_questions
-1. Verify `MODEL_NAME` and `DATASET_NAME` on top of the `finetune_nimra.py` file
-1. ssh into della and cd to finetune-llama-models dir
-1. [optional] try out the test on compute node (instructions below)
-1. verify `launch_ft.slurm` script
-1. run `sbatch scripts/launch_ft.slurm`
+1. Prep data for finetuning using [script_prep_data_for_finetuning.ipynb](data_prep_scripts/script_prep_data_for_finetuning.ipynb). This will output train/test/val `.jsonl` files to [finetuning_datasets/](finetuning_datasets/) folder. **NOTE**: This folder is in the .gitignore because the jsonl files can get too large for git lfs.
 
-#### Running Inference: CONTEXT-based question generation
-1. verify the defaults for the following arguments in inference_nimra.py script:
+<!-- 1. Upload train/test/val .jsonl files to della in finetune-llama-models repo at data/oral_args_questions -->
+1. Verify `MODEL_NAME`, `DATASET_NAME` and `USER` on top of the [`finetune.py`](../finetuning_scripts/finetune.py) file
+1. ssh into della and cd to this repo dir
+1. [optional] try out the test on compute node (instructions below)
+1. verify details in [`launch_finetune.slurm`](finetuning_scripts/launch_finetune.slurm) script.
+1. run `sbatch finetune/finetuning_scripts/launch_finetune.slurm`
+
+#### Running Inference:
+1. verify the defaults for the following arguments in `inference.py` script:
 `--base_model_dir`
 `--adapter_dir`
 `--test_file`
 
-1. For CONTEXT-based question generation: `--test_file`: `/scratch/gpfs/nnadeem/finetune-llama-models/data/oral_args_questions/test.jsonl`
+1. For CONTEXT-based question generation (pre-2024): `--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/test_100.jsonl`
+1. For OS-based question generation (2024) (converted to CB):
+    1. `--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/OS_to_CB_based_questions_test.jsonl`
+    1. Run [`finetune/data_prep_scripts/convert_OS_to_CB_questions.ipynb`](data_prep_scripts/convert_OS_to_CB_questions.ipynb) to generate the `OS_to_CB_based_questions_test.jsonl` file
 
-
-
-
-#### Running Inference: opening_statement-based question generation
-1. generate finetune_question_test.jsonl file using the notebook: `llm_generation_scripts/generate_questions_llama_finetuned.ipynb` in llms-for-oral-arguments repo
-1. Upload the generated `finetune_question_test.jsonl` to della in the finetune-llama-models repo in the `data` folder
-1. Verify inference_nimra.py script args: `--base_model_dir`, `--adapter_dir`, `--test_file`
-1. Specifically,`--test_file`: `/scratch/gpfs/nnadeem/finetune-llama-models/data/finetune_question_test.jsonl`
 1. Follow the test on compute node (instructions below)
 
 ## COMMANDS
 
+**DISCLAIMER**: THE FOLLOWING NEEDS TO BE UPDATED, CURRENTLY COPY PASTED FROM NIMRA's MESSY NOTES.
 
 ##### SCRATCH
 ```
@@ -87,7 +60,7 @@ model_name="Llama-3.2-3B-Instruct"
 model_path="meta-llama/Llama-3.2-3B-Instruct"
 ```
 
-##### RUNNING INFERENCE: `inference_nimra.py` in `finetune-llama-models` test on compute node
+##### RUNNING INFERENCE: `inference.py` test on compute node
 
 ```
 salloc --nodes=1 --ntasks=1 --time=59:00 --mem=24G --gres=gpu:1 --partition=pli-c 
@@ -97,53 +70,53 @@ conda activate llama_finetuning_env
 
 ## Option 1: base model on fine tuning test
 ##### LLAMA
-python inference_nimra.py \
+python inference.py \
 --output_file "inference_oral_arg_context_test_100_base_model_llama_70B_4bit.jsonl" \
---test_file "/scratch/gpfs/nnadeem/finetune-llama-models/data/oral_args_questions/test_100.jsonl" \
---base_model_dir "/scratch/gpfs/nnadeem/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit/"
+--test_file "/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/test_100.jsonl" \
+--base_model_dir "/scratch/gpfs/$USER/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit/"
 
 ##### QWEN
-python inference_nimra_qwen.py \
+python inference_qwen.py \
 --output_file "inference_oral_arg_context_test_100_base_model_qwen_32B_4bit.jsonl" \
---test_file "/scratch/gpfs/nnadeem/finetune-llama-models/data/oral_args_questions/test_100.jsonl" \
---base_model_dir "/scratch/gpfs/nnadeem/transformer_cache/Qwen2.5-32B-bnb-4bit/"
+--test_file "/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/test_100.jsonl" \
+--base_model_dir "/scratch/gpfs/$USER/transformer_cache/Qwen2.5-32B-bnb-4bit/"
 
 ## Option 2: Lora finetuned model
 #### Option 2a: on fine tuning test_100 (i.e. context based questions)
 ######## LLAMA
-python inference_nimra.py \
+python inference.py \
 --output_file "inference_oral_arg_context_test_100_lora_finetuned_llama_70B_4bit.jsonl" \
---test_file "/scratch/gpfs/nnadeem/finetune-llama-models/data/oral_args_questions/test_100.jsonl" \
---base_model_dir "/scratch/gpfs/nnadeem/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit/" \
+--test_file "/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/test_100.jsonl" \
+--base_model_dir "/scratch/gpfs/$USER/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit/" \
 --use_lora \
---adapter_dir "/scratch/gpfs/nnadeem/finetune-llama-models/models/finetuned_Llama-3.3-70B-Instruct-bnb-4bit_oral_args_questions/checkpoint-2920"
+--adapter_dir "/scratch/gpfs/$USER/finetune-llama-models/models/finetuned_Llama-3.3-70B-Instruct-bnb-4bit_oral_args_questions/checkpoint-2920"
 
 ######## QWEN
-python inference_nimra_qwen.py \
+python inference_qwen.py \
 --output_file "inference_oral_arg_context_test_100_lora_finetuned_qwen_32B_4bit.jsonl" \
---test_file "/scratch/gpfs/nnadeem/finetune-llama-models/data/oral_args_questions/test_100.jsonl" \
---base_model_dir "/scratch/gpfs/nnadeem/transformer_cache/Qwen2.5-32B-bnb-4bit/" \
+--test_file "/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/test_100.jsonl" \
+--base_model_dir "/scratch/gpfs/$USER/transformer_cache/Qwen2.5-32B-bnb-4bit/" \
 --use_lora \
---adapter_dir "/scratch/gpfs/nnadeem/finetune-llama-models/models/finetuned_Qwen2.5-32B-bnb-4bit_oral_args_questions/checkpoint-2920"
+--adapter_dir "/scratch/gpfs/$USER/finetune-llama-models/models/finetuned_Qwen2.5-32B-bnb-4bit_oral_args_questions/checkpoint-2920"
 
 
 #### Option 2b: on 597R opening statement question generation (i.e. OS-based questions)
-python inference_nimra.py \
+python inference.py \
 --output_file "inference_oral_arg_OS_based_questions_lora_finetuned_llama_70B_4bit.jsonl" \
---test_file "/scratch/gpfs/nnadeem/finetune-llama-models/data/OS_based_questions_test.jsonl" \
---base_model_dir "/scratch/gpfs/nnadeem/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit/" \
+--test_file "/scratch/gpfs/$USER/finetune-llama-models/data/OS_based_questions_test.jsonl" \
+--base_model_dir "/scratch/gpfs/$USER/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit/" \
 --use_lora \
---adapter_dir "/scratch/gpfs/nnadeem/finetune-llama-models/models/finetuned_Llama-3.3-70B-Instruct-bnb-4bit_oral_args_questions/checkpoint-2920"
+--adapter_dir "/scratch/gpfs/$USER/finetune-llama-models/models/finetuned_Llama-3.3-70B-Instruct-bnb-4bit_oral_args_questions/checkpoint-2920"
 
 
 
 #### Option 2c: on OS based converted to CB question generation
-python inference_nimra.py \
+python inference.py \
 --output_file "inference_oral_arg_OS_to_CB_based_questions_lora_finetuned_llama_70B_4bit_sotomayor_alito.jsonl" \
---test_file "/scratch/gpfs/nnadeem/finetune-llama-models/data/OS_to_CB_based_questions_test_sotomayor_alito.jsonl" \
---base_model_dir "/scratch/gpfs/nnadeem/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit/" \
+--test_file "/scratch/gpfs/$USER/finetune-llama-models/data/OS_to_CB_based_questions_test_sotomayor_alito.jsonl" \
+--base_model_dir "/scratch/gpfs/$USER/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit/" \
 --use_lora \
---adapter_dir "/scratch/gpfs/nnadeem/finetune-llama-models/models/finetuned_Llama-3.3-70B-Instruct-bnb-4bit_oral_args_questions/checkpoint-2920"
+--adapter_dir "/scratch/gpfs/$USER/finetune-llama-models/models/finetuned_Llama-3.3-70B-Instruct-bnb-4bit_oral_args_questions/checkpoint-2920"
 
 ```
 ##### RUNNING PEFT: `launch_nimra_ft_peft.slurm` test on compute node
@@ -219,7 +192,7 @@ max_num_samples=1000
 dataset_name="oral_arg_questions"
 model_name="Meta-Llama-3-8B-Instruct"
 model_path="meta-llama/Meta-Llama-3-8B-Instruct"
-outdir=/scratch/gpfs/nnadeem/nlp_checkpoints/${model_name}_experiment_scratch/${dataset_name}/full_ft_lr_${lr}
+outdir=/scratch/gpfs/$USER/nlp_checkpoints/${model_name}_experiment_scratch/${dataset_name}/full_ft_lr_${lr}
 num_proc=4
 batch_size=16
 
@@ -330,7 +303,7 @@ ORIGINAL SLURM SCRIPT launch_ft_nimra.slurm
 #SBATCH --time=2:00:00          # total run time limit (HH:MM:SS)
 #SBATCH --mail-type=begin        # send email when job begins
 #SBATCH --mail-type=end          # send email when job ends
-#SBATCH --mail-user=nnadeem@princeton.edu
+#SBATCH --mail-user=$USER@princeton.edu
 
 module purge
 module load anaconda3/2023.3
