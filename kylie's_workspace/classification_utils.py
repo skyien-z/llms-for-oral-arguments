@@ -1,4 +1,6 @@
 
+import re
+
 def format_messages(system_prompt, opening_statement, question):
     user_prompt = f"""### Your Task:
         Opening Statement: {opening_statement}
@@ -95,3 +97,72 @@ def get_legalbench_classification_prompt(opening_statement, question):
     """
 
     return format_messages(system_prompt, opening_statement, question)
+
+def get_metacog_classification_prompt(opening_statement, question):
+    system_prompt = """You are an expert assistant trained to classify the purpose of questions asked by judges during oral arguments. Your task is to identify the primary purpose of a given question based on the advocate's opening statement and the text of the question itself.
+
+        ### Instructions:
+        Judge's questions at oral arguments typically fall into one of the following categories:
+
+        - 'statutory_interpretation': Related to the interpretation and application of statutes
+        - 'precedent_and_doctrine': Related to the examination and application of precedents and doctrines.
+        - 'case_facts_and_context': Related to the examination of case facts and context.
+        - 'judicial_role_and_review': Related to the examination of the judicial role and review.
+        - 'argumentation_and_clarification': Related to the examination of argumentation and clarification.
+        - 'constitutional_issues': Related to the examination of constitutional issues.
+        - 'procedural_matters': Related to the examination of procedural matters.
+
+        Your output should classify the judge's question into one of these categories and explain your reasoning.
+
+
+        ### Output format:
+        Your response must follow this JSON format:
+        {
+        "classification": "<Category Name>",
+        "reasoning": "<A brief explanation for the classification>"
+        }
+
+    """
+    return format_messages(system_prompt, opening_statement, question)
+
+
+def get_model_response(pipeline, messages):
+    output = pipeline(
+            messages,
+            max_new_tokens=256,
+        )
+    response = output[0]["generated_text"][-1]
+    return response
+
+def parse_response(response):
+    content = response['content']
+    
+    # gets one word response for valence
+    regex = r'"classification":\s*"([^"]+)"'
+    match = re.search(regex, content)
+    if match:
+        return match.group(1)
+    else:
+        return None
+
+def get_model_classification(pipeline, messages):
+    response = get_model_response(pipeline, messages)
+    return parse_response(response)
+
+############################################################################################
+### EXPORTED FUNCTIONS
+############################################################################################
+def classify_questions_valence(pipeline, opening_statement, question):
+    valence_messages = get_valence_classification_prompt(opening_statement, question)
+    return get_model_classification(pipeline, valence_messages)
+
+def classify_questions_legalbench(pipeline, opening_statement, question):
+    legalbench_messages = get_legalbench_classification_prompt(opening_statement, question)
+    return get_model_classification(pipeline, legalbench_messages)
+
+def classify_questions_metacog(pipeline, opening_statement, question):
+    metacog_messages = get_metacog_classification_prompt(opening_statement, question)
+    return get_model_classification(pipeline, metacog_messages)
+############################################################################################
+### END
+############################################################################################
