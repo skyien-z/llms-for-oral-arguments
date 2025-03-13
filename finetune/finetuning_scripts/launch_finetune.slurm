@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=ds_ft_peft_70b  # create a short name for your job
+#SBATCH --job-name=ft_oral_args  # create a short name for your job
 #SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1               # total number of tasks across all nodes
 #SBATCH --mem=93G
@@ -13,4 +13,4 @@ module purge
 module load anaconda3/2024.6
 conda activate llama_finetuning_env
 
-python finetune_nimra.py
+python finetuning_scripts/finetune.py
