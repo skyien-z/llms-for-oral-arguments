@@ -36,21 +36,17 @@ git clone git@hf.co:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 1. verify details in [`launch_finetune.slurm`](finetuning_scripts/launch_finetune.slurm) script.
 1. run `sbatch finetune/finetuning_scripts/launch_finetune.slurm`
 
-#### Running Inference: CONTEXT-based question generation
-1. verify the defaults for the following arguments in inference.py script:
+#### Running Inference:
+1. verify the defaults for the following arguments in `inference.py` script:
 `--base_model_dir`
 `--adapter_dir`
 `--test_file`
 
-1. For CONTEXT-based question generation: `--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/test_100.jsonl`
+1. For CONTEXT-based question generation (pre-2024): `--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/test_100.jsonl`
+1. For OS-based question generation (2024) (converted to CB):
+    1. `--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/OS_to_CB_based_questions_test.jsonl`
+    1. Run [`finetune/data_prep_scripts/convert_OS_to_CB_questions.ipynb`](data_prep_scripts/convert_OS_to_CB_questions.ipynb) to generate the `OS_to_CB_based_questions_test.jsonl` file
 
-
-
-
-#### Running Inference: opening_statement-based question generation
-1. Run [`finetune/data_prep_scripts/convert_OS_to_CB_questions.ipynb`](data_prep_scripts/convert_OS_to_CB_questions.ipynb) to generate the `OS_to_CB_based_questions_test.jsonl` file
-1. Verify inference.py script args: `--base_model_dir`, `--adapter_dir`, `--test_file`
-1. Specifically,`--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/OS_to_CB_based_questions_test.jsonl`
 1. Follow the test on compute node (instructions below)
 
 ## COMMANDS

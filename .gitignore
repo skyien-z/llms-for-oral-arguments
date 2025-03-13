@@ -3,3 +3,4 @@ tmp/
 *.out
 .DS_Store
 finetune/finetuning_datasets/*
+finetune/models/*
