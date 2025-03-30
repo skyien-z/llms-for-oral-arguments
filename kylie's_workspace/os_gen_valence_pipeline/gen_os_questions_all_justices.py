@@ -3,9 +3,10 @@ import transformers
 import torch
 import re
 import pandas as pd
+import os
+from pathlib import Path
 
-# Non-fine-tuned model
-model_id = '/scratch/gpfs/kz9921/transformer_cache/Llama-3.3-70B-Instruct-bnb-4bit' 
+model_id = '/scratch/gpfs/kz9921/transformer_cache/Meta-Llama-3.1-8B-Instruct' 
 
 pipeline = transformers.pipeline(
     "text-generation",
@@ -79,53 +80,41 @@ def parse_response(response):
 
     return cleaned_questions
 
-def create_justice_questions_tuple(justice, advocate_side, row):
-    '''
-    Given a justice, advocate to whom the justice is responding, and a row of the 2024
-    full text transcripts csv (which contains the transcript id, petitioner opening statement and full text 
-    and respondent opening statement and full text), creates and returns a question generation instruction prompt 
-    and all relevant data needed to run the prompt effectively.
 
-    @params: justice -- SCOTUS Justice
-    @params: advocate_side -- "petitioner" or "respondent"
-    @params: row a row of the 2024 full text transcripts csv
-    '''
-    if advocate_side == "petitioner":
-        opening_statement = row['petitioner_opening_text']
-    else:
-        opening_statement = row['respondent_opening_statement']
-    
-    sample = get_question_generation_prompt(justice, opening_statement)
-    sample.update({
-        'justice': justice,
-        'question_addressee': advocate_side,
-        'opening_statement': opening_statement
-    })
-    return sample
-
-# input_fp = '../datasets/original/2024_full_text_transcripts.csv'
-input_fp = './alito_2024_full_text_questions_llama70b_finetuned.csv'
-transcripts_df = pd.read_csv(input_fp)
-current_justices = {"Justice Brett M. Kavanaugh", "Justice Amy Coney Barrett", "Justice Ketanji Brown Jackson"}
-# Justice John G. Roberts", "Justice Clarence Thomas", "Justice Samuel A. Alito", "Justice Sonia Sotomayor", "Justice Elena Kagan", "Justice Neil Gorsuch", 
+# Find file in git repo
+def get_file_path(filename):
+    repo_root = Path(os.getcwd()).resolve().parents[1]
+    print(repo_root)
+    for file in repo_root.rglob(filename):
+        return file
+    return None
 
 def add_justice_questions(justice_name, opening_statement):
     messages = get_question_generation_prompt(justice_name, opening_statement)
     response = get_model_response(messages)
-    print(response)
     questions = parse_response(response)
+    print(response)
     # return json string of list of questions to store in pandas df
     return json.dumps(questions)
 
-model_suffix = model_id.split('/')[1]
-for justice in current_justices:
-    print(justice)
-    new_justice_df = transcripts_df
-    justice_last_name = justice.split()[-1].lower()
-    new_justice_df[f'questions_{justice_last_name}_petitioner'] = new_justice_df.apply(
-        lambda row: add_justice_questions(justice, row['petitioner_opening_text']), axis=1)
-    new_justice_df[f'questions_{justice_last_name}_respondent'] = new_justice_df.apply(
-    lambda row: add_justice_questions(justice, row['respondent_opening_statement']), axis=1)
-    out_fp = f'{justice_last_name}_2024_full_text_questions_llama70b_finetuned.csv' #CHANGE
-    print("saving data")
-    new_justice_df.to_csv(out_fp, index=False)
+def main():
+    input_fp = get_file_path("2024_full_text_transcripts.csv")
+    transcripts_df = pd.read_csv(input_fp)
+    current_justices = {"Justice John G. Roberts", "Justice Clarence Thomas", "Justice Samuel A. Alito", "Justice Sonia Sotomayor", "Justice Elena Kagan", "Justice Neil Gorsuch", "Justice Brett M. Kavanaugh", "Justice Amy Coney Barrett", "Justice Ketanji Brown Jackson"}
+
+    for justice in current_justices:
+        print(justice)
+        new_justice_df = transcripts_df
+        justice_last_name = justice.split()[-1].lower()
+
+        # add justice questions to df
+        new_justice_df[f'questions_{justice_last_name}_petitioner'] = new_justice_df.apply(
+            lambda row: add_justice_questions(justice, row['petitioner_opening_text']), axis=1)
+        new_justice_df[f'questions_{justice_last_name}_respondent'] = new_justice_df.apply(
+        lambda row: add_justice_questions(justice, row['respondent_opening_statement']), axis=1)
+
+        out_fp = f'../generated_data/{justice_last_name}_2024_full_text_questions_llama8b.csv'
+        new_justice_df.to_csv(out_fp, index=False)
+
+if __name__ == '__main__':
+    main()
