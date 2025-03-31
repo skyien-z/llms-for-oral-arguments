@@ -13,20 +13,6 @@ from peft import PeftModel
 import re
 
 USER = "nnadeem"
-
-# # MODEL_NAME = "Llama-3.3-70B-Instruct-bnb-4bit"
-# MODEL_NAME = "Meta-Llama-3.1-8B-Instruct-bnb-4bit"
-# # MODEL_NAME = "Qwen2.5-32B-bnb-4bit"
-
-# DATASET_NAME="CB_questions"
-# DATASET_NAME="dialogue_style"
-
-
-# MODEL_PATH = f"/scratch/gpfs/{USER}/transformer_cache/{MODEL_NAME}/"
-# DATA_PATH = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/finetune/finetuning_datasets/{DATASET_NAME}/train.jsonl"
-# OUTPUT_DIR = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/finetune/models/finetuned_{MODEL_NAME}_{DATASET_NAME}"
-
-
 TRANSCRIPTS_DIR = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/2024_cases_json/"
 CASEBRIEF_DIR = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/2023-2024_case_briefs/"      # directory of raw JSONs of case briefs
 
