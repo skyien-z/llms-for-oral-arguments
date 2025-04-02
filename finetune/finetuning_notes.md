@@ -26,14 +26,22 @@ git clone git@hf.co:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 ## Workflows 
 
 #### Running PEFT FT
-
-1. Prep data for finetuning using [script_prep_data_for_finetuning.ipynb](data_prep_scripts/script_prep_data_for_finetuning.ipynb). This will output train/test/val `.jsonl` files to [finetuning_datasets/](finetuning_datasets/) folder. **NOTE**: This folder is in the .gitignore because the jsonl files can get too large for git lfs.
-
-<!-- 1. Upload train/test/val .jsonl files to della in finetune-llama-models repo at data/oral_args_questions -->
-1. Verify `MODEL_NAME`, `DATASET_NAME` and `USER` on top of the [`finetune.py`](../finetuning_scripts/finetune.py) file
 1. ssh into della and cd to this repo dir
-1. [optional] try out the test on compute node (instructions below)
-1. verify details in [`launch_finetune.slurm`](finetuning_scripts/launch_finetune.slurm) script.
+1. Prep data for finetuning:
+    1. ORIGINAL Context-Based Question Generation: use [script_prep_data_for_finetuning_CB_questions.ipynb](data_prep_scripts/script_prep_data_for_finetuning_CB_questions.ipynb). This will output train/test/val `.jsonl` files to [finetuning_datasets/CB_questions](finetuning_datasets/CB_questions/) folder. 
+    1. NEW Dialogue-Style: use [script_prep_data_for_finetuning_dialogue_style.ipynb](data_prep_scripts/script_prep_data_for_finetuning_dialogue_style.ipynb). This will output train/test/val `.jsonl` files to [finetuning_datasets/dialogue_style](finetuning_datasets/dialogue_style/) folder.     
+    **NOTE**: The `finetuning_datasets` folder is in the .gitignore because the jsonl files can get too large for git lfs.
+1. [optional] try out the test on compute node:
+    1. Verify `MODEL_NAME`, `DATASET_NAME` and `USER` on top of the [`finetune.py`](../finetuning_scripts/finetune.py) file. These values are overriden in the [`launch_finetune.slurm`](finetuning_scripts/launch_finetune.slurm) script, but when calling script directly, these are the defaults.
+    1. Run the following:
+    ```
+    salloc --nodes=1 --ntasks=1 --time=59:00 --mem=24G --gres=gpu:1 --partition=pli-c 
+    module load anaconda3/2024.6
+    conda activate llama_finetuning_env
+    python finetune/finetuning_scripts/finetune.py
+    ## python finetune/finetuning_scripts/finetune.py --dialogue_style  # To run on dialogue style data
+    ```
+1. Verify details in [`launch_finetune.slurm`](finetuning_scripts/launch_finetune.slurm) script, specficially `MODEL_NAME`, `DATASET_NAME`, and `OUTPUT_DIR`.
 1. run `sbatch finetune/finetuning_scripts/launch_finetune.slurm`
 
 #### Running Inference:
@@ -42,9 +50,9 @@ git clone git@hf.co:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 `--adapter_dir`
 `--test_file`
 
-1. For CONTEXT-based question generation (pre-2024): `--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/test_100.jsonl`
+1. For CONTEXT-based question generation (pre-2024): `--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/CB_questions/test_100.jsonl`
 1. For OS-based question generation (2024) (converted to CB):
-    1. `--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/OS_to_CB_based_questions_test.jsonl`
+    1. `--test_file`: `/scratch/gpfs/$USER/llms-for-oral-arguments/finetune/finetuning_datasets/eval_only/OS_to_CB_based_questions_test.jsonl`
     1. Run [`finetune/data_prep_scripts/convert_OS_to_CB_questions.ipynb`](data_prep_scripts/convert_OS_to_CB_questions.ipynb) to generate the `OS_to_CB_based_questions_test.jsonl` file
 
 1. Follow the test on compute node (instructions below)
@@ -52,13 +60,6 @@ git clone git@hf.co:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 ## COMMANDS
 
 **DISCLAIMER**: THE FOLLOWING NEEDS TO BE UPDATED, CURRENTLY COPY PASTED FROM NIMRA's MESSY NOTES.
-
-##### SCRATCH
-```
-salloc --nodes=1 --ntasks=1 --time=59:00 --mem=24G --gres=gpu:4 --partition=pli-c
-model_name="Llama-3.2-3B-Instruct"
-model_path="meta-llama/Llama-3.2-3B-Instruct"
-```
 
 ##### RUNNING INFERENCE: `inference.py` test on compute node
 
