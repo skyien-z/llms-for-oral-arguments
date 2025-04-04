@@ -17,28 +17,41 @@ from tqdm import tqdm
 
 import argparse
 
-# MODEL_NAME = "Llama-3.3-70B-Instruct-bnb-4bit"
-# MODEL_NAME = "Meta-Llama-3.1-8B-Instruct-bnb-4bit"
-MODEL_NAME = "Qwen2.5-32B-bnb-4bit"
-DATASET_NAME = "train.jsonl"
 USER = "nnadeem"
 
+# MODEL_NAME = "Llama-3.3-70B-Instruct-bnb-4bit"
+MODEL_NAME = "Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+# MODEL_NAME = "Qwen2.5-32B-bnb-4bit"
+
+DATASET_NAME="CB_questions"
+DATASET_NAME="dialogue_style"
+
+
 MODEL_PATH = f"/scratch/gpfs/{USER}/transformer_cache/{MODEL_NAME}/"
-DATA_PATH = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/datasets/finetune/{DATASET_NAME}"
-OUTPUT_DIR = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/models/finetuned_{MODEL_NAME}_{DATASET_NAME}"
+DATA_PATH = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/finetune/finetuning_datasets/{DATASET_NAME}/train.jsonl"
+OUTPUT_DIR = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/finetune/models/finetuned_{MODEL_NAME}_{DATASET_NAME}"
 
 def set_chat_template():
-    return """{% if not add_generation_prompt is defined %}{% set add_generation_prompt = false %}{% endif %}{% set ns = namespace(is_first=false, is_tool=false, is_output_first=true, system_prompt='') %}{%- for message in messages %}{%- if message['role'] == 'system' %}{% set ns.system_prompt = message['content'] %}{%- endif %}{%- endfor %}{{bos_token}}{{ns.system_prompt}}{%- for message in messages %}{%- if message['role'] == 'user' %}{%- set ns.is_tool = false -%}{{'<｜User｜>' + message['content']}}{%- endif %}{%- if message['role'] == 'assistant' and message['content'] is none %}{%- set ns.is_tool = false -%}{%- for tool in message['tool_calls']%}{%- if not ns.is_first %}{{'<｜Assistant｜><｜tool▁calls▁begin｜><｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\\n' + '```json' + '\\n' + tool['function']['arguments'] + '\\n' + '```' + '<｜tool▁call▁end｜>'}}{%- set ns.is_first = true -%}{%- else %}{{'\\n' + '<｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\\n' + '```json' + '\\n' + tool['function']['arguments'] + '\\n' + '```' + '<｜tool▁call▁end｜>'}}{{'<｜tool▁calls▁end｜><｜end▁of▁sentence｜>'}}{%- endif %}{%- endfor %}{%- endif %}{%- if message['role'] == 'assistant' and message['content'] is not none %}{%- if ns.is_tool %}{{'<｜tool▁outputs▁end｜>' + message['content'] + '<｜end▁of▁sentence｜>'}}{%- set ns.is_tool = false -%}{%- else %}{% set content = message['content'] %}{{'<｜Assistant｜>' + content + '<｜end▁of▁sentence｜>'}}{%- endif %}{%- endif %}{%- if message['role'] == 'tool' %}{%- set ns.is_tool = true -%}{%- if ns.is_output_first %}{{'<｜tool▁outputs▁begin｜><｜tool▁output▁begin｜>' + message['content'] + '<｜tool▁output▁end｜>'}}{%- set ns.is_output_first = false %}{%- else %}{{'\\n<｜tool▁output▁begin｜>' + message['content'] + '<｜tool▁output▁end｜>'}}{%- endif %}{%- endif %}{%- endfor -%}{% if ns.is_tool %}{{'<｜tool▁outputs▁end｜>'}}{% endif %}{% if add_generation_prompt and not ns.is_tool %}{{'<｜Assistant｜>'}}{% endif %}"""
+    return """<|begin_of_text|>{%- for message in messages %}<|start_header_id|>{{ message['role'] }}<|end_header_id|>\n\n{{ message['content'] }}<|eot_id|>{%- endfor %}"""
 
-def load_data_nimra(filename, tokenizer):
-    texts = []
+def read_jsonl(filename):
+    with open(filename, "r") as f:
+        data = [json.loads(line) for line in f]
+    return data
+
+def load_data_dialogue(filename):
+    data_transcripts = read_jsonl(filename)
+    dialogues = [transcript["messages"] for transcript in data_transcripts]
+    return dialogues
+
+def load_data(filename):
+    dialogues = []
     with open(filename) as f:
         for line in f:
             line = json.loads(line)
             messages = [{"role": "system", "content": line["system_prompt"]}, {"role": "user", "content": line["instruction"]}, {"role": "assistant", "content": line["output"]}, ]
-            tokenized = tokenizer.apply_chat_template(messages, add_generation_prompt = False, tokenize=False)
-            texts.append(tokenized)
-        return {"text": texts}
+            dialogues.append(messages)
+    return dialogues
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -46,8 +59,10 @@ if __name__ == "__main__":
     parser.add_argument('--max_seq_length', type=int, default=65536)
     parser.add_argument('--output_dir', type=str, default=OUTPUT_DIR)
     parser.add_argument('--data_path', type=str, default=DATA_PATH)
+    parser.add_argument('--dialogue_style', action='store_true', help="If set, use the dialogue style formatting of data")
 
     args = parser.parse_args()
+    print(args)
     
     dtype = None # None for auto detection. Float16 for Tesla T4, V100, Bfloat16 for Ampere+
     load_in_4bit = True # Use 4bit quantization to reduce memory usage. Can be False.
@@ -65,21 +80,25 @@ if __name__ == "__main__":
         tokenizer = AutoTokenizer.from_pretrained(args.model_name)
     tokenizer.chat_template = set_chat_template()
     
-    print(f"Loading dataset from {args.data_path}")
-    train = load_data_nimra(args.data_path, tokenizer)
-    dataset = Dataset.from_dict(train)
+    print(f"args.dialogue: {args.dialogue_style}. Loading dataset from {args.data_path}")
+    if args.dialogue_style:
+        chat = load_data_dialogue(args.data_path)
+    else:
+        chat = load_data(args.data_path)
+    dataset = Dataset.from_dict({"chat": chat})
+    dataset = dataset.map(lambda x: {"text": tokenizer.apply_chat_template(x["chat"], tokenize=False, add_generation_prompt=False)})
     print(f"Successfully loaded dataset.")
     
     print(f"Loading PEFT model...")
     model = FastLanguageModel.get_peft_model(
         model,
-        r = 32, # Choose any number > 0 ! Suggested 8, 16, 32, 64, 128
+        # r = 32, # Choose any number > 0 ! Suggested 8, 16, 32, 64, 128
+        r = 16, # NIMRA: Changed from 32 to save memory
         target_modules = ["q_proj", "k_proj", "v_proj", "o_proj",
                         "gate_proj", "up_proj", "down_proj",],
         lora_alpha = 16,
         lora_dropout = 0, # Supports any, but = 0 is optimized
         bias = "none",    # Supports any, but = "none" is optimized
-        # [NEW] "unsloth" uses 30% less VRAM, fits 2x larger batch sizes!
         use_gradient_checkpointing = "unsloth", # True or "unsloth" for very long context
         random_state = 3407,
         use_rslora = False,  # We support rank stabilized LoRA
@@ -93,11 +112,13 @@ if __name__ == "__main__":
         train_dataset = dataset,
         dataset_text_field = "text",
         max_seq_length = args.max_seq_length,
-        dataset_num_proc = 2,
+        # dataset_num_proc = 2,
+        dataset_num_proc = 1, # NIMRA: Reduce from 2 to save memory
         packing = False, # Can make training 5x faster for short sequences.
         args = TrainingArguments(
             per_device_train_batch_size = 1,
-            gradient_accumulation_steps = 8,
+            # gradient_accumulation_steps = 8,
+            gradient_accumulation_steps = 4, # NIMRA: Reduce from 8 to save memory
             warmup_steps = 0,
             num_train_epochs = 1, # Set this for 1 full training run.
             #max_steps = 20,
@@ -113,9 +134,10 @@ if __name__ == "__main__":
         ),
     )
 
-
-    from unsloth.chat_templates import train_on_responses_only
-    trainer = train_on_responses_only(trainer, instruction_part="<|begin_of_text|><|start_header_id|>system<|end_header_id|>", response_part="<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n")
+    if not args.dialogue_style:
+        print("TRAINING ON RESPONSES ONLY...")
+        from unsloth.chat_templates import train_on_responses_only
+        trainer = train_on_responses_only(trainer, instruction_part="<|begin_of_text|><|start_header_id|>system<|end_header_id|>", response_part="<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n")
 
     print(f"Training model...")
     trainer_stats = trainer.train()
