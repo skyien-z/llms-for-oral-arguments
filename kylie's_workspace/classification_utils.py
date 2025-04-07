@@ -45,7 +45,6 @@ def get_valence_classification_prompt(opening_statement, question):
         Your response must follow this JSON format:
         {
         "classification": "<Category Name>",
-        "reasoning": "<A brief explanation for the classification>"
         }
 
         ### Example:
@@ -54,10 +53,7 @@ def get_valence_classification_prompt(opening_statement, question):
         
         ### Response:
         {
-        "classification": "Competitive",
-        "reasoning": "The question challenges the advocate's statement. It requests more information. If the question  
-        directly criticized the advocate's point ("This seems incorrect"), it would be "Very Competitive," but because it 
-        only requests more information, the question is "Competitive."
+        "classification": "Competitive"
         }
     """
     
@@ -82,7 +78,6 @@ def get_legalbench_classification_prompt(opening_statement, question):
         Your response must follow this JSON format:
         {
         "classification": "<Category Name>",
-        "reasoning": "<A brief explanation for the classification>"
         }
 
         ### Example:
@@ -91,8 +86,7 @@ def get_legalbench_classification_prompt(opening_statement, question):
                 
         ### Response:
         {
-        "classification": "Implications",
-        "reasoning": "The question explores the potential limits and future consequences of the advocate's proposed rule in unanticipated scenarios."
+        "classification": "Implications"
         }
     """
 
@@ -118,8 +112,7 @@ def get_metacog_classification_prompt(opening_statement, question):
         ### Output format:
         Your response must follow this JSON format:
         {
-        "classification": "<Category Name>",
-        "reasoning": "<A brief explanation for the classification>"
+            "classification": "<Category Name>"
         }
 
     """
