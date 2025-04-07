@@ -20,16 +20,8 @@ def format_messages(system_prompt, opening_statement, question):
     return messages
 
 def get_valence_classification_prompt(opening_statement, question):
-    system_prompt = """You are an expert assistant trained to valence, or sentiment, of the questions asked by justices during oral arguments. Your task is to identify the competitiveness of a given question based on the advocate's opening statement and the text of the question itself.
+    system_prompt = """You are an expert assistant trained to identify valence, or sentiment, of the questions asked by justices during oral arguments. Your task is to identify the competitiveness of a given question based on the advocate's opening statement and the text of the question itself.
         ### Instructions:
-        During oral arguments, Supreme Court justices will often have an opinion on the case. This opinion 
-        may be influenced by a Justice's ideological predisposition and may influence the questions that they ask
-        an advocation. For example, if a petitioner made an opening statement appealing to progressive values,
-        a progressive justice may ask cooperative questions that allow the petitioner to present his argument more 
-        in-depth. On the other hand, that same progressive justice may ask the other-side-championing respondent 
-        more competitive questions that critique the respondent's opening statement because the respondent's argument is
-        less aligned with the justice's opinion.
-
         Your task, given an opening statement of an advocate (either the petitioner or respondent) and a justice's 
         question is to classify the degree of cooperativeness/competitiveness of justice's question with regards to 
         an advocate's opening statement.

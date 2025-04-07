@@ -41,8 +41,8 @@ all_questions_df['metacog'] = all_questions_df.apply(
 
 ############################################################################
 ## Update Output File Path!
-output_dir = './'
-output_file = 'test_all_metrics.csv'
+output_dir = 'generated_data/'
+output_file = '2024_questions_all_justices_llama8b_with_qids_all_metrics_greedy.csv'
 ############################################################################
 
 all_questions_df.to_csv(output_dir + output_file, index=False)
