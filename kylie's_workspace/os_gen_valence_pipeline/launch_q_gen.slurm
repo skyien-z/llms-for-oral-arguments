@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --job-name=generate_llama_8b_baseline_questions  # create a short name for your job
+#SBATCH --nodes=1                # node count
+#SBATCH --ntasks=1               # total number of tasks across all nodes
+#SBATCH --mem=5G
+#SBATCH --gres=gpu:1
+#SBATCH --partition=pli-c
+#SBATCH --time=11:59:00          # total run time limit (HH:MM:SS)
+#SBATCH --mail-type=begin        # send email when job begins
+#SBATCH --mail-type=end          # send email when job ends
+
+module purge
+module load anaconda3/2024.6
+conda activate llama_finetuning_env
+
+python gen_os_questions_all_justices.py

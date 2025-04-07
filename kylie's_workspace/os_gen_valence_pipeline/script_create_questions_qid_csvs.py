@@ -12,7 +12,7 @@ def get_file_path(filename):
 
 #################################################################################
 ## REPLACE WITH YOUR INPUT FILE NAME -- DON'T WORRY ABOUT PATH
-input_file_name = "2024_full_text_all_justices_questions_llama70b.csv"
+input_file_name = "2024_llama8b_generated_questions.csv"
 #################################################################################
 df = pd.read_csv(get_file_path(input_file_name))
 
@@ -51,8 +51,8 @@ for justice in current_justices:
 
 #################################################################################
 ## REPLACE WITH YOUR OUTPUT FILE PATH
-output_dir = "./"
-output_file_path = "2024_questions_all_justices_llama70b_with_qids.csv"
+output_dir = "../generated_data/"
+output_file_path = "2024_questions_all_justices_llama8b_with_qids.csv"
 #################################################################################
 
 all_questions_df.to_csv(output_dir+output_file_path)
