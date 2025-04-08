@@ -5,7 +5,8 @@ from vllm import SamplingParams
 formalize_justices = {"justice_amy_coney_barrett": "Amy Coney Barret", "justice_brett_m_kavanaugh": "Brett M. Kavanaugh",  "justice_sonia_sotomayor": "Sonia Sotomayor",
                         "justice_clarence_thomas": "Clarence Thomas", "justice_elena_kagan": "Elena Kagan", "justice_john_g_roberts_jr": "John G. Roberts Jr.",
                         "justice_ketanji_brown_jackson": "Kentanji Brown Jackson", "justice_neil_gorsuch": "Neil Gorsuch", "justice_samuel_a_alito_jr": "Samual A. Alito Jr."}
-  
+
+# TODO Do we want to apply chat template to context or just pass in context?
 def format_messages(system_prompt, context, justice, remark):
     user_prompt = f"""### Your Task:
         Context: {context}
@@ -158,7 +159,6 @@ def get_realistic_classification_prompt(context, justice, remark):
     return format_messages(system_prompt, context, justice, remark)
 
 def get_is_helpful_classification_prompt(context, justice, remark):
-    # how_helpful
     system_prompt = """You are an expert assistant trained to classify the helpfulness of remarks (either statements or questions) asked by judges during oral arguments. 
     Your task is to determine whether a remark is helpful for a justice to say based on its context -- past remarks-answer pairs of an oral argument --, the justice making the remark, and the text of the remark itself.
 
@@ -249,17 +249,16 @@ def get_similarity_classification_prompt(context, justice, remark1, remark2):
 
 
 def get_preference_classification_prompt(context, justice, remark1, remark2):
-    # how_overall
-    system_prompt = """You are an expert assistant trained to classify justice remarks (either statements or questions).
+    system_prompt = """You are an expert legal assistant assessing the quality of Supreme Court oral arguments.
     Your task is to determine how much you prefer one remark to the other based on the context -- past remarks-answer pairs of an oral argument -- of when the remark was made, the justice making the remark, and the text of the remark itself.
 
         ### Instructions:
         Choose your response from the follow categories:
-        - '-2': You strongly prefer Remark1 to Remark2.
-        - '-1': You prefer Remark1 to Remark2.
-        - '0': You have no preference between Remark1 and Remark2.
-        - '1': You prefer Remark2 to Remark1.
-        - '2': You strongly prefer Remark2 to Remark1.
+        - '-2': As a legal expert, you strongly prefer Remark1 to Remark2.
+        - '-1': As a legal expert, you prefer Remark1 to Remark2.
+        - '0': As a legal expert, you have no preference between Remark1 and Remark2.
+        - '1': As a legal expert, you prefer Remark2 to Remark1.
+        - '2': As a legal expert, you strongly prefer Remark2 to Remark1.
 
         Your output should classify the judge's remark into one of these categories.
 
@@ -326,11 +325,14 @@ def classify_questions_realness(llm, tokenizer, context, justice, remark):
 def classify_questions_helpfulness(llm, tokenizer, context, justice, remark):
     return classify_remark(get_is_helpful_classification_prompt, llm, tokenizer, context, justice, remark)
 
+def classify_questions_overall(llm, tokenizer, context, justice, remark):
+    return classify_remark(get_overall_classification_prompt, llm, tokenizer, context, justice, remark)
+
 def classify_questions_similarity(llm, tokenizer, context, justice, remark1, remark2):
-    return classify_remark(get_similarity_classification_prompt, llm, tokenizer, context, justice, remark1, remark2)
+    return classify_remark_comparative(get_similarity_classification_prompt, llm, tokenizer, context, justice, remark1, remark2)
 
 def classify_questions_preference(llm, tokenizer, context, justice, remark1, remark2):
-    return classify_remark(get_preference_classification_prompt, llm, tokenizer, context, justice, remark1, remark2)
+    return classify_remark_comparative(get_preference_classification_prompt, llm, tokenizer, context, justice, remark1, remark2)
 ############################################################################################
 ### END
 ############################################################################################
