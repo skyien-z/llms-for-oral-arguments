@@ -14,16 +14,40 @@ module load anaconda3/2024.6
 conda activate llama_finetuning_env
 
 
-#################### DIALOGUE STYLE
+#################### MULTITURN
+ADAPTER_NAME=finetuned_Llama-3.3-70B-Instruct-bnb-4bit_dialogue_style_e_1_lora_r_16_lr_5e-5_gas_2
+BASE_MODEL_DIR=/scratch/gpfs/${USER}/transformer_cache/Meta-Llama-3.1-8B-Instruct-bnb-4bit/
+ADAPTER_DIR=/scratch/gpfs/${USER}/llms-for-oral-arguments/finetune/models/${FT_MODEL_NAME}/final_checkpoint
+DATA_PATH=/scratch/gpfs/${USER}/llms-for-oral-arguments/finetune/finetuning_datasets/eval_only/multiturn_samples_2024.jsonl
+OUTPUT_DIR=/scratch/gpfs/${USER}/llms-for-oral-arguments/finetune/outputs/multiturn/{ADAPTER_NAME}
 
-# for i in 1 2 3 4 5 6 7 8 9 10
-for i in 7 8 9 10
-do
-echo "RUNNING NEW ITERATION"
-echo $i
-python finetune/finetuning_scripts/inference_dialogue_style.py \
---output_dir=finetune/outputs/OS_questions/iter_${i}
-done
+#### Gen for only actual justices
+python finetune/finetuning_scripts/inference_multiturn.py \
+    --output_dir=finetune/outputs/OUTPUT_DIR \
+    --base_model_dir=${BASE_MODEL_DIR} \
+    --adapter_dir=${ADAPTER_DIR} \
+    --data_path=${DATA_PATH} \
+    --use_lora ;
+
+#### Gen for all justices
+python finetune/finetuning_scripts/inference_multiturn.py \
+    --output_dir=finetune/outputs/OUTPUT_DIR \
+    --base_model_dir=${BASE_MODEL_DIR} \
+    --adapter_dir=${ADAPTER_DIR} \
+    --data_path=${DATA_PATH} \
+    --use_lora \
+    --generate_for_all_justices ;   ## Only line different from above
+
+# #################### DIALOGUE STYLE
+
+# # for i in 1 2 3 4 5 6 7 8 9 10
+# for i in 7 8 9 10
+# do
+# echo "RUNNING NEW ITERATION"
+# echo $i
+# python finetune/finetuning_scripts/inference_dialogue_style.py \
+# --output_dir=finetune/outputs/OS_questions/iter_${i}
+# done
 
 
 #################### ORIGINAL FINETUNING SETTING
