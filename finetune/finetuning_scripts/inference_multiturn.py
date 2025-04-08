@@ -12,12 +12,21 @@ from transformers import (
 from peft import PeftModel
 import re
 
-USER = "nnadeem"
-TRANSCRIPTS_DIR = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/2024_cases_json/"
-CASEBRIEF_DIR = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/2023-2024_case_briefs/"      # directory of raw JSONs of case briefs
 
-BASE_MODEL_DIR = "/scratch/gpfs/nnadeem/transformer_cache/Meta-Llama-3.1-8B-Instruct-bnb-4bit/"
-adapter_dir = f"/scratch/gpfs/{USER}/llms-for-oral-arguments/finetune/models/finetuned_Meta-Llama-3.1-8B-Instruct-bnb-4bit_dialogue_style/checkpoint-242"
+"""
+### Sample usage for testing
+
+python finetune/finetuning_scripts/inference_multiturn.py --use_lora
+
+"""
+### Default args
+USER = "nnadeem"
+BASE_MODEL_NAME="Llama-3.3-70B-Instruct-bnb-4bit"
+ADAPTER_NAME="finetuned_Llama-3.3-70B-Instruct-bnb-4bit_dialogue_style_e_1_lora_r_16_lr_5e-5_gas_2"
+BASE_MODEL_DIR=f"/scratch/gpfs/{USER}/transformer_cache/{BASE_MODEL_NAME}/"
+ADAPTER_DIR=f"/scratch/gpfs/{USER}/llms-for-oral-arguments/finetune/models/{ADAPTER_NAME}/final_checkpoint"
+DATA_PATH=f"/scratch/gpfs/{USER}/llms-for-oral-arguments/finetune/finetuning_datasets/eval_only/context_based_statements_format.jsonl"
+OUTPUT_DIR=f"/scratch/gpfs/{USER}/llms-for-oral-arguments/finetune/outputs/multiturn/{ADAPTER_NAME}"
 
 def set_chat_template():
     return """<|begin_of_text|>{%- for message in messages %}<|start_header_id|>{{ message['role'] }}<|end_header_id|>\n\n{{ message['content'] }}<|eot_id|>{%- endfor %}"""
@@ -75,17 +84,18 @@ def get_response_for_justice(model, tokenizer, context, justice, max_new_tokens=
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_path', type=str, default="finetune/finetuning_datasets/eval_only/multiturn_samples_2024.jsonl")
-    parser.add_argument('--base_model_dir', type=str, required=True, help="Path to the original (base) model directory.")
-    parser.add_argument('--adapter_dir', type=str, help="Path to the directory containing LoRA adapter files.")
-    parser.add_argument('--use_lora', action='store_true', help="If set, use Lora finetuned model in adapter dir, else use model.")
-    parser.add_argument('--generate_for_all_justices', action='store_true')
-    parser.add_argument('--output_dir', type=str, default="finetune/outputs/multiturn")
+    parser.add_argument('--data_path', type=str, default=DATA_PATH)
+    parser.add_argument('--base_model_dir', type=str, default=BASE_MODEL_DIR)
+    parser.add_argument('--adapter_dir', type=str, default=ADAPTER_DIR)
+    parser.add_argument('--output_dir', type=str, default=OUTPUT_DIR)
+    parser.add_argument('--use_lora', action='store_true', help="If set, use Lora finetuned model in adapter dir, else use base model.")
+    parser.add_argument('--generate_for_all_justices', action='store_true', help="If set, generate model_response for all justices at each turn, else only for the actual justice at each turn.")
     args = parser.parse_args()
-    os.makedirs(args.output_dir, exist_ok=True)
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
 
     # 1) Load tokenizer from the *base* model
-    tokenizer = AutoTokenizer.from_pretrained(base_model_dir, use_fast=False)
+    tokenizer = AutoTokenizer.from_pretrained(args.base_model_dir, use_fast=False)
     tokenizer.chat_template = set_chat_template()
 
     # 2) Load the base model
@@ -117,25 +127,30 @@ def main():
         "justice_sonia_sotomayor"
     ]
 
-    ### If args.generate_for_all is False, run the model only for the justice specified in "actual_justice"
+    ### If args.generate_for_all_justices is False, run the model only for the justice specified in "actual_justice"
     ### Otherwise, run the model for all justices
-    if not args.generate_for_all:
-        for sample in data:
-            justice = sample["actual_justice"]
-            model_response = get_response_for_justice(model, tokenizer, sample["context"], justice)
-            sample["predictions"][justice] = {"model_response": model_response}
-    else:
-        for sample in data:
+    if args.generate_for_all_justices:
+        print("Generating responses for ALL justices...")
+        out_fp = f"{args.output_dir}/multiturn_samples_2024_model_responses_all.jsonl"
+        for i, sample in enumerate(data):
+            print(f"Processing sample {i}")
             for justice in justices:
                 model_response = get_response_for_justice(model, tokenizer, sample["context"], justice)
                 sample["predictions"][justice] = {"model_response": model_response}
-    
-    # Save final results
-    if args.generate_for_all:
-        out_fp = f"{args.output_dir}/multiturn_samples_2024_model_responses_all.jsonl"
+            if i % 100 == 0:
+                dump_jsonl(out_fp, data) ## Save intermediate results
     else:
+        print("Generating responses for ACTUAL justices only...")
         out_fp = f"{args.output_dir}/multiturn_samples_2024_model_responses_actual_only.jsonl"
+        for i, sample in enumerate(data):
+            print(f"Processing sample {i}")
+            justice = sample["actual_justice"]
+            model_response = get_response_for_justice(model, tokenizer, sample["context"], justice)
+            sample["predictions"][justice] = {"model_response": model_response}
+            if i % 100 == 0:
+                dump_jsonl(out_fp, data) ## Save intermediate results
 
+    # Save final results
     dump_jsonl(out_fp, data)
     print(f"Successfuly ran all samples. Final outputs saved to {out_fp}")
 

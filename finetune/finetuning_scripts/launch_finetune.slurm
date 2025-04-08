@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=ft_70b_r16_lr2_e2  # create a short name for your job
+#SBATCH --job-name=ft_8b_r64_lr2_e4  # create a short name for your job
 #SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1               # total number of tasks across all nodes
 #SBATCH --mem-per-cpu=93G
 #SBATCH --gres=gpu:1
 #SBATCH --partition=pli-c
-#SBATCH --time=11:59:00          # total run time limit (HH:MM:SS)
+#SBATCH --time=05:00:00          # total run time limit (HH:MM:SS)
 #SBATCH --mail-type=begin        # send email when job begins
 #SBATCH --mail-type=end          # send email when job ends
 
@@ -19,13 +19,13 @@ conda activate llama_finetuning_env
 ##############################
 
 # num_epochs=1
-num_epochs=2
-# num_epochs=4
+# num_epochs=2
+num_epochs=4
 
-# gradient_accumulation_steps=4
-gradient_accumulation_steps=2
+gradient_accumulation_steps=4
+# gradient_accumulation_steps=2
 
-lora_r=16 # Choose any number > 0 ! Suggested 8, 16, 32, 64, 128 (Orig was 32)
+lora_r=64 # Choose any number > 0 ! Suggested 8, 16, 32, 64, 128 (Orig was 32)
 
 # lr=5e-5
 lr=2e-5
@@ -34,8 +34,8 @@ lr=2e-5
 #   Define arguments
 ##############################
 
-MODEL_NAME="Llama-3.3-70B-Instruct-bnb-4bit"
-# MODEL_NAME="Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+# MODEL_NAME="Llama-3.3-70B-Instruct-bnb-4bit"
+MODEL_NAME="Meta-Llama-3.1-8B-Instruct-bnb-4bit"
 # MODEL_NAME="Qwen2.5-32B-bnb-4bit"
 MODEL_PATH=/scratch/gpfs/${USER}/transformer_cache/${MODEL_NAME}/
 

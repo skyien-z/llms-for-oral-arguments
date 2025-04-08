@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=ds_inference_all_j  # create a short name for your job
+#SBATCH --job-name=multi_inference_70b_all_5e  # create a short name for your job
 #SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1               # total number of tasks across all nodes
 #SBATCH --mem=8G
 #SBATCH --gres=gpu:1
 #SBATCH --partition=pli-c
-#SBATCH --time=10:00:00          # total run time limit (HH:MM:SS)
+#SBATCH --time=11:59:00          # total run time limit (HH:MM:SS)
 #SBATCH --mail-type=begin        # send email when job begins
 #SBATCH --mail-type=end          # send email when job ends
 
@@ -15,23 +15,32 @@ conda activate llama_finetuning_env
 
 
 #################### MULTITURN
-ADAPTER_NAME=finetuned_Llama-3.3-70B-Instruct-bnb-4bit_dialogue_style_e_1_lora_r_16_lr_5e-5_gas_2
-BASE_MODEL_DIR=/scratch/gpfs/${USER}/transformer_cache/Meta-Llama-3.1-8B-Instruct-bnb-4bit/
-ADAPTER_DIR=/scratch/gpfs/${USER}/llms-for-oral-arguments/finetune/models/${FT_MODEL_NAME}/final_checkpoint
-DATA_PATH=/scratch/gpfs/${USER}/llms-for-oral-arguments/finetune/finetuning_datasets/eval_only/multiturn_samples_2024.jsonl
-OUTPUT_DIR=/scratch/gpfs/${USER}/llms-for-oral-arguments/finetune/outputs/multiturn/{ADAPTER_NAME}
+ADAPTER_NAME="finetuned_Llama-3.3-70B-Instruct-bnb-4bit_dialogue_style_e_2_lora_r_16_lr_5e-5_gas_2" ## actual + all new
+# ADAPTER_NAME="finetuned_Llama-3.3-70B-Instruct-bnb-4bit_dialogue_style_e_2_lora_r_16_lr_2e-5_gas_2" ## all + actual
+BASE_MODEL_NAME="Llama-3.3-70B-Instruct-bnb-4bit"
 
-#### Gen for only actual justices
-python finetune/finetuning_scripts/inference_multiturn.py \
-    --output_dir=finetune/outputs/OUTPUT_DIR \
-    --base_model_dir=${BASE_MODEL_DIR} \
-    --adapter_dir=${ADAPTER_DIR} \
-    --data_path=${DATA_PATH} \
-    --use_lora ;
+# ADAPTER_NAME="finetuned_Meta-Llama-3.1-8B-Instruct-bnb-4bit_dialogue_style_e_4_lora_r_32_lr_2e-5_gas_4" ## actual
+# ADAPTER_NAME="finetuned_Meta-Llama-3.1-8B-Instruct-bnb-4bit_dialogue_style_e_4_lora_r_16_lr_5e-5_gas_4"  ## actual
+# ADAPTER_NAME="finetuned_Meta-Llama-3.1-8B-Instruct-bnb-4bit_dialogue_style_e_1_lora_r_64_lr_2e-5_gas_4" ## all + actual
+# BASE_MODEL_NAME="Meta-Llama-3.1-8B-Instruct-bnb-4bit"
 
-#### Gen for all justices
+
+BASE_MODEL_DIR=/scratch/gpfs/${USER}/transformer_cache/${BASE_MODEL_NAME}/
+ADAPTER_DIR=/scratch/gpfs/${USER}/llms-for-oral-arguments/finetune/models/${ADAPTER_NAME}/final_checkpoint
+DATA_PATH=/scratch/gpfs/${USER}/llms-for-oral-arguments/finetune/finetuning_datasets/eval_only/context_based_statements_format.jsonl
+OUTPUT_DIR=/scratch/gpfs/${USER}/llms-for-oral-arguments/finetune/outputs/multiturn/${ADAPTER_NAME}
+
+# #### Gen for only ACTUAL justices
+# python finetune/finetuning_scripts/inference_multiturn.py \
+#     --output_dir=${OUTPUT_DIR} \
+#     --base_model_dir=${BASE_MODEL_DIR} \
+#     --adapter_dir=${ADAPTER_DIR} \
+#     --data_path=${DATA_PATH} \
+#     --use_lora ;
+
+#### Gen for ALL justices
 python finetune/finetuning_scripts/inference_multiturn.py \
-    --output_dir=finetune/outputs/OUTPUT_DIR \
+    --output_dir=${OUTPUT_DIR} \
     --base_model_dir=${BASE_MODEL_DIR} \
     --adapter_dir=${ADAPTER_DIR} \
     --data_path=${DATA_PATH} \
